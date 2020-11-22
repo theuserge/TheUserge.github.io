@@ -10,7 +10,7 @@ Here is Video Tutorial to Deploy or Setup UserGe on your Account with Heroku:
 
 To Deploy on your VPS or local machine. Check out the Repository Read Me section
 
-For more Information: Type `#usergeguide` in [UserGeOt](https://t.me/usergeot).
+For more Information: Type `#usergeguide` and `#deployment` in [UserGeOt](https://t.me/usergeot).
 
 ## 2. How to **Add Unofficial Plugins**?
 
