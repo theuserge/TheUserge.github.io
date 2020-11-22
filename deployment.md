@@ -1,7 +1,7 @@
 
 # Deployment
 
-<pre>This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.</pre>
+**This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.**
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
@@ -21,21 +21,21 @@ Click on the any Var from the list to get its detailed description
 
 **Mandatory Vars:**
 
-1. [**API_ID** and **API_HASH**](https://theuserge.github.io/deployment#api_id_hash)
+1. [**API_ID** and **API_HASH**](https://theuserge.github.io/deployment#1-api_id-and-api_hash)
 
-2. [**DATABASE_URL**](https://theuserge.github.io/deployment#database_url)
+2. [**DATABASE_URL**](https://theuserge.github.io/deployment#2-database_url)
 
-3. [**LOG_CHANNEL_ID**](https://github.com/UsergeTeam/Userge/wiki/Deployment#3-log_channel_id)
+3. [**LOG_CHANNEL_ID**](https://theuserge.github.io/deployment#3-log_channel_id)
 
-4. Vars Defined for your [**Mode**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes)
+4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
 <pre> These are Minimum required vars need to setup to make userbot functional. </pre>
 
 **Non-Mandatory Vars:**
 
-1. [**LOAD_UNOFFICIAL_PLUGINS**](https://github.com/UsergeTeam/Userge/wiki/Deployment#1-load_unofficial_plugins)
+1. [**LOAD_UNOFFICIAL_PLUGINS**](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
 
-2. [**WORKERS**](https://github.com/UsergeTeam/Userge/wiki/Deployment#2-workers)
+2. [**WORKERS**](https://theuserge.github.io/deployment#2-workers)
 
 3. [**G_DRIVE_CLIENT_ID** *&* **G_DRIVE_CLIENT_SECRET**](https://github.com/UsergeTeam/Userge/wiki/Deployment#3-g_drive_client_id--g_drive_client_secret)
 
