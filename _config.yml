@@ -6,7 +6,7 @@ buttons:
       btn1_title: Main Repository
       btn2_url: https://github.com/UsergeTeam/Userge-Plugins
       btn2_title: Plugins Repository
-      btn4_url: https://t.me/theUserge
-      btn4_title: Updates Channel
-      btn5_url: https://t.me/UsergeOT
-      btn5_title: Support Group
+      btn3_url: https://t.me/theUserge
+      btn3_title: Updates Channel
+      btn4_url: https://t.me/UsergeOT
+      btn4_title: Support Group
