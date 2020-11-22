@@ -105,62 +105,62 @@ Click on the any Var from the list to get its detailed description
 
 ### 2. [DATABASE_URL](#database_url)
 
-1. First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
+* First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
-2. Login or Sign Up (Create an Account) there. If you dont have an Account!
+* Login or Sign Up (Create an Account) there. If you dont have an Account!
 
-3. After Login, You'll be in there Dashboard Page
+* After Login, You'll be in there Dashboard Page
 
 ![This](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
 
-4. Choose an option **Build a Cluster** (as show picture below)
+* Choose an option **Build a Cluster** (as show picture below)
 
-5. Now, You'll see Pricing Plan setion.
+* Now, You'll see Pricing Plan setion.
 
 ![This](https://telegra.ph/file/714afabd905531eedc275.jpg)
 
-6. Here, We going to use Free Plan for our userbot
+* Here, We going to use Free Plan for our userbot
 
-7. After that, You have to select Region and Server. Where your Databse server will host.
+* After that, You have to select Region and Server. Where your Databse server will host.
 
 ![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
 
 <pre> Select the Nearest server from your location so it wont take long time to connect</pre>
 
-8. At Last, Click on **Create Cluster**.
+* At Last, Click on **Create Cluster**.
 
 ![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
 <pre> You have to wait for sometime at this Page while your Database being created. </pre>
 
-9. After Created, Click on **Network Access** (Can see option under Security section of Above Image)
+* After Created, Click on **Network Access** (Can see option under Security section of Above Image)
 
-10. You will see an option **Add IP Adress**. Click on that
+* You will see an option **Add IP Adress**. Click on that
 ![This](https://telegra.ph/file/8229e06fc38c87e8880ff.jpg)
 
-11. Now, **Allow Access From Anywhere**. Then **Confirm**
+* Now, **Allow Access From Anywhere**. Then **Confirm**
 
 ![This](https://telegra.ph/file/83c30132c4fc2b639f669.jpg)
 
 <pre> Wait until the Status change from **Pending** to **Active** </pre>
 
-12. Go Back to **Cluster** option and Click on **Connect**.
+* Go Back to **Cluster** option and Click on **Connect**.
 
-13. Now. Fill any random **Username** and **Password**
+* Now. Fill any random **Username** and **Password**
 
 <pre> **Note:** Don't use Special character in your Password like <code>!@#$%</code>etc. </pre>
 
-14. After filled, Click on **Create MongoDB User**.
+* After filled, Click on **Create MongoDB User**.
 
-15. There you are, Select **Choose a connection method**
+* There you are, Select **Choose a connection method**
 
-16. Choose **Connect Your Application**
+* Choose **Connect Your Application**
 
-17. Now, Select **DRIVER** as <code>Pyhton</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
+* Now, Select **DRIVER** as <code>Pyhton</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
 
-<pre> eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority </pre>
+> eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority
 
-18. Replace <password> with your given Password and <dbname> with "test" or "cluster0"
+* Replace <password> with your given Password and <dbname> with "test" or "cluster0"
 
 **That's it**. You have got your **DATABASE_URL** Var
 
