@@ -93,7 +93,7 @@ Click on the any Var from the list to get its detailed description
 
 ***
 
-### 1. [API_ID and API_HASH]
+### 1. API_ID and API_HASH
 
 1. Go to [my.telegram.org](https://my.telegram.org) then Enter your Phone Number with your country code.
 
@@ -103,7 +103,7 @@ Click on the any Var from the list to get its detailed description
 
 4. Thats it, You"ll get your **API_ID** and **API_HASH** Var.
 
-### 2. [DATABASE_URL]
+### 2. DATABASE_URL
 
 * First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
