@@ -1,22 +1,19 @@
+
 # Deployment
 
-This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.
+<pre>This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.</pre>
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
 **Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware. [Click here](https://www.docker.com/) To know more about Docker. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-**Legacy Method** - Using Python and all those packages which require to Run this bot. You can also say a Manual way
- 
-[**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
+**Legacy Method** - Using Python and all those packages which require to Run this bot. You can also say a Manual way to deploy userbot.
 
-***
-
-### Config Vars
+### Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
 Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.
 
-> You can leave non mandatory vars for now and can add them later.
+<pre> You can leave non mandatory vars for now and can add them later. </pre>
 
 ### List of available Vars
 
@@ -32,7 +29,7 @@ Click on the any Var from the list to get its detailed description
 
 4. Vars Defined for your [**Mode**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes)
 
-> These are Minimum required vars need to setup to make userbot functional.
+<pre> These are Minimum required vars need to setup to make userbot functional. </pre>
 
 **Non-Mandatory Vars:**
 
@@ -86,7 +83,7 @@ Click on the any Var from the list to get its detailed description
 
 25. [**HEROKU_APP_NAME**](https://github.com/UsergeTeam/Userge/wiki/Deployment#25-heroku_app_name)
 
-> UserGe has many non-mandatory vars which are used for extra features
+<pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
 ### **Branches in [Userge Repository](https://github.com/UsergeTeam/Userge)**
 
@@ -114,22 +111,27 @@ Click on the any Var from the list to get its detailed description
 
 3. After Login, You'll be in there Dashboard Page
 
-4. Choose an option **Build a Cluster** (as show picture below)
 ![This](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
 
+4. Choose an option **Build a Cluster** (as show picture below)
+
 5. Now, You'll see Pricing Plan setion.
+
 ![This](https://telegra.ph/file/714afabd905531eedc275.jpg)
+
 6. Here, We going to use Free Plan for our userbot
 
 7. After that, You have to select Region and Server. Where your Databse server will host.
+
 ![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
 
-> Select the Nearest server from your location
+<pre> Select the Nearest server from your location so it wont take long time to connect</pre>
 
 8. At Last, Click on **Create Cluster**.
+
 ![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
-> You have to wait for sometime at this Page while your Database being created.
+<pre> You have to wait for sometime at this Page while your Database being created. </pre>
 
 9. After Created, Click on **Network Access** (Can see option under Security section of Above Image)
 
@@ -140,13 +142,13 @@ Click on the any Var from the list to get its detailed description
 
 ![This](https://telegra.ph/file/83c30132c4fc2b639f669.jpg)
 
-> Wait until the Status change from **Pending** to **Active**
+<pre> Wait until the Status change from **Pending** to **Active** </pre>
 
 12. Go Back to **Cluster** option and Click on **Connect**.
 
 13. Now. Fill any random **Username** and **Password**
 
-> **Note:** Don't use Special character in your Password like <code>!@#$%</code>etc.
+<pre> **Note:** Don't use Special character in your Password like <code>!@#$%</code>etc. </pre>
 
 14. After filled, Click on **Create MongoDB User**.
 
@@ -156,7 +158,7 @@ Click on the any Var from the list to get its detailed description
 
 17. Now, Select **DRIVER** as <code>Pyhton</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
 
-> eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority
+<pre> eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority </pre>
 
 18. Replace <password> with your given Password and <dbname> with "test" or "cluster0"
 
