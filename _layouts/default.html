@@ -18,6 +18,7 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
        .alone-css {
            color: #FFFFFF;
@@ -34,10 +35,10 @@
     <header class="page-header" role="banner">
       <h1 class="project-name"><a href="https://theuserge.github.io/" class="alone-css">Userge Docs</a></h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="{{ site.buttons.btn1_url }}" class="btn">{{ site.buttons.btn1_title }}</a>
-      <a href="{{ site.buttons.btn2_url }}" class="btn">{{ site.buttons.btn2_title }}</a>
-      <a href="{{ site.buttons.btn3_url }}" class="btn">{{ site.buttons.btn3_title }}</a>
-      <a href="{{ site.buttons.btn4_url }}" class="btn">{{ site.buttons.btn4_title }}</a>
+      <a href="{{ site.buttons.btn1_url }}" class="btn"><i class="fab fa-github"></i> {{ site.buttons.btn1_title }}</a>
+      <a href="{{ site.buttons.btn2_url }}" class="btn"><i class="fas fa-plug"></i> {{ site.buttons.btn2_title }}</a>
+      <a href="{{ site.buttons.btn3_url }}" class="btn"><i class="fas fa-sync"></i> {{ site.buttons.btn3_title }}</a>
+      <a href="{{ site.buttons.btn4_url }}" class="btn"><i class="fas fa-users"></i> {{ site.buttons.btn4_title }}</a>
       <br>
       <a href="{{ site.buttons.btn5_url }}" class="btn">{{ site.buttons.btn5_title }}</a>
       <a href="{{ site.buttons.btn6_url }}" class="btn">{{ site.buttons.btn6_title }}</a>
