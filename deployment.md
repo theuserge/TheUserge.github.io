@@ -108,9 +108,9 @@ c) **Enter Anything as app name and app short name, enter my.telegram.org in url
 **Thats it** , **you"ll get your** **API_ID** *and* **API_HASH.**
 
 
- #### 2. DATABASE_URL
+#### 2. DATABASE_URL
 
-a) **First Go to** <code>[**cloud.mongodb.com**](https://cloud.mongodb.com)</code> **then sign up there.**
+a) **First Go to** [**cloud.mongodb.com**](https://cloud.mongodb.com) **then sign up there.**
 
 b) **You will see an option `Build a Cluster`
 Click there 👇👇**
@@ -144,7 +144,7 @@ j) **Then enter anything as username and password but don't use special symbols 
 
 k) **Then select connect to cluster method then select and select python3.6 or later as verison then copy the url and replace password with your password and dbname with test.**
 
-<U>_ **Cool!!** you have got your **DATABASE_URL**_
+*Cool!! you have got your* **DATABASE_URL**_
 
 **Make sure to replace password with your password and dbname with test :)** 
 
@@ -177,7 +177,7 @@ k) **Then select connect to cluster method then select and select python3.6 or l
 
 **So let's start getting values of these vars**
 
-a) **Go to <code>[https://console.developers.google.com/](https://console.developers.google.com/)**</code>
+a) **Go to** [**https://console.developers.google.com/**](https://console.developers.google.com/)
 
 b) **Sign in with your Google account**
 
@@ -247,7 +247,7 @@ m) **Select desktop app and enter the name then click create👇👇**
 
 ### 8. CURRENCY_API
 
-**go to** <code>[**https://free.currencyconverterapi.com**](https://free.currencyconverterapi.com)</code>
+**go to** [**https://free.currencyconverterapi.com**](https://free.currencyconverterapi.com)
 
 *It is used for currency converter & exchange rate plugin*
 
@@ -269,7 +269,7 @@ c) **Check your email inbox which you entered, you will get a confirmation mail 
 
 **So let's start getting value of this var**
 
-a) **Go to** <code>[**http://eepurl.com/bOLOcf**](http://eepurl.com/bOLOcf)</code> **and sign up**
+a) **Go to** [**http://eepurl.com/bOLOcf**](http://eepurl.com/bOLOcf) **and sign up**
 
 b) **After that follow instructions given below in the image👇👇**
 
@@ -289,7 +289,7 @@ b) **After that follow instructions given below in the image👇👇**
 
 ### 12. OPEN_WEATHER_MAP
 
-**You need to get Weather API From** <code>[**https://openweathermap.org/**](https://openweathermap.org/)</code> 
+**You need to get Weather API From** [**https://openweathermap.org/**](https://openweathermap.org/)
 
 **So let's start getting value of this var**
 
@@ -315,7 +315,7 @@ d) **You have got your api key :) 👇👇**
 
 **So let's start getting value of this var**
 
-a) **Go to** <code>[**https://www.remove.bg/api**](https://www.remove.bg/api)</code> 
+a) **Go to** [**https://www.remove.bg/api**](https://www.remove.bg/api)
 
 b) **Click on Get API key👇👇**
 
@@ -412,7 +412,7 @@ _UserGe as a userbot with user account_
 
 **HU_STRING_SESSION**
 
-_get this using_ <code>[**https://GenUserGeString.usergeuserbot.repl.run**](https://GenUserGeString.usergeuserbot.repl.run)</code> _or by running "bash genStr" in heroku console after deploying & fill it later._
+_get this using_ [**https://GenUserGeString.usergeuserbot.repl.run**](https://GenUserGeString.usergeuserbot.repl.run) _or by running "bash genStr" in heroku console after deploying & fill it later._
 
 ### 2. BOT MODE
 
