@@ -1,12 +1,14 @@
 title: Userge Docs
 description: The complete documentation of Userge
-show_downloads: false
 theme: jekyll-theme-cayman
 buttons:
-      zip_url: https://github.com/UsergeTeam/Userge
-      zip_title: Main Repo
-      zip_hide: false
-      tar_url: https://github.com/UsergeTeam/Userge-Plugins
-      tar_title: Plugins Repo
-      tar_hide: false
-      github_hide: true
+      btn1_url: https://github.com/UsergeTeam/Userge
+      btn1_title: Main Repo
+      btn2_url: https://github.com/UsergeTeam/Userge-Plugins
+      btn2_title: Plugins Repo
+      btn3_url: https://github.com/UsergeTeam/Userge-Assistant
+      btn3_title: Assistant Repo
+      btn4_url: https://t.me/theUserge
+      btn4_title: Updates Channel
+      btn5_url: https://t.me/UsergeOT
+      btn5_title: Support Group
