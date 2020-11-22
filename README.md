@@ -1,5 +1,3 @@
-# Preview
-
 ## [UserGe Docs](https://theuserge.github.io/)
 1. [Decorators](https://theuserge.github.io/decorators)
 2. [Deployment](https://theuserge.github.io/deployment)
