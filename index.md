@@ -28,4 +28,4 @@ Hello wonderer!, Here is the way to start your journey to make your Telegram Acc
 3. [Examples](https://theuserge.github.io/examples)
 4. [Decorators](https://theuserge.github.io/decorators)
 
-<b>**Note**:-</b> Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc
+**Note**:- __Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc__
