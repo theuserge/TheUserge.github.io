@@ -88,7 +88,7 @@ Click on the any Var from the list to get its detailed description
 
 > UserGe has many non-mandatory vars which are used for extra features
 
-### **Branches in **[Userge Repository](https://github.com/UsergeTeam/Userge)**
+### **Branches in [Userge Repository](https://github.com/UsergeTeam/Userge)**
 
 1. **Alpha** - Not stable, Only for Devs for testing Purposes.
 2. **Beta** - Pretty stable, Regular Updates & Changes occur.
