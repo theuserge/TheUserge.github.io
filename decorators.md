@@ -34,7 +34,7 @@ Decorator for handling message containing command text and custom flags or comma
 
     * `wild card: str | dict | list` This can be used to give customised title and description other than above defaults. **Syntax**: The title you want to declare should be key of dictionary and value should be a string, or another dictionary or a list. [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L34)
 
-    > **`{tr}`: This option can be used in usage or examples to replace default `.` prefix of command trigger with custom user defined `Config.CMD_TRIGGER`**
+    > **`{tr}`**: This option can be used in usage or examples to replace default **`.`** prefix of command trigger with custom user defined **`Config.CMD_TRIGGER`**
 
 ~ $ ~ [**Optional**] ~ $ ~
 
@@ -54,7 +54,7 @@ Decorator for handling message containing command text and custom flags or comma
 
 * `allow_channels: bool` Specify if your command works in channels. `[default: True]`
 
-> **All above `allow_*` keyword arguments are simply provided to prohibit specific chat type to ensure proper functioning of your callable function.**
+> All above **`allow_*`** keyword arguments are simply provided to prohibit specific chat type to ensure proper functioning of your callable function.
 
 * `only_admins: bool` Specify if your command (i.e. callable function) needs admin privileges in current chat (groups or channel) to be used. `[default: False]`
 
@@ -80,7 +80,7 @@ Decorator for handling message containing command text and custom flags or comma
 
 * `del_pre: bool` Pass `True` to get a `dict` of flags without prefix. `[default: False]`
 
-> ###### `[*]`: Works only if command is allowed to be triggered by sudo users via `addscmd`
+> **`[*]`**: Works only if command is allowed to be triggered by sudo users via **`addscmd`**
 
 ### Examples:
 
