@@ -1,41 +1,40 @@
 # Deployment
 
-## <u>Page Reference 
+This Userbot can be deployable with Three way Heroku, Docker and Legacy Way.
 
-[**SETTING UP VARS**](https://github.com/UsergeTeam/Userge/wiki/Deployment#config-vars)
+**Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-_DEPLOYING PART-_
+**Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware. [Click here](https://www.docker.com/) To know more about Docker. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-[**WITH HEROKU**](https://github.com/UsergeTeam/Userge/wiki/Deployment#deploying-to-heroku--)
-
-[**WITH DOCKER**](https://github.com/UsergeTeam/Userge/wiki/Deployment#deploying-with-docker-)
-
-[**WITH GIT , PYTHON & PIP**](https://github.com/UsergeTeam/Userge/wiki/Deployment#deploying-with-gitpython--pip)
+**Legacy Method** - 
  
+[**Setting Up Var**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
 ***
 
-### <u>Config Vars
+### Config Vars
 
-*Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.*<br>
-*You can leave non mandatory vars for now and can add them later.*
+Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.
 
-### LIST OF Available VARS
-_CLICK ANY VAR IN LIST TO GET ITS DETAILED DESCRIPTION_
+>*You can leave non mandatory vars for now and can add them later.*
 
-**Mandatory Vars-**
-*(Minimum required vars need to setup to make userbot functional.)*
+### List of available Vars
 
-1. [**API_ID** and **API_HASH**](https://github.com/UsergeTeam/Userge/wiki/Deployment#1-api_id-and-api_hash)
+Click on the any Var from the list to get its detailed description
 
-2. [**DATABASE_URL**](https://github.com/UsergeTeam/Userge/wiki/Deployment#2-database_url)
+**Mandatory Vars:**
+
+1. [**API_ID** and **API_HASH**](https://theuserge.github.io/deployment#api_id_hash)
+
+2. [**DATABASE_URL**](https://theuserge.github.io/deployment#database_url)
 
 3. [**LOG_CHANNEL_ID**](https://github.com/UsergeTeam/Userge/wiki/Deployment#3-log_channel_id)
 
-4. _VARS DEFINED FOR YOUR_ [**MODE**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes)
+4. Vars Define for your [**Mode**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes)
 
-**Non-Mandatory Vars-**
-*(UserGe has many non-mandatory vars which are used for extra features)*
+> These are Minimum required vars need to setup to make userbot functional.
+
+**Non-Mandatory Vars:**
 
 1. [**LOAD_UNOFFICIAL_PLUGINS**](https://github.com/UsergeTeam/Userge/wiki/Deployment#1-load_unofficial_plugins)
 
@@ -85,68 +84,84 @@ _CLICK ANY VAR IN LIST TO GET ITS DETAILED DESCRIPTION_
 
 24. [**HEROKU_API_KEY**](https://github.com/UsergeTeam/Userge/wiki/Deployment#24-heroku_api_key) 
 
-25. [**HEROKU_APP_NAME**](https://github.com/UsergeTeam/Userge/wiki/Deployment#25-heroku_app_name) 
+25. [**HEROKU_APP_NAME**](https://github.com/UsergeTeam/Userge/wiki/Deployment#25-heroku_app_name)
 
-### **Branches in UserGE** [**REPO**](https://github.com/UsergeTeam/Userge)
+> UserGe has many non-mandatory vars which are used for extra features
 
-1. **ALPHA** - *not stable , only for Devs for testing purposes.*
-2. **BETA** - *pretty stable , regular updates & changes occur.*
-3. **MASTER** - *very stable , "updates" can take a while & only merged from BETA after confirming No Bugs.*
+### **Branches in **[Userge Repository](https://github.com/UsergeTeam/Userge)**
 
-
+1. **Alpha** - Not stable, Only for Devs for testing Purposes.
+2. **Beta** - Pretty stable, Regular Updates & Changes occur.
+3. **Master** - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
 
 ***
 
-#### 1. API_ID and API_HASH
+### 1. [API_ID and API_HASH](#api_id_hash)
 
-a) **Go to** [**my.telegram.org**](https://my.telegram.org) **then enter your phone number with your country code.**
+1. Go to <code>[my.telegram.org](https://my.telegram.org)</code> then Enter your Phone Number with your country code.
 
-b) **After you are logged in click on Api Development Tools.**
+2. After, you are logged in click on API Development Tools.
 
-c) **Enter Anything as app name and app short name, enter my.telegram.org in url section**
+3. Enter Anything as App name and App short name, Enter my.telegram.org in url section
 
-**Thats it** , **you"ll get your** **API_ID** *and* **API_HASH.**
+4. Thats it, You"ll get your **API_ID** and **API_HASH** Var.
 
+### 2. [DATABASE_URL](#database_url)
 
-#### 2. DATABASE_URL
+1. First, Go to <code>[cloud.mongodb.com](https://cloud.mongodb.com)</code> then Sign Up there.
 
-a) **First Go to** [**cloud.mongodb.com**](https://cloud.mongodb.com) **then sign up there.**
+2. Login or Sign Up (Create an Account) there. If you dont have an Account!
 
-b) **You will see an option `Build a Cluster`
-Click there 👇👇**
+3. After Login, You'll be in there Dashboard Page
+
+4. Choose an option **Build a Cluster** (as show picture below)
 ![This](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
 
-c) **Then you will see Plan selecting section, i have shown it below👇👇**
+5. Now, You'll see Pricing Plan setion.
 ![This](https://telegra.ph/file/714afabd905531eedc275.jpg)
-_Select free shared cluster plan._
+6. Here, We going to use Free Plan for our userbot
 
-d) **You will see region and server section, select all this shown below👇👇**
+7. After that, You have to select Region and Server. Where your Databse server will host.
 ![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
-_Then click create cluster._
 
-![This](
-https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
-_You have to wait for sometime at this page☝️☝️._
+> Select the Nearest server from your location
 
-e) **After done click on network access(can see option under security section of above image)**
+8. At Last, Click on **Create Cluster**.
+![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
-f) **You will see an access panel and select allow access from anywhere👇👇**
+> You have to wait for sometime at this Page while your Database being created.
+
+9. After Created, Click on **Network Access** (Can see option under Security section of Above Image)
+
+10. You will see an option **Add IP Adress**. Click on that
 ![This](https://telegra.ph/file/8229e06fc38c87e8880ff.jpg)
 
-g) **Then click Confirm and wait for sometime till it gets done.**
+11. Now, **Allow Access From Anywhere**. Then **Confirm**
 
-h) **After done click on clusters again**
-
-i) **Then click on connect👇👇**
 ![This](https://telegra.ph/file/83c30132c4fc2b639f669.jpg)
 
-j) **Then enter anything as username and password but don't use special symbols like @#$ etc, click on create mongodb user.**
+> Wait until the Status change from **Pending** to **Active**
 
-k) **Then select connect to cluster method then select and select python3.6 or later as verison then copy the url and replace password with your password and dbname with test.**
+12. Go Back to **Cluster** option and Click on **Connect**.
 
-*Cool!! you have got your* **DATABASE_URL**_
+13. Now. Fill any random **Username** and **Password**
 
-**Make sure to replace password with your password and dbname with test :)** 
+> **Note:** Don't use Special character in your Password like <code>!@#$%</code>etc.
+
+14. After filled, Click on **Create MongoDB User**.
+
+15. There you are, Select **Choose a connection method**
+
+16. Choose **Connect Your Application**
+
+17. Now, Select **DRIVER** as <code>Pyhton</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
+
+> eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority
+
+18. Replace <password> with your given Password and <dbname> with "test" or "cluster0"
+
+**That's it**. You have got your **DATABASE_URL** Var
+
 
 ### 3. LOG_CHANNEL_ID
 *for this just make a new **private** channel on telegram and get id of that channel and put it in the value along with -*
