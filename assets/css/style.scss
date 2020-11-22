@@ -1,8 +1,11 @@
 a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
+  color: #FFFFFF;
+  text-decoration: none;
 
+  &:hover {
+    text-decoration: none;
+  }
+}
 ---
 ---
 
