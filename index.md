@@ -22,7 +22,7 @@
 ><b>**Note**:-</b> Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc
 
 ## Table Of Contents
-1. [Decorators](https://https://theuserge.github.io/decorators.html)
+1. [Decorators](https://theuserge.github.io/decorators.html)
 2. [Deployment](https://github.com/UsergeTeam/Userge/wiki/Deployment)
 3. [Examples](https://github.com/UsergeTeam/Userge/wiki/Examples)
 4. [How to Use (FAQs)](https://github.com/UsergeTeam/Userge/wiki/FAQs)
