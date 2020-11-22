@@ -8,7 +8,7 @@ This Userbot can be deployable with three diffrent way. Which are Heroku, Docker
 
 **Legacy Method** - Using Python and all those packages which require to Run this bot. You can also say a Manual way
  
-[**Setting Up Var**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
+[**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
 ***
 
@@ -30,7 +30,7 @@ Click on the any Var from the list to get its detailed description
 
 3. [**LOG_CHANNEL_ID**](https://github.com/UsergeTeam/Userge/wiki/Deployment#3-log_channel_id)
 
-4. Vars Define for your [**Mode**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes)
+4. Vars Defined for your [**Mode**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes)
 
 > These are Minimum required vars need to setup to make userbot functional.
 
