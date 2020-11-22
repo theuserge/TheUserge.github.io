@@ -2,6 +2,7 @@ title: Userge Docs
 url: https://theuserge.github.io/
 description: The complete documentation of Userge
 theme: jekyll-theme-cayman
+syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
 buttons:
       btn1_url: https://github.com/UsergeTeam/Userge
       btn1_title: Main Repository
@@ -19,4 +20,3 @@ buttons:
       btn7_title: Examples
       btn8_url: https://theuserge.github.io/decorators
       btn8_title: Decorators
-      
