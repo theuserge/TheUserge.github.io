@@ -172,13 +172,13 @@ async def echo(message: Message):
 
 However, now we want following modification in `echo` command:
 
-* *It should work only in goups.*
+* It should work only in goups.
 
-* *Can only be triggered by `>` prefix.*
+* Can only be triggered by `>` prefix.
 
-* *Change `-` flag prefix to `*`.*
+* Change `-` flag prefix to `*`.
 
-* *Anyone can use this command*.
+* Anyone can use this command.
 
 To do this all we need to do is take the same code and alter some parameters,
 
@@ -212,5 +212,5 @@ async def echo(message: Message):
 
 ```
 
-That's all for `userge.on_cmd` for more Examples check out our Plugins in main repo or unofficial plugins repo
+That's all for `userge.on_cmd` for more Examples check out our Plugins in main repo or unofficial plugins repository
 
