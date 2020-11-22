@@ -4,83 +4,83 @@ In addition to available [`Pyrogram Decorators`](https://docs.pyrogram.org/api/d
 
 ## `@userge.on_cmd`
 
-_Decorator for handling message containing command text and custom flags or command prefixes._
+Decorator for handling message containing command text and custom flags or command prefixes.
 
 ### Parameters:
 
 ~ $ ~ [**Mandatory**] ~ $ ~
 
-* `command: str` => _Command name to be executed_ (without a command trigger prefix)
+* `command: str` Command name to be executed (without a command trigger prefix)
 
-* `about: str | dict` => _Describe your function, this will be used to parse help strings. This can be a single string or a dictionary containing keys and values as mentioned below._
+* `about: str | dict` Describe your function, this will be used to parse help strings. This can be a single string or a dictionary containing keys and values as mentioned below.
 
-  * _`Options Available for about (dict):`_
+  * **Options Available for about (dict):**
 
-    * `header: str`-> _title of your command_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/tools/alive.py#L31)
+    * `header: str` Title of your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/tools/alive.py#L31)
 
-    * `description: str`-> _describe working of your command_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/ocr.py#L52)
+    * `description: str` Describe working of your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/ocr.py#L52)
 
-    * `flags: str | dict`-> _mention available flags in your command_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L25)
+    * `flags: str | dict` Mention available flags in your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L25)
 
-    * `options: str | dict`-> _mention available options that can be used with your comand_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L128)
+    * `options: str | dict` Mention available options that can be used with your comand [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L128)
 
-    * `types: str | list`-> _specific types with which your command can be triggered_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L137)
+    * `types: str | list` Specific types with which your command can be triggered [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L137)
 
-    * `usage: str`-> _syntax with which user should trigger command_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/autopic.py#L41)
+    * `usage: str` Syntax with which user should trigger command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/autopic.py#L41)
 
-    * `examples: str | list`-> _a example on how to use your command (a list containing examples is also supported)_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L29) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L31)
+    * `examples: str | list` A example on how to use your command (a list containing examples is also supported) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L29) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L31)
 
-    * `others: str`-> _additional note that you would like to give_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L30)
+    * `others: str` Additional note that you would like to give [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L30)
 
-    * `wild card: str | dict | list`-> _this can be used to give customised title and description other than above defaults._ **Syntax**: _`the title you want to declare should be key of dictionary and value should be a string, or another dictionary or a list.`_ [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L34)
+    * `wild card: str | dict | list` This can be used to give customised title and description other than above defaults. **Syntax**: The title you want to declare should be key of dictionary and value should be a string, or another dictionary or a list. [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L34)
 
-    > **`{tr}`**: **This option can be used in usage or examples to replace default `.` prefix of command trigger with custom user defined `Config.CMD_TRIGGER`**
+    > **`{tr}`: This option can be used in usage or examples to replace default `.` prefix of command trigger with custom user defined `Config.CMD_TRIGGER`**
 
 ~ $ ~ [**Optional**] ~ $ ~
 
-* `group: int` => _The [group](https://docs.pyrogram.org/topics/more-on-updates#handler-groups) identifier of callable function. `[default: 0]`_
+* `group: int` The [group](https://docs.pyrogram.org/topics/more-on-updates#handler-groups) identifier of callable function. `[default: 0]`
 
-* `name: str` => _A name for your command. `[default: '']`_
+* `name: str` A name for your command. `[default: '']`
 
-* `trigger: str` => _A custom trigger for your command. Useful when you want commands to be triggered only by some specific triggers only. `[default: Config.CMD_TRIGGER]`_
+* `trigger: str` A custom trigger for your command. Useful when you want commands to be triggered only by some specific triggers only. `[default: Config.CMD_TRIGGER]`
 
-* `filter_me: bool` => _Specify who can access this command. If `False` everyone can access this command else if `True` only userbot owner and sudo-users[*](https://github.com/UsergeTeam/Userge/wiki/Decorators#-works-only-if-command-is-allowed-to-be-triggered-by-sudo-users-via-addscmd) can access this command. `[default: True]`_
+* `filter_me: bool` Specify who can access this command. If `False` everyone can access this command else if `True` only userbot owner and sudo-users[*](https://github.com/UsergeTeam/Userge/wiki/Decorators#-works-only-if-command-is-allowed-to-be-triggered-by-sudo-users-via-addscmd) can access this command. `[default: True]`
 
-* `allow_private: bool` => _Specify if your command should work in private chats or not. `[default: True]`_
+* `allow_private: bool` Specify if your command should work in private chats or not. `[default: True]`
 
-* `allow_bots: bool` => _Specify if your command is intended to work for bots chats. `[default: True]`_
+* `allow_bots: bool` Specify if your command is intended to work for bots chats. `[default: True]`
 
-* `allow_groups: bool` => _Specify if your command works in group chats. `[default: True]`_
+* `allow_groups: bool` Specify if your command works in group chats. `[default: True]`
 
-* `allow_channels: bool` => _Specify if your command works in channels. `[default: True]`
+* `allow_channels: bool` Specify if your command works in channels. `[default: True]`
 
 > **All above `allow_*` keyword arguments are simply provided to prohibit specific chat type to ensure proper functioning of your callable function.**
 
-* `only_admins: bool` => _Specify if your command (i.e. callable function) needs admin privileges in current chat (groups or channel) to be used. `[default: False]`_
+* `only_admins: bool` Specify if your command (i.e. callable function) needs admin privileges in current chat (groups or channel) to be used. `[default: False]`
 
-* `allow_via_bot: bool` => _Userge supports bot account session too. And since due to some Telegram Restrictions bots can't trigger some API calls, and in order to avoid BotMethodInvaild error this argument can be passed as `True` to prohibit command execution if client is set to bot. `[default: True]`_
+* `allow_via_bot: bool` Userge supports bot account session too. And since due to some Telegram Restrictions bots can't trigger some API calls, and in order to avoid BotMethodInvaild error this argument can be passed as `True` to prohibit command execution if client is set to bot. `[default: True]`
 
-* `check_client: bool` => _By passing `True` userge will check if current client is bot or not. `[default: False]`_
+* `check_client: bool` By passing `True` userge will check if current client is bot or not. `[default: False]`
 
-* `check_downpath: bool` => _If `True`, userge will make sure that `Config.DOWN_PATH` exists. `[default: False]`_
+* `check_downpath: bool` If `True`, userge will make sure that `Config.DOWN_PATH` exists. `[default: False]`
 
-* `check_change_info_perm: bool` => _Pass `True` to check if current userge client has Change Info Privileges in current chat before further execution of program. `[default: False]`_
+* `check_change_info_perm: bool` Pass `True` to check if current userge client has Change Info Privileges in current chat before further execution of program. `[default: False]`
 
-* `check_edit_perm: bool` => _Pass `True` to check if current client has Edit Permission in current Channel before further execution. `[default: False]`_
+* `check_edit_perm: bool` Pass `True` to check if current client has Edit Permission in current Channel before further execution. `[default: False]`
 
-* `check_delete_perm: bool` => _Pass `True` to check if current client has Delete Permissions in current chat. `[default: False]`_
+* `check_delete_perm: bool` Pass `True` to check if current client has Delete Permissions in current chat. `[default: False]`
 
-* `check_restrict_perm: bool` => _Pass `True` to check if current client can Restrict Users in current chat. `[default: False]`_
+* `check_restrict_perm: bool` Pass `True` to check if current client can Restrict Users in current chat. `[default: False]`
 
-* `check_invite_perm: bool` => _Pass `True` to check if current client has Privileges to Add Users to export a private invite link, etc... `[default: False]`_
+* `check_invite_perm: bool` Pass `True` to check if current client has Privileges to Add Users to export a private invite link, etc... `[default: False]`
 
-* `check_pin_perm: bool` => _Pass `True` to check if current client has Privileges to Pin Messages in current chat. `[default: False]`_
+* `check_pin_perm: bool` Pass `True` to check if current client has Privileges to Pin Messages in current chat. `[default: False]`
 
-* `prefix: str` => _Set a custom prefix to detect flags in a message. `[default: '-']`_
+* `prefix: str` Set a custom prefix to detect flags in a message. `[default: '-']`
 
-* `del_pre: bool` => _Pass `True` to get a `dict` of flags without prefix. `[default: False]`_
+* `del_pre: bool` Pass `True` to get a `dict` of flags without prefix. `[default: False]`
 
-> ###### `[*]`: _works only if command is allowed to be triggered by sudo users via `addscmd`_
+> ###### `[*]`: Works only if command is allowed to be triggered by sudo users via `addscmd`
 
 ### Examples:
 
