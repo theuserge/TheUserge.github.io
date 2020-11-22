@@ -167,6 +167,82 @@ await message.client.send_message(message.chat.id, text)
 
 # by using this method it ensures that correct client makes request to API
 
+
+
 ```
+
+Let's say, now we need our command to take input from replied message when a specific flag is passed then,
+
+```python
+
+from userge import userge, Message
+
+@userge.on_cmd("echo", about={
+
+    'header': "Echo",
+
+    'description': "Give any text i will repeat it",
+
+    'flags': {'-r': "I will take text from replied message if u send command with this flag"},
+
+    'usage': "{tr}echo [flag (optional)]",
+
+    'examples': ['{tr}echo Hi', '{tr}echo -r']})
+
+async def echo(message: Message):
+
+    text = message.input_str
+
+    if '-r' in message.flags and message.reply_to_message:
+
+        text = message.reply_to_message.text
+
+    # ... rest of the code for echo.
+
+```
+
+However, now we want following modification in `echo` command:
+
+* *It should work only in goups.*
+
+* *Can only be triggered by `>` prefix.*
+
+* *Change `-` flag prefix to `*`.*
+
+* *Anyone can use this command*.
+
+To do this all we need to do is take the same code and alter some parameters,
+
+```python
+
+# skipping to decorator 
+
+@userge.on_cmd("echo", about={"header": "Echo"  # and so on ...
+
+    },
+
+    # To make it work only in groups we will have to disable channels, bot and private chats. 
+
+    allow_private=False, allow_channels=False, allow_bots=False,
+
+    # now to change trigger prefix
+
+    trigger='>',
+
+    # change flag prefix
+
+    prefix='*',
+
+    # allow all users to trigger command
+
+    filter_me=False)
+
+async def echo(message: Message):
+
+    # ... rest of the code
+
+```
+
+That's all for `userge.on_cmd` for more Examples check out our Plugins in main repo or unofficial plugins repo
 
 
