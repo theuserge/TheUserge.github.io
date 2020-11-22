@@ -1,12 +1,12 @@
 # Deployment
 
-This Userbot can be deployable with Three way Heroku, Docker and Legacy Way.
+This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
 **Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware. [Click here](https://www.docker.com/) To know more about Docker. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-**Legacy Method** - 
+**Legacy Method** - Using Python and all those packages which require to Run this bot. You can also say a Manual way
  
 [**Setting Up Var**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
@@ -16,7 +16,7 @@ This Userbot can be deployable with Three way Heroku, Docker and Legacy Way.
 
 Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.
 
->*You can leave non mandatory vars for now and can add them later.*
+> You can leave non mandatory vars for now and can add them later.
 
 ### List of available Vars
 
@@ -98,7 +98,7 @@ Click on the any Var from the list to get its detailed description
 
 ### 1. [API_ID and API_HASH](#api_id_hash)
 
-1. Go to <code>[my.telegram.org](https://my.telegram.org)</code> then Enter your Phone Number with your country code.
+1. Go to [my.telegram.org](https://my.telegram.org) then Enter your Phone Number with your country code.
 
 2. After, you are logged in click on API Development Tools.
 
@@ -108,7 +108,7 @@ Click on the any Var from the list to get its detailed description
 
 ### 2. [DATABASE_URL](#database_url)
 
-1. First, Go to <code>[cloud.mongodb.com](https://cloud.mongodb.com)</code> then Sign Up there.
+1. First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
 2. Login or Sign Up (Create an Account) there. If you dont have an Account!
 
