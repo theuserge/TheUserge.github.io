@@ -1,6 +1,6 @@
 ![Userge-image](https://telegra.ph/file/083ee09d368e0ee991996.jpg)
 
-<pre>Hello wonderer!, Here is the way to start your journey to make your Telegram Account automated with UserGe. It is best Open-source Userbot for Telegram to simplify your daily task in convenient way.</pre>
+Hello wonderer!, Here is the way to start your journey to make your Telegram Account automated with UserGe. It is best Open-source Userbot for Telegram to simplify your daily task in convenient way.
 
 ## What is UserGe?
 
