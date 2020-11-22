@@ -3,11 +3,9 @@ description: The complete documentation of Userge
 theme: jekyll-theme-cayman
 buttons:
       btn1_url: https://github.com/UsergeTeam/Userge
-      btn1_title: Main Repo
+      btn1_title: Main Repository
       btn2_url: https://github.com/UsergeTeam/Userge-Plugins
-      btn2_title: Plugins Repo
-      btn3_url: https://github.com/UsergeTeam/Userge-Assistant
-      btn3_title: Assistant Repo
+      btn2_title: Plugins Repository
       btn4_url: https://t.me/theUserge
       btn4_title: Updates Channel
       btn5_url: https://t.me/UsergeOT
