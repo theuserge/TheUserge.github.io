@@ -22,8 +22,6 @@ Hello wonderer!, Here is the way to start your journey to make your Telegram Acc
 *  Built-in help support (Use **.help**)
 *  and much more...
 
-><b>**Note**:-</b> Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc
-
 ## Table Of Contents
 1. [Decorators](https://theuserge.github.io/decorators)
 2. [Deployment](https://theuserge.github.io/Deployment)
