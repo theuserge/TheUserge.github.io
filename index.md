@@ -8,21 +8,24 @@ Hello wonderer!, Here is the way to start your journey to make your Telegram Acc
 
 ### Features:
 *  Powerful and Very Useful built-in Plugins
-*  Telegram Downloads/ Uploads
-*  Google Drive Downloads/Upload Supported (Also Team Drive Supported!)
-*  Zip/ Unzip/ tar/ Supported
+*  Telegram Upload/ Download
+*  Google Drive Upload/Download Supported (Also Team Drive Supported!)
+*  (Zip/ Unzip/ tar) Supported
 *  Multi Archives Split/ Combine Supported
 *  PM Permit/ AFK
-*  Notes/ Filters
+*  Notes/ Filters/ Welcomes
 *  Plugin Manager
+*  OCR Image reader
+*  Remove Background APIs
+*  Lydia ChatBot
 *  Group Management
 *  Built-in help support (Use **.help**)
-*  and Much more...
+*  and much more...
 
-## Quick Links
-1. [Deployment](https://theuserge.github.io/deployment)
-2. [How to Use (FAQs)](https://theuserge.github.io/faq)
-3. [Examples](https://theuserge.github.io/examples)
-4. [Decorators](https://theuserge.github.io/decorators)
+><b>**Note**:-</b> Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc
 
-<b>**Note**:-</b> Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc
+## Table Of Contents
+1. [Decorators](https://theuserge.github.io/decorators)
+2. [Deployment](https://theuserge.github.io/Deployment)
+3. [Examples](https://theuserge.github.io/Examples)
+4. [How to Use (FAQs)](https://theuserge.github.io/FAQs)
