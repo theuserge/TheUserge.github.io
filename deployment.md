@@ -99,7 +99,7 @@ _CLICK ANY VAR IN LIST TO GET ITS DETAILED DESCRIPTION_
 
 #### 1. API_ID and API_HASH
 
-a) **Go to** <code>[**my.telegram.org**](https://my.telegram.org)</code> **then enter your phone number with your country code.**
+a) **Go to** [**my.telegram.org**](https://my.telegram.org) **then enter your phone number with your country code.**
 
 b) **After you are logged in click on Api Development Tools.**
 
