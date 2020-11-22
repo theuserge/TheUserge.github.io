@@ -1,7 +1,7 @@
 
 # Deployment
 
-**This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.**
+This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
@@ -13,7 +13,7 @@
 
 Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.
 
-<pre> You can leave non mandatory vars for now and can add them later. </pre>
+<pre>You can leave non mandatory vars for now and can add them later. </pre>
 
 ### List of available Vars
 
@@ -29,7 +29,7 @@ Click on the any Var from the list to get its detailed description
 
 4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
-<pre> These are Minimum required vars need to setup to make userbot functional. </pre>
+<pre>These are Minimum required vars need to setup to make userbot functional. </pre>
 
 **Non-Mandatory Vars:**
 
@@ -37,51 +37,51 @@ Click on the any Var from the list to get its detailed description
 
 2. [**WORKERS**](https://theuserge.github.io/deployment#2-workers)
 
-3. [**G_DRIVE_CLIENT_ID** *&* **G_DRIVE_CLIENT_SECRET**](https://github.com/UsergeTeam/Userge/wiki/Deployment#3-g_drive_client_id--g_drive_client_secret)
+3. [**G_DRIVE_CLIENT_ID** *&* **G_DRIVE_CLIENT_SECRET**](https://theuserge.github.io/deployment#3-g_drive_client_id--g_drive_client_secret)
 
-4. [**G_DRIVE_IS_TD**](https://github.com/UsergeTeam/Userge/wiki/Deployment#4-g_drive_is_td)
+4. [**G_DRIVE_IS_TD**](https://theuserge.github.io/deployment#4-g_drive_is_td)
 
-5. [**G_DRIVE_INDEX_LINK**](https://github.com/UsergeTeam/Userge/wiki/Deployment#5-g_drive_index_link)
+5. [**G_DRIVE_INDEX_LINK**](https://theuserge.github.io/deployment#5-g_drive_index_link)
 
-6. [**DOWN_PATH**](https://github.com/UsergeTeam/Userge/wiki/Deployment#6-down_path)
+6. [**DOWN_PATH**](https://theuserge.github.io/deployment#6-down_path)
 
-7. [**PREFERRED_LANGUAGE**](https://github.com/UsergeTeam/Userge/wiki/Deployment#7-preferred_language)
+7. [**PREFERRED_LANGUAGE**](https://theuserge.github.io/deployment#7-preferred_language)
 
-8. [**CURRENCY_API**](https://github.com/UsergeTeam/Userge/wiki/Deployment#8-currency_api)
+8. [**CURRENCY_API**](https://theuserge.github.io/deployment#8-currency_api)
 
-9. [**OCR_SPACE_API_KEY**](https://github.com/UsergeTeam/Userge/wiki/Deployment#9-ocr_space_api_key)
+9. [**OCR_SPACE_API_KEY**](https://theuserge.github.io/deployment#9-ocr_space_api_key)
 
-10. [**WEATHER_DEFCITY**](https://github.com/UsergeTeam/Userge/wiki/Deployment#10-weather_defcity)
+10. [**WEATHER_DEFCITY**](https://theuserge.github.io/deployment#10-weather_defcity)
 
-11. [**SPAM_WATCH_API**](https://github.com/UsergeTeam/Userge/wiki/Deployment#11-spam_watch_api)
+11. [**SPAM_WATCH_API**](https://theuserge.github.io/deployment#11-spam_watch_api)
 
-12. [**OPEN_WEATHER_MAP**](https://github.com/UsergeTeam/Userge/wiki/Deployment#12-open_weather_map)
+12. [**OPEN_WEATHER_MAP**](https://theuserge.github.io/deployment#12-open_weather_map)
 
-13. [**REMOVE_BG_API_KEY**](https://github.com/UsergeTeam/Userge/wiki/Deployment#13-remove_bg_api_key)
+13. [**REMOVE_BG_API_KEY**](https://theuserge.github.io/deployment#13-remove_bg_api_key)
 
-14. [**G_DRIVE_PARENT_ID**](https://github.com/UsergeTeam/Userge/wiki/Deployment#14-g_drive_parent_id)
+14. [**G_DRIVE_PARENT_ID**](https://theuserge.github.io/deployment#14-g_drive_parent_id)
 
-15. [**CMD_TRIGGER**](https://github.com/UsergeTeam/Userge/wiki/Deployment#15-cmd_trigger)
+15. [**CMD_TRIGGER**](https://theuserge.github.io/deployment#15-cmd_trigger)
 
-16. [**SUDO_TRIGGER**](https://github.com/UsergeTeam/Userge/wiki/Deployment#16-sudo_trigger) 
+16. [**SUDO_TRIGGER**](https://theuserge.github.io/deployment#16-sudo_trigger) 
 
-17. [**UPSTREAM_REPO**](https://github.com/UsergeTeam/Userge/wiki/Deployment#17-upstream_repo) 
+17. [**UPSTREAM_REPO**](https://theuserge.github.io/deployment#17-upstream_repo) 
 
-18. [**FINISHED_PROGRESS_STR**](https://github.com/UsergeTeam/Userge/wiki/Deployment#18-finished_progress_str) 
+18. [**FINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#18-finished_progress_str) 
 
-19. [**UNFINISHED_PROGRESS_STR**](https://github.com/UsergeTeam/Userge/wiki/Deployment#19-unfinished_progress_str) 
+19. [**UNFINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#19-unfinished_progress_str) 
 
-20. [**CUSTOM_PACK_NAME**](https://github.com/UsergeTeam/Userge/wiki/Deployment#20-custom_pack_name) 
+20. [**CUSTOM_PACK_NAME**](https://theuserge.github.io/deployment#20-custom_pack_name) 
 
-21. [**ALIVE_MEDIA**](https://github.com/UsergeTeam/Userge/wiki/Deployment#21-alive_media) 
+21. [**ALIVE_MEDIA**](https://theuserge.github.io/deployment#21-alive_media) 
 
-22. [**INSTA_ID**](https://github.com/UsergeTeam/Userge/wiki/Deployment#22-insta_id) 
+22. [**INSTA_ID**](https://theuserge.github.io/deployment#22-insta_id) 
 
-23. [**INSTA_PASS**](https://github.com/UsergeTeam/Userge/wiki/Deployment#23-insta_pass) 
+23. [**INSTA_PASS**](https://theuserge.github.io/deployment#23-insta_pass) 
 
-24. [**HEROKU_API_KEY**](https://github.com/UsergeTeam/Userge/wiki/Deployment#24-heroku_api_key) 
+24. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#24-heroku_api_key) 
 
-25. [**HEROKU_APP_NAME**](https://github.com/UsergeTeam/Userge/wiki/Deployment#25-heroku_app_name)
+25. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#25-heroku_app_name)
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
@@ -125,13 +125,13 @@ Click on the any Var from the list to get its detailed description
 
 ![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
 
-<pre> Select the Nearest server from your location so it wont take long time to connect</pre>
+<pre>Tip: Select the Nearest server from your location so it wont take long time to connect</pre>
 
 * At Last, Click on **Create Cluster**.
 
 ![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
-<pre> You have to wait for sometime at this Page while your Database being created. </pre>
+<pre>You have to wait for sometime at this Page while your Database being created. </pre>
 
 * After Created, Click on **Network Access** (Can see option under Security section of Above Image)
 
@@ -148,7 +148,7 @@ Click on the any Var from the list to get its detailed description
 
 * Now. Fill any random **Username** and **Password**
 
-<pre> **Note:** Don't use Special character in your Password like <code>!@#$%</code>etc. </pre>
+<pre>Note: Don't use Special character in your Password like @#$% etc. </pre>
 
 * After filled, Click on **Create MongoDB User**.
 
