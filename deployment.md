@@ -302,7 +302,7 @@ b) **After that follow instructions given below in the image👇👇**
 
 **It bans the spamwatch banned users in the groups wherever you are admin**
 
-**Get SpamWatch API from [**@SpamWatch**](https://t.me/spamwatch) in Telegram**
+**Get SpamWatch API from [@SpamWatch](https://t.me/spamwatch) in Telegram**
 
 ### 12. OPEN_WEATHER_MAP
 
