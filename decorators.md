@@ -44,7 +44,7 @@ Decorator for handling message containing command text and custom flags or comma
 
 * `trigger: str` A custom trigger for your command. Useful when you want commands to be triggered only by some specific triggers only. `[default: Config.CMD_TRIGGER]`
 
-* `filter_me: bool` Specify who can access this command. If `False` everyone can access this command else if `True` only userbot owner and sudo-users[*](https://github.com/UsergeTeam/Userge/wiki/Decorators#-works-only-if-command-is-allowed-to-be-triggered-by-sudo-users-via-addscmd) can access this command. `[default: True]`
+* `filter_me: bool` Specify who can access this command. If `False` everyone can access this command else if `True` only userbot owner and sudo-users* can access this command. `[default: True]`
 
 * `allow_private: bool` Specify if your command should work in private chats or not. `[default: True]`
 
