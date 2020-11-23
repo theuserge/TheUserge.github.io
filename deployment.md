@@ -160,7 +160,7 @@ Click on the any Var from the list to get its detailed description
 
 > eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority
 
-* Replace <password> with your given Password and <dbname> with "test" or "cluster0"
+* Replace password with your given Password and dbname with "test" or "cluster0" and remove <> symbols.
 
 **That's it**. You have got your **DATABASE_URL** Var
 
