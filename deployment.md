@@ -131,7 +131,7 @@ Click on the any Var from the list to get its detailed description
 
 ![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
-<pre>You have to wait for sometime at this Page while your Database being created. </pre>
+<pre>You have to wait for sometime at this Page while your Database is being created. </pre>
 
 * After Created, Click on **Network Access** (Can see option under Security section of Above Image)
 
@@ -142,7 +142,7 @@ Click on the any Var from the list to get its detailed description
 
 ![This](https://telegra.ph/file/83c30132c4fc2b639f669.jpg)
 
-<pre> Wait until the Status change from **Pending** to **Active** </pre>
+<pre> Wait until the Status change from Pending to Active </pre>
 
 * Go Back to **Cluster** option and Click on **Connect**.
 
