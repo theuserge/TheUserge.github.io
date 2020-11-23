@@ -175,7 +175,7 @@ Click on the any Var from the list to get its detailed description
                  OR
 
    * Send a message to Channel and click on that message » Select **Copy Link** » message link will look like this `https://t.me/22441677554/5 (https://t.me/{channel_id}/{message_id})` copy channel_id (i.e. `22441677554`) » add `-100` in starting of copied channel_id and paste it in vars. `[Example LOG ID: -10022441677554]` 
->**`NOTE`** - *While using [**BOT MODE or DUAL MODE**](https://github.com/UsergeTeam/Userge/wiki/Deployment#userge-modes) , make sure to add assistant bot to your log channel.*
+>**`NOTE`** - *While using [**BOT MODE or DUAL MODE**](https://theuserge.github.io/deployment#userge-modes) , make sure to add assistant bot to your log channel.*
 ---
 
 ## Non-Mandatory Vars
