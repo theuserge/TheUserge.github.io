@@ -158,7 +158,7 @@ Click on the any Var from the list to get its detailed description
 
 * Now, Select **DRIVER** as <code>Pyhton</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
 
-> eg. mongodb+srv://<username>:<password>@mongos0.example.com/<dbname>?retryWrites=true&w=majority
+> eg. mongodb+srv://&lt;username&gt;:&lt;password&gt;@mongos0.example.com/&lt;dbname&gt;?retryWrites=true&w=majority
 
 * Replace password with your given Password and dbname with "test" or "cluster0" and remove <> symbols.
 
