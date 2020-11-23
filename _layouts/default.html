@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#5d15ef">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" href="https://raw.githubusercontent.com/UsergeTeam/Userge/beta/resources/userge.png">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -37,11 +37,11 @@
     <header class="page-header" role="banner">
       <h1 class="project-name"><a href="/" class="alone-css"><i class="fas fa-robot"></i> Userge Docs</a></h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="/#quick-links" class="btn"><i class="fas fa-link"></i> QuickLinks</a>
       <a href="{{ site.buttons.btn1_url }}" class="btn"><i class="fab fa-github"></i> {{ site.buttons.btn1_title }}</a>
       <a href="{{ site.buttons.btn2_url }}" class="btn"><i class="fas fa-plug"></i> {{ site.buttons.btn2_title }}</a>
       <a href="{{ site.buttons.btn3_url }}" class="btn"><i class="fas fa-sync"></i> {{ site.buttons.btn3_title }}</a>
       <a href="{{ site.buttons.btn4_url }}" class="btn"><i class="fas fa-users"></i> {{ site.buttons.btn4_title }}</a>
+      <a href="/#quick-links" class="btn"><i class="fas fa-link"></i> Quick Links</a>
     </header>
 
     <main id="content" class="main-content" role="main">
@@ -49,9 +49,9 @@
 
       <footer class="site-footer">
         <nav>
-          <a href="/">Home</a>
-          <a href="/#quick-links">QuickLinks</a>
+          <a href="/">Home</a> / <a href="/#quick-links">QuickLinks</a>
         </nav>
+        <br>
         <span class="site-footer-credits">Made with ❤️ by <a href="https://t.me/UsergeOT">UsergeTeam</a>.</span>
       </footer>
     </main>
