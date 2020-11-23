@@ -35,26 +35,23 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name"><a href="https://theuserge.github.io/" class="alone-css">Userge Docs</a></h1>
+      <h1 class="project-name"><a href="/" class="alone-css"><i class="fas fa-robot"></i> Userge Docs</a></h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <a href="#quick-links" class="btn"><i class="fas fa-link"></i> QuickLinks</a>
       <a href="{{ site.buttons.btn1_url }}" class="btn"><i class="fab fa-github"></i> {{ site.buttons.btn1_title }}</a>
       <a href="{{ site.buttons.btn2_url }}" class="btn"><i class="fas fa-plug"></i> {{ site.buttons.btn2_title }}</a>
       <a href="{{ site.buttons.btn3_url }}" class="btn"><i class="fas fa-sync"></i> {{ site.buttons.btn3_title }}</a>
       <a href="{{ site.buttons.btn4_url }}" class="btn"><i class="fas fa-users"></i> {{ site.buttons.btn4_title }}</a>
-      <br>
-      <a href="{{ site.buttons.btn5_url }}" class="btn">{{ site.buttons.btn5_title }}</a>
-      <a href="{{ site.buttons.btn6_url }}" class="btn">{{ site.buttons.btn6_title }}</a>
-      <a href="{{ site.buttons.btn7_url }}" class="btn">{{ site.buttons.btn7_title }}</a>
-      <a href="{{ site.buttons.btn8_url }}" class="btn">{{ site.buttons.btn8_title }}</a>
     </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
+        <nav>
+          <a href="/">Home</a>
+          <a href="#quick-links">QuickLinks</a>
+        </nav>
         <span class="site-footer-credits">Made with ❤️ by <a href="https://t.me/UsergeOT">UsergeTeam</a>.</span>
       </footer>
     </main>
