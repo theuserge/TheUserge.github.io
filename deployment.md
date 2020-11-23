@@ -1,7 +1,7 @@
 
 # Deployment
 
-This Userbot can be deployable with three diffrent way. Which are Heroku, Docker and Legacy way.
+This Userbot can be deployed with three diffrent way. Which are Heroku, Docker and Legacy way.
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
