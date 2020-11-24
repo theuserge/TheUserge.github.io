@@ -9,6 +9,10 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 **Legacy Method** - Using Python and all those packages which require to Run this bot. You can also say a Manual way to deploy userbot.
 
+[![userge deploy](https://telegra.ph/file/083ee09d368e0ee991996.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
+
+In this video tutorial, We have deployed our userbot on heroku with include all steps. Some missing Vars which you didnt see in this video can find their guide below.
+
 ### Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
 Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.
@@ -160,107 +164,126 @@ Click on the any Var from the list to get its detailed description
 
 > eg. mongodb+srv://&lt;username&gt;:&lt;password&gt;@mongos0.example.com/&lt;dbname&gt;?retryWrites=true&w=majority
 
-* Replace password with your given Password and dbname with "test" or "cluster0" and remove <> symbols.
+* Replace &lt;password&gt; with your given Password and &lt;dbname&gt; with "test" or "cluster0" and remove <> symbols.
 
 **That's it**. You have got your **DATABASE_URL** Var
 
 
 ### 3. LOG_CHANNEL_ID
-*for this just make a new **private** channel on telegram and get id of that channel and put it in the value along with -*
 
- `[Getting Channel ID]`
-  You can get Channel ID by following methods:
-   * Add `@MissRose_bot` and send `/id`.
+Here, You need Log Channel Id to get all logs and Traceback errors of your UserBot.
 
-                 OR
+* Create a **Private Channel** on your Telegram.
 
-   * Send a message to Channel and click on that message » Select **Copy Link** » message link will look like this `https://t.me/22441677554/5 (https://t.me/{channel_id}/{message_id})` copy channel_id (i.e. `22441677554`) » add `-100` in starting of copied channel_id and paste it in vars. `[Example LOG ID: -10022441677554]` 
->**`NOTE`** - *While using [**BOT MODE or DUAL MODE**](https://theuserge.github.io/deployment#userge-modes) , make sure to add assistant bot to your log channel.*
----
+* Type and send any Message on your channel.
+
+* Now, Forword your Message to @ShowJsonBot.
+
+* Bot will send you json formated data of your message.
+
+* Find "forward_from_chat" section in the message. you'll see the "id" starting with <code>-100.....</code>
+
+* Copy the id with included hyphen (<code> - </code>) and Paste into LOG_CHANNEL_ID Var.
+
+> For more information... Watch the [Video](https://youtu.be/M4T_BJvFqkc?t=1025)
+
+##### ---- [Optional] ----
+
+Instead of making Channel You can also create a Group to get your logs and This is the very easy way to get. Let's Do it 
+
+* You just need to make a new **Private Group** on Telegram.
+
+* Add @MissRoseBot in your Private Group from Add Member > Search "@MissRoseBot" and then Add.
+
+* After added, Just type "/id" in the chat.
+
+* You'll get the id of your channel or group.
+
+> Note: Changing Group Type to Public may give you issue in Userbot. To Fix this, Put Public group id in var.
 
 ## Non-Mandatory Vars
  
 ### 1. LOAD_UNOFFICIAL_PLUGINS
 
-*Set the value to True if you like to use unofficial plugins*
+Userge has a plugin repository where extra plugins are available. A place collection of all the plugins for Userge UserBot made by awesome people who are not in Userge dev team. We saying this as [Unofficial Plugins](https://github.com/UsergeTeam/Userge-Plugins).
+
+To load these all Plugins you have to set the var value "True" while deploying userbot. Alphabets case must be or lower case.
 
 ### 2. WORKERS
 
-*set the number of workers count you want, defaults are currently depends on cpu cores, So it will be sum of number of cpu cores and 4*
+Set the number of workers count you want, Defaults are currently depends on CPU Cores, Basically, It's the number of CPU Core. Leave it as default and the default value is 4.
 
 ### 3. G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET
 
-*These vars are used for gdrive features*
+**This Vars is used for Google Drive Feature. If you want to download or upload your files and document into Google Drive. You must set this var value.**
 
-**So let's start getting values of these vars**
+So, Let's Start
 
-a) **Go to** [**https://console.developers.google.com/**](https://console.developers.google.com/)
+* Go to** [**https://console.developers.google.com/**](https://console.developers.google.com/) and Sign In with your Account.
 
-b) **Sign in with your Google account**
+![gdrive client id and secret var](https://telegra.ph/file/2763b33134d486925ee4c.jpg)
 
-c) **You will see a dashboard like this👇👇** 
-![](https://telegra.ph/file/2763b33134d486925ee4c.jpg) 
+* You'll see the Dashboard Page.
 
-d) **Search for Drive API and enable it**
+* Now, Search "Drive API" in the top of the Box.
 
-e) **Then click on create project👇👇**
+* Select **Drive API** and **Enable** it.
 
-![](https://telegra.ph/file/cdc2b1ff2c4a7316b3c9e.jpg) 
+![gdrive project name](https://telegra.ph/file/96e2a696183ea51f0e886.jpg)
 
-f) **Write anything as name👇👇**
+* Give a Name of your Project and Click on **Create**.
 
-![](https://telegra.ph/file/96e2a696183ea51f0e886.jpg) 
-**Click create👆👆**
+![create credential](https://telegra.ph/file/e22bef29e3fff8e752760.jpg)
 
-g) **Click Create credentials👇👇**
+* At the Right Side, You'll see **Create Credentials** option. Click on it.
 
-![](https://telegra.ph/file/e22bef29e3fff8e752760.jpg) 
+![oAuth consent screen](https://telegra.ph/file/a582c16d9c8d24a2846b7.jpg)
 
-h) **Click QAuth consent screen👇👇**
+* Click on **oAuth consent screen** option.
 
-![](https://telegra.ph/file/a582c16d9c8d24a2846b7.jpg) 
+![](https://telegra.ph/file/dec4a53a721811c35086e.jpg)
 
-i) **Select external and click create👇👇**
+* Select User Type as **External** and **Create**
 
-![](https://telegra.ph/file/dec4a53a721811c35086e.jpg) 
+* **Give a Name** of your Application and **Save**
 
-j) **Enter anything as application name then click save**
+![gdrive oauth](https://telegra.ph/file/e3a3faa84eae7de5a20cd.jpg)
 
-**Then you will see a dashboard like this👇👇**
+* You'll see **oAuth consent screen** dashboard page.
 
-![](https://telegra.ph/file/e3a3faa84eae7de5a20cd.jpg) 
+![crendentials](https://telegra.ph/file/283fd1bee4c070d81a65d.jpg) 
 
-k) **Click credentials👇👇**
+* Now, Click on **Credentials**
 
-![](https://telegra.ph/file/283fd1bee4c070d81a65d.jpg) 
+![oauth client id](https://telegra.ph/file/998ef37a6f1602a68f94d.jpg) 
 
-l) **Select QAuth Client id👇👇**
+* Then, **Create Credentials** and Select **oAuth client ID**
 
-![](https://telegra.ph/file/998ef37a6f1602a68f94d.jpg) 
+![Select Desktop App](https://telegra.ph/file/b9f4a0114c61432de3d3f.jpg) 
 
-m) **Select desktop app and enter the name then click create👇👇**
+* Choose **Desktop App** and Click on **Create**
 
-![](https://telegra.ph/file/b9f4a0114c61432de3d3f.jpg) 
+![id created](https://telegra.ph/file/b7b01299c2dfc019936bf.jpg)
 
-**Boom! You have got your client id and client secret👇👇**
-
-![](https://telegra.ph/file/b7b01299c2dfc019936bf.jpg)
+* That's it... You have got your both G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET Var.
 
 ### 4. G_DRIVE_IS_TD
 
-*Set it to True if your drive is TEAMDRIVE*
+If you are using Team Drive (TD) then set this value as True. To Know more about TD, You can find it on Web.
 
 ### 5. G_DRIVE_INDEX_LINK
 
-*Enter your index link here if you want a sharable link for your drive files*
+If you have created Google Drive Index, You can use it as well for output the Index Link after Uploading the file to Google Drive. Just fill your url into the value.
+
+<pre>eg. https://example.example.workers.dev</pre>
 
 ### 6. DOWN_PATH
 
-*Set name to your working directory*
+You can rename the directory of your downloads folder. by default all your file will be downloaded in "downloads" folder.
 
 ### 7. PREFERRED_LANGUAGE
 
-*Your Languge ( ex: if english => 'en' )*
+Select your Preferred languge. For example: If English value will be `en`
 
 ### 8. CURRENCY_API
 
@@ -296,7 +319,7 @@ b) **After that follow instructions given below in the image👇👇**
 
 ### 10. WEATHER_DEFCITY 
 
-**add default city for weather, eg- Delhi, India**
+Add default city for weather, eg- Delhi, India**
 
 ### 11. SPAM_WATCH_API
 
