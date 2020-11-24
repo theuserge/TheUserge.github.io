@@ -110,7 +110,7 @@ Set BOT_TOKEN Var in KEY and value should be your Bot Token which you get from @
 
 For More Info: Type `#botmode` in [UserGeOt](https://t.me/usergeot).
 
-*After Setup* **BOT_TOKEN** *and OWNER_ID Add Your bot to Userge log channel and Enable these* **settings** *in* **BotFather**
+*After Setup* **BOT_TOKEN** *and* **OWNER_ID** *Add Your bot to Userge log channel and Enable these* **settings** *in* **BotFather**
 
 ![This](https://telegra.ph/file/16a099e25ca28647d6662.jpg)
 
