@@ -429,7 +429,7 @@ _UserGe as a userbot with user account_
 
 **HU_STRING_SESSION**
 
-_get this using_ [**https://GenUserGeString.usergeuserbot.repl.run**](https://GenUserGeString.usergeuserbot.repl.run) _or by running "bash genStr" in heroku console after deploying & fill it later._
+_Get this using_ [**@genStr_Bot**](https://t.me/genStr_Bot) _or by running "bash genStr" in heroku console after deploying & fill it later._
 
 ### 2. BOT MODE
 
