@@ -17,11 +17,11 @@ In this video tutorial, We have deployed our userbot on heroku with include all 
 
 Config vars are basically the variables which configures or modifies userbot's settings for functions which are the basic necessities of plugins.You have to set the proper mandatory vars to make It functional and to start basic features of bot.
 
-<pre>You can leave non mandatory vars for now and can add them later. </pre>
+**You can leave non mandatory vars for now and can add them later.**
 
-### List of available Vars
+### List of Available Vars in Userge
 
-Click on the any Var from the list to get its detailed description
+Click on the any var from the list below to get its detailed description and setup guide.
 
 **Mandatory Vars:**
 
@@ -33,7 +33,7 @@ Click on the any Var from the list to get its detailed description
 
 4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
-<pre>These are Minimum required vars need to setup to make userbot functional. </pre>
+**Note:** These are minimum required vars need to setup to make userbot functional. </pre>
 
 **Non-Mandatory Vars:**
 
@@ -89,11 +89,11 @@ Click on the any Var from the list to get its detailed description
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
-### **Branches in [Userge Repository](https://github.com/UsergeTeam/Userge)**
+### Branches in [Userge Repository](https://github.com/UsergeTeam/Userge)
 
-1. **Alpha** - Not stable, Only for Devs for testing Purposes.
-2. **Beta** - Pretty stable, Regular Updates & Changes occur.
-3. **Master** - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
+1. Alpha - Not stable, Only for Devs for testing Purposes.
+2. Beta - Pretty stable, Regular Updates & Changes occur.
+3. Master - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
 
 ***
 
@@ -129,9 +129,9 @@ Click on the any Var from the list to get its detailed description
 
 ![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
 
-<pre>Tip: Select the Nearest server from your location so it wont take long time to connect</pre>
+<pre>Tips: Select the Nearest server from your location so it wont take long time to connect</pre>
 
-* At Last, Click on **Create Cluster**.
+* At last, Click on **Create Cluster**.
 
 ![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
@@ -177,7 +177,7 @@ Here, You need Log Channel Id to get all logs and Traceback errors of your UserB
 
 * Type and send any Message on your channel.
 
-* Now, Forword your Message to @ShowJsonBot.
+* Now, Forward your Message to @ShowJsonBot.
 
 * Bot will send you json formated data of your message.
 
@@ -219,7 +219,7 @@ Set the number of workers count you want, Defaults are currently depends on CPU 
 
 So, Let's Start
 
-* Go to** [**https://console.developers.google.com/**](https://console.developers.google.com/) and Sign In with your Account.
+* Go to [**console.developers.google.com**](https://console.developers.google.com/) and Sign In with your Account.
 
 ![gdrive client id and secret var](https://telegra.ph/file/2763b33134d486925ee4c.jpg)
 
@@ -239,7 +239,7 @@ So, Let's Start
 
 ![oAuth consent screen](https://telegra.ph/file/a582c16d9c8d24a2846b7.jpg)
 
-* Click on **oAuth consent screen** option.
+* Click on **OAuth consent screen** option.
 
 ![](https://telegra.ph/file/dec4a53a721811c35086e.jpg)
 
@@ -249,7 +249,7 @@ So, Let's Start
 
 ![gdrive oauth](https://telegra.ph/file/e3a3faa84eae7de5a20cd.jpg)
 
-* You'll see **oAuth consent screen** dashboard page.
+* You'll see **OAuth consent screen** dashboard page.
 
 ![crendentials](https://telegra.ph/file/283fd1bee4c070d81a65d.jpg) 
 
@@ -257,7 +257,7 @@ So, Let's Start
 
 ![oauth client id](https://telegra.ph/file/998ef37a6f1602a68f94d.jpg) 
 
-* Then, **Create Credentials** and Select **oAuth client ID**
+* Then, **Create Credentials** and Select **OAuth client ID**
 
 ![Select Desktop App](https://telegra.ph/file/b9f4a0114c61432de3d3f.jpg) 
 
@@ -287,25 +287,25 @@ Select your Preferred languge. For example: If English value will be `en`
 
 ### 8. CURRENCY_API
 
-**go to** [**https://free.currencyconverterapi.com**](https://free.currencyconverterapi.com)
+This var is used for Currency converter & Exchange Rate in Plugin. If you dont want this you can leave this var value blank.
 
-*It is used for currency converter & exchange rate plugin*
+* Go to [**free.currencyconverterapi.com**](https://free.currencyconverterapi.com)
 
-**So let's start getting value of this var**
+![Free api](https://telegra.ph/file/ab0b4ce9e84355717d7cb.jpg)
 
-a) **Click on get your free api key👇👇**
+* Click on **Get Your Free API Key**.
 
-![](https://telegra.ph/file/ab0b4ce9e84355717d7cb.jpg)
+[currency api key](https://telegra.ph/file/08d143dbd9ed128d82a32.jpg)
 
-b) **Enter your email, Fill the captcha and click get your free api key👇👇**
+* Now, Enter your Email Address, Check the Captcha.
 
-![](https://telegra.ph/file/08d143dbd9ed128d82a32.jpg)
+* And last, Click on **Get Your Free API Key**.
 
-c) **Check your email inbox which you entered, you will get a confirmation mail with your api key, confirm your email and you can use your api key**
+That's It... Check your Email, You have received the API Key there. Confirm your Email Address and Fill the API Key in Value.
 
-### 9. *Next var is* **OCR_SPACE_API_KEY**
+### 9. OCR_SPACE_API_KEY
 
-**It is used for reading text from images (OCR) module**
+It is mainly used for reading texts from the images
 
 **So let's start getting value of this var**
 
