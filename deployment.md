@@ -3,11 +3,11 @@
 
 This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker and Legacy way.
 
-**Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want want to deploy local on your system. This is the best place to deploy your Userbot for free.
+**Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
 **Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware. [Click here](https://www.docker.com/) To know more about Docker. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-**Legacy Method** - Using Python and all those packages which require to Run this bot. You can also say a Manual way to deploy userbot.
+**Legacy Method** - Using Python and all those packages which required to Run this bot. You can also say a Manual way to deploy userbot.
 
 [![userge deploy](https://telegra.ph/file/083ee09d368e0ee991996.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
 
