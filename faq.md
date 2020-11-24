@@ -1,8 +1,6 @@
 # FAQs
 
-**The Purpose of this page to Answer all your common Questions regarding UserGe**
-
-***
+The Purpose of this page to Answer all your common Questions regarding UserGe
 
 ## 1. How to Setup UserGe?
 
@@ -93,13 +91,26 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 * That's it... Start Uploading your file with `.help .gup`
 
-## 8. What is Bot Mode? How to Enable **Bot Mode**?
+## 8. What is Bot Mode? How to Enable Bot Mode?
 
 You can use UserGe as bots which execute your all command through the Bot. Similarly like Rose Bot and other Bots.
 
-Type `#botmode` in [UserGeOt](https://t.me/usergeot).
+To Use Bot Mode in Userge, you need to set these two vars and configure the settings shown below.
 
-After Setup Bot Token Enable these thing in BotFather
+1. OWNER_ID
+2. BOT_TOKEN
+
+#### OWNER_ID
+
+Set OWNER_ID Var in KEY and value should be your user id. To get your user id, Type .ids in the reply of your own message.\
+
+#### BOT_TOKEN
+
+Set BOT_TOKEN Var in KEY and value should be your Bot Token which you get from @BotFather Bot
+
+For More Info: Type `#botmode` in [UserGeOt](https://t.me/usergeot).
+
+**After Setup Bot Token Enable these thing in BotFather**
 
 ![This](https://telegra.ph/file/16a099e25ca28647d6662.jpg)
 
@@ -164,13 +175,13 @@ It's kinda a Restriction by Telegram, If you make multiple requests from Telegra
 
 ## 14. How to Setup Deezloader?
 
-To download Songs and Playlist from Deezer. You need to configure its var.
+To download Songs and Playlist from Deezer. You need to configure these var.
 
-Detailed Guide canm be here: [Deezloader Setup Guide](https://t.me/UnofficialPluginsHelp/4)
+Detailed Guide can be found here: [Deezloader Setup Guide](https://t.me/UnofficialPluginsHelp/4)
 
 ## 15. What is SpamWatch?
 
-It's a federation in rose bot, which happens to use and develop a userbot named kantek to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch 🤔.
+It's a Federation in Rose Bot, Which happens to use and develop a userbot named kantek to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch 🤔.
 
 ## 16. How to Set your OWN Custom Media for .alive?
 
@@ -232,31 +243,32 @@ To do Follow these Steps:
 
 Done, Now it will show that media (via preview) along with your custom PM Message. Also have a look on this [Image](https://telegra.ph/media-in-pmPermit-10-16) to get a idea of How to do it.
 
-## 22. How to delete all profile pic of your Telegram Account?
+## 22. How to Use Spam Watch API?
 
-   `.delpfp <count>`
+`.antispam` If you want Auto ban the spammers from the groups where you are Admin. 
 
-## 23. How to use spam watch api?
+`.info` If you wanna check the user. He/ She is banned in SpamWatch or CAS.
 
-`.antispam` if u want auto ban of spammers. 
+## 23. How to Update Userge Userbot?
 
-`.info` u wanna chek if someone is banned in SpamWatch or CAS
+To Update your Userge Bot better check in help by typing `.help update`
 
-## 24. How to update userbot?
+## 24. How to know Dyno Usage?
 
-`.update -beta -pull -push`
-Or
+Type `.usage`
 
-`.update -master -pull -push`
+## 25. File type issue while Downloading from link?
 
-**(Beta and master are two different branches , use anyone you like )**
+When you download any file from the link it contain some query in the url which came along with the filename. which give you issue to open the file. To fix this you can rename the file or can download with custom filename.
 
-## 25. How to know dyno usage?
+#### To Rename the file
 
-  `.usage`
+Use `.term "downloaded_file_path" "new_file_name_with_path"`
 
-## 26. File type issue while downloading from direct link?
- 
- Via downloading with direct links due to undefined extension , can give issue while accessing your file after being downloaded. Simple solution for that is to rename it accordingly with correct extension , for this you should know the correct extension for the file you are downloading . You can do it  from your local storage after downloading it or before downloading also via following command -
-`.download direct-link | filename.ext`
-`eg-.download https//xyzzzzzz.com | Titanic.mkv`
+<pre>eg. .term "downloads/disney_movie.mp4?string=blablabla" "downloads/disney_movie.mp4"</pre>
+
+#### To Download file with Custom filename
+
+Use `.download your_link | filename.ext`
+
+<pre>eg. .download https//example.com/files/disney_movie.mp4?string=blablabla | disney_movie.mp4</pre>
