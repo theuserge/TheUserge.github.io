@@ -67,9 +67,9 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 ### Setup GDrive Parent Id
 
-* Go to `drive.google.com` Create or Open an folder which you want Add, Where your bot uploaded files will store.
+* Go to `drive.google.com` Create or Open the folder which you want to Add, Where your bot will upload files. 
 
-* Look at the URL of Page
+* Copy the URL of Page
 
 <pre>https://drive.google.com/folderview?id=12Ncm5VjoGIKT12eA-cgFOqRZWzVf749v</pre>
 
@@ -93,7 +93,7 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 ## 8. What is Bot Mode? How to Enable Bot Mode?
 
-You can use UserGe as bots which execute your all command through the Bot. Similarly like Rose Bot and other Bots.
+You can use UserGe as bot which can execute your all commands through the Bot. Similarly like Rose Bot and other Bots.
 
 To Use Bot Mode in Userge, you need to set these two vars and configure the settings shown below.
 
@@ -102,7 +102,7 @@ To Use Bot Mode in Userge, you need to set these two vars and configure the sett
 
 #### OWNER_ID
 
-Set OWNER_ID Var in KEY and value should be your user id. To get your user id, Type .ids in the reply of your own message.\
+Set OWNER_ID Var in KEY and value should be your user id. To get your user id, Type `.ids` in the reply of your own message.
 
 #### BOT_TOKEN
 
@@ -110,7 +110,7 @@ Set BOT_TOKEN Var in KEY and value should be your Bot Token which you get from @
 
 For More Info: Type `#botmode` in [UserGeOt](https://t.me/usergeot).
 
-**After Setup Bot Token Enable these thing in BotFather**
+*After Setup* **BOT_TOKEN** *and OWNER_ID Add Your bot to Userge log channel and Enable these* **settings** *in* **BotFather**
 
 ![This](https://telegra.ph/file/16a099e25ca28647d6662.jpg)
 
@@ -129,7 +129,7 @@ Dyno saver is basically turning your Dyno off by typing the command `.die`
 
 Ps:- You have to manually start it again from Heroku Account, you can also use [@HK_heroku_BOT](https://t.me/HK_heroku_BOT) and [@yHerokuBot](https://t.me/yHerokuBot)
 
-**Tips:** You can set timeout to turn your dyno off ,it will start to count when you went offline but if you come back online within that timeout, it will start to recount from beginning ,you can save huge amount of dyno hours using this 🌞
+**Tips:** You can set timeout to turn your dyno off ,it will start to count when you went offline but if you come back online within that timeout, it will start to recount from beginning ,you can save huge amount of dyno hours using this 
 
 ## 11. How to Add Buttons in Text, Notes, and Filters?
 
@@ -181,7 +181,7 @@ Detailed Guide can be found here: [Deezloader Setup Guide](https://t.me/Unoffici
 
 ## 15. What is SpamWatch?
 
-It's a Federation in Rose Bot, Which happens to use and develop a userbot named kantek to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch 🤔.
+It's a Federation in Rose Bot, Which happens to use and develop a userbot named kantek to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch.
 
 ## 16. How to Set your OWN Custom Media for .alive?
 
