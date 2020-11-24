@@ -82,7 +82,7 @@ To Use Inline Mode You must have enabled Bot Mode!!!
 
 Type your `@botusername` then give space you'll see Inline Menu
 
-## 9. What is Dyno Saver? What is `.die`? Only for Heroku Users
+## 10. What is Dyno Saver? What is `.die`? Only for Heroku Users
 
 Dyno saver is basically turning your Dyno off by typing the command `.die`
 
@@ -90,7 +90,7 @@ Dyno saver is basically turning your Dyno off by typing the command `.die`
 
 **Tip:** You can set timeout to turn your dyno off ,it will start to count when you went offline but if you come back online within that timeout, it will start to recount from beginning ,you can save huge amount of dyno hours using this 🌞
 
-## 10. How to Add Buttons in Notes/Filters ?
+## 11. How to Add Buttons in Notes/Filters ?
 
 Suppose i am adding a button with a, 
 
@@ -106,25 +106,25 @@ So here is its pattern:-
 
 just add it to note/filter now..
 
-## 15. how to setup Lydia ?
+## 12. how to setup Lydia ?
     
 [Lydia help](https://t.me/UnofficialPluginsHelp/55)
 
-## 16. What is floodwait?
+## 13. What is floodwait?
 
 It's kinda a Restriction by TELEGRAM , if u make requests in bulk to telegram servers they restrict you from sending more requests
 
 📌Mainly happens when you use same session string in many bots
 
-## 17. How to setup deezloader?
+## 14. How to setup deezloader?
     
 [Deezloader Setup guide](https://t.me/UnofficialPluginsHelp/4)
 
-## 18. What is spamwatch?
+## 15. What is spamwatch?
 
 It's a federation in rose bot, which happens to use and develop a userbot named kantek to ban possible spam bots using their logs 😕😕SpamWatch api have 3 levels . Normal users can only fetch ban info whereas those with higher lvl can add bans in SpamWatch 🤔.
 
-## 19.How to set your own custom media for .alive?
+## 16.How to set your own custom media for .alive?
 
 .`setvar ALIVE_MEDIA link` (the link should be a link to message)
 
@@ -132,7 +132,7 @@ Example :
 
 .setvar ALIVE_MEDIA `https://t.me/theuserge/8`   
 
-## 20. How to use YouTube cmd of userge properly?
+## 17. How to use YouTube cmd of userge properly?
 
 **1. how to download videos?**
     
@@ -152,7 +152,7 @@ Eg:-
 
 For more detailed cmds type` .help ytdl`
 
-## 21.what are index link? 
+## 18.what are index link? 
 
 index links are direct shareable links for drive files, you can use that to share context of gdrive without making the file public.(not only gdrive but other cloud storage also ) (click here to get list of index links )
 
@@ -164,7 +164,7 @@ Eg for userge :-
 ![This](https://telegra.ph/file/198178745f79f9617e99d.jpg)
 `Then !upload downloads/Death.Note.S01E01.10bit.720p.BRrip.English.Audio.x265-[AKJ].mkv`
 
-## 22.How to send secret message in userge bot ?
+## 19.How to send secret message in userge bot ?
 
 📌note that you will need to userge as bot i.e botmode
 
@@ -178,19 +178,19 @@ Eg for userge :-
 
 you will see a Inline Query to Send Msg to a user, click on it.
 
-## 23. What's the purpose of Worker VAR?
+## 20. What's the purpose of Worker VAR?
 
 Same as workers of building construction, More the workers , more it will handle, But it consumes dyno too
 
-## 24. How to clear download path?
+## 21. How to clear download path?
   
  `.dclear`
 
-## 25. How to stop autopic?
+## 22. How to stop autopic?
     
 Do `.autopic` once again
 
-## 26. How to use upload and download feature of userge properly ?
+## 23. How to use upload and download feature of userge properly ?
 
 I will divide this answer in parts and try to answer the common problems in order :
 
@@ -245,7 +245,7 @@ Now,
 
 **The example is shown with a rar file but all file types supported like zip,tar etc.**
 
-## 27. How to add media in custom pm permit?
+## 24. How to add media in custom pm permit?
 
 Before continuing with steps let me explain it  briefly. 
 
@@ -265,17 +265,17 @@ Steps to do so-
 
 done, now it will show that media (via preview) along with your custom pm message. Also have a look on these [Images](https://telegra.ph/media-in-pmPermit-10-16) to get a better idea of how to do it.
 
-## 28. How to delete all profile pic of your Telegram Account?
+## 25. How to delete all profile pic of your Telegram Account?
 
    `.delpfp <count>`
 
-## 29. How to use spam watch api?
+## 26. How to use spam watch api?
 
 `.antispam` if u want auto ban of spammers. 
 
 `.info` u wanna chek if someone is banned in SpamWatch or CAS
 
-## 30. How to update userbot?
+## 27. How to update userbot?
 
 `.update -beta -pull -push`
 Or
@@ -284,11 +284,11 @@ Or
 
 **(Beta and master are two different branches , use anyone you like )**
 
-## 31. How to know dyno usage?
+## 28. How to know dyno usage?
 
   `.usage`
 
-## 32. File type issue while downloading from direct link?
+## 29. File type issue while downloading from direct link?
  
  Via downloading with direct links due to undefined extension , can give issue while accessing your file after being downloaded. Simple solution for that is to rename it accordingly with correct extension , for this you should know the correct extension for the file you are downloading . You can do it  from your local storage after downloading it or before downloading also via following command -
 `.download direct-link | filename.ext`
