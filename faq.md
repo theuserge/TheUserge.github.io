@@ -1,30 +1,41 @@
+# FAQs
+
 **The Purpose of this page to Answer all your common Questions regarding UserGe**
 
 ***
 
 ## 1. How to Setup UserGe?
 
-Here is Video Tutorial to Deploy or Setup UserGe on your Account with Heroku:
+[![userge deploy](https://telegra.ph/file/083ee09d368e0ee991996.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
 
-[https://youtu.be/M4T_BJvFqkc](https://youtu.be/M4T_BJvFqkc)
+A video tutorial to Deploy or Setup UserGe on your Account with Heroku. To Deploy on your VPS or local machine and For more further Information, Check the [Deployment Page](https://theuserge.github.io/deployment.html)
 
-To Deploy on your VPS or local machine. Check out the Repository Read Me section
-
-For more Information: Type `#usergeguide` and `#deployment` in [UserGeOt](https://t.me/usergeot).
+ You can also type `#usergeguide` and `#deployment` in [UserGeOt](https://t.me/usergeot).
 
 ## 2. How to **Add Unofficial Plugins**?
 
-Check out this Guide for Heroku
+**For Heroku Users:**
 
-[https://t.me/UnofficialPluginsHelp/31](https://t.me/UnofficialPluginsHelp/31).
+* Go to Heroku website > App Setting > Reveal Config Vars.
+* Type **LOAD_UNOFFICIAL_PLUGINS** in the KEY.
+* Type **True** in the value.
+* That's it... Restart the Dyno.
 
-To Enable Unofficial Plugins on your VPS or local machine add or change value to `true` in your `config.env` file.
+Check out [this](https://t.me/UnofficialPluginsHelp/31) Guide for more information. You can also Type `#unofficialhelp` in [UserGeOt](https://t.me/usergeot).
 
-Type `#unofficialhelp` in [UserGeOt](https://t.me/usergeot).
+**For Docker or Legacy Method Users:**
+
+To Enable Unofficial Plugins on your Userge UserBot. Add `LOAD_UNOFFICIAL_PLUGINS` KEY and value is `true` into your `config.env` file.
 
 ## 3. How to Generate String Session ?
 
-Type `#string` in [UserGeOt](https://t.me/usergeot).
+To Generate Session String of your Userge bot. You can try anyone way from these two method.
+
+* From Heroku website > Userge App > More > Run Console > Type `bash genStr`
+
+* [Userge Session Gen* Bot](https://t.me/genStr_bot)
+
+For more way to Generate session string. Type `#string` in [UserGeOt](https://t.me/usergeot).
 
 ## 4. How to get All Commands list?
 
@@ -40,16 +51,31 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 <pre>.help sudo </pre>
 
+## 7. How to Setup Google Drive? How to Setup GDrive Parent Id?
 
-## 7. What is Parent Id/ Folder Id in GDrive? How to Get it?
+* Type `.gsetup` in your Userge Log channel
 
-1. Go to `drive.google.com` Open an folder that you want add, where you uploaded file will store.
+* You'll get a link something like this
 
-2. Look at the URL of Page
+<pre>https://accounts.google.com/o/oauth2/v2/auth?client_id=[SECURED!]&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata&access_type=offline&response_type=code</pre>
+
+* Open the link and Select your Google Account and Allow all Access.
+
+* After that You'll get a code which you have to copy and come back to Telegram channel log,
+
+* Type `.gconf your_copied_code` and send
+
+* That's it...
+
+### Setup GDrive Parent Id
+
+* Go to `drive.google.com` Create or Open an folder which you want Add, Where your bot uploaded files will store.
+
+* Look at the URL of Page
 
 <pre>https://drive.google.com/folderview?id=12Ncm5VjoGIKT12eA-cgFOqRZWzVf749v</pre>
 
-3. This is your Folder's Parent Id
+ **This is your Folder's Parent Id**
 
 <pre>12Ncm5VjoGIKT12eA-cgFOqRZWzVf749v</pre>
 
@@ -57,11 +83,15 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 <pre>https://drive.google.com/drive/mobile/folders/0AFU0CuwgEOaWUj9PVb?sort=13&direction=a</pre>
 
-This is your TD Parent Id
+**This is your TD Parent Id**
 
 <pre>0AFU0CuwgEOaWUj9PVb</pre>
 
-📌**Note:** It's Just a Demo , Don't use the same ID 😂😳
+> **Note:** It's Just a Demo, Don't use the same ID.
+
+* After Getting your Parent Id. Type `.gset your_parent_id`
+
+* That's it... Start Uploading your file with `.help .gup`
 
 ## 8. What is Bot Mode? How to Enable **Bot Mode**?
 
