@@ -145,7 +145,7 @@ To Add buttons in Images, Just Reply with the Images and Follow the Pattern.
 
 ## 12. How to Setup Lydia?
 
-Lydia is a Active Machine Learning Chat Bot Powered by CoffeeHouse from @Intellivoid. This AI Chat bot reply user messages using AML.
+Lydia is an Active Machine Learning Chat Bot Powered by CoffeeHouse from @Intellivoid. This AI Chat bot reply user messages using AML.
 
 To Setup this You have to configure these two KEY vars on your Heroku App or If you are using other plaform than Heroku then add these var on your `config.env` file.
 
@@ -201,7 +201,7 @@ To Do this you must have enabled Bot Mode in Userge.
 4. Type Message you want say in Private.
 5. Then Add this symbol `:` at the last of your Message.
 
-You will see a Inline Query to Send Private Message to the user, Click on it.
+You will see an Inline Query to Send Private Message to the user, Click on it.
 
 ## 18. How to Clear Downloads Path?
 
@@ -223,11 +223,11 @@ Type `.autopic` once again.
 
 That's It...
 
-## 21. How to Add Media in Cstom PM Permit?
+## 21. How to Add Media in Custom PM Permit?
 
 Before continuing with steps understand this it briefly. 
 
-Userge, Itself doesn't have such feature for now to set a media (gif, video, image) in PM Permit. but you can do it via embeding your Media link in any word (you may already have seen those blue text (hyperlinked text) containing links, Just like that we going to use that. Telegram will show preview of such direct links, So user will able to see that media on telegram itself without actually opening the link.
+Userge, Itself doesn't have such feature for now to set a media (gif, video, image) in PM Permit. but you can do it via embedding your Media link in any word (you may already have seen those blue text (hyperlinked text) containing links, Just like that we going to use that. Telegram will show preview of such direct links, So user will able to see that media on telegram itself without actually opening the link.
 
 To do Follow these Steps:
 
