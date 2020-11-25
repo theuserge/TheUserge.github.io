@@ -20,7 +20,13 @@
 
 ## Step By Step
 
-first of all install python and necessary packages
+first of all install root repo
+
+```bash
+pkg install root-repo
+```
+
+install python and necessary packages
 
 ```bash
 pkg install python

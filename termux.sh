@@ -3,7 +3,7 @@ log() {
 }
 
 log "installing python"
-pkg install -y python
+pkg install -y root-repo python
 pip install -U pip wheel setuptools
 
 log "installing necessary packages"
