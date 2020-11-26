@@ -143,7 +143,7 @@ cp config.env.sample config.env
 ```bash
 bash genStr
 ```
-OR you can use this [@genStr_bot]{https://t.me/genStr_bot) to get string.
+OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get string.
 
 ##### 6. Finally Run the Userge
 
