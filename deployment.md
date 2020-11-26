@@ -17,23 +17,23 @@ In this video tutorial, We have deployed our userbot on heroku with include all 
 
 ### Steps to Deploy:
 
-##### 1. Choose a Branch to deploy:
+**1. Choose a Branch to deploy:**
 
-* [**Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
+[**Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
 
-* [**Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
+[**Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
 
-* [**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
+[**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
 
-##### 2. Fill "[Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge)" values.
+**2. Fill "[Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge)" values.**
 
-##### 3. Click on Deploy Button.
+**3. Click on Deploy Button.**
 
-##### 4. Turn on Dyno from Resource Tab.
+**4. Turn on Dyno from Resource Tab.**
 
-##### 5. That's it... Start using Userge.
+**5. That's it... Start using Userge.**
 
-You can add [**Non-Mandatory Vars**](https://github.com/UsergeTeam/Userge/wiki/Deployment#list-of-avaiable-vars) later as per your needs. Those vars are used by there respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
+You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used by there respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
 
 ## Deploying with Docker 🐳
 
@@ -43,59 +43,80 @@ Follow the official Docker [Installation Guide](https://docs.docker.com/engine/i
 
 **2. Install Docker-Compose**
 
-* Easiest way to install docker-compose is:
+Easiest way to install docker-compose is:
 
 ```bash
 sudo pip install docker-compose
 ```
 
-* OR also you can check other official methods of installing docker-compose [here](https://docs.docker.com/compose/install/)
+OR also you can check other official methods of installing docker-compose [here](https://docs.docker.com/compose/install/)
 
 **3. Run Userge**
 
-1. We dont need to clone the repo (yeah Docker-compose does that for us)
+We dont need to clone the repo (yeah Docker-compose does that for us)
 
-2. Setup configs
+1. Setup configs
 
-    - Download the sample config file
+Download the sample config file
 
-        - ```mkdir userge && cd userge```
-        - ```wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/config.env.sample -O config.env```
-        - ```vim config.env```
+```bash
+mkdir userge && cd userge
+```
+```bash
+wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/config.env.sample -O config.env
+```
+```bash
+vim config.env
+```
     
-    - Download the yml file for docker-compose
+Download the yml file for docker-compose
     
-        - ```wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml```
+```bash
+wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml
+```
         
-3. Finally start the bot
+2. Finally start the bot
 
 ```bash
 docker-compose up -d
 ```
 
-4. The bot should be running now
+3. The bot should be running now
 
-5. Check logs with 
+4. Check logs with
+
 ```bash
 docker-compose logs -f
 ```
 
-**How to Stop the Bot?**
+**Q. How to Stop the Bot?**
 
 1. Stop Command
+
 ```bash
 docker-compose stop
 ```
-This will just stop the containers. Built images won't be removed. So next time you can start with ``docker-compose start`` command And it won't take time for building from scratch.
+
+This will just stop the containers. Built images won't be removed. So next time you can start with this command
+
+```bash
+docker-compose start
+```
+
+It won't take time for building from scratch.
     
 2. Down command
+
 ```bash
 docker-compose down
 ```
+You can stop and delete the built images also. So next time you have to do this to start the bot.
 
-You will stop and delete the built images also. So next time you have to do ``docker-compose up -d`` to start the bot.
+```bash
+docker-compose up -d
+```
 
-**How to Update the Bot?**
+**Q. How to Update the Bot?**
 
 ```bash
 docker-compose up -d
@@ -108,9 +129,9 @@ Changes will be fetched from git repo. You can change repo url from **docker-com
 ### Requirements:
 
 * Python 3.8 or higher version
-* Mandatory Vars
+* [Mandatory Vars](https://theuserge.github.io/deployment.html#mandatory-vars)
 
-##### 1. Clone the Repository
+**1. Clone the Repository**
 
 ```bash
 git clone https://github.com/UsergeTeam/Userge.git
@@ -119,7 +140,7 @@ git clone https://github.com/UsergeTeam/Userge.git
 cd Userge
 ```
 
-##### 2. Create Virtual Env
+**2. Create Virtual Env**
 ```bash
 virtualenv -p /usr/bin/python3 venv
 ```
@@ -127,25 +148,26 @@ virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 ```
 
-##### 3. Install Requirements
+**3. Install Requirements**
+
 ```bash
 pip install -r requirements.txt
 ```
 
-##### 4. Create config.env as given config.env.sample and Fill that
+**4. Create config.env as given config.env.sample and Fill that**
 
 ```bash
 cp config.env.sample config.env
 ```
 
-##### 5. Get String Session and Add it to config.env
+**5. Get String Session and Add it to config.env**
 
 ```bash
 bash genStr
 ```
 OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get string.
 
-##### 6. Finally Run the Userge
+**6. Finally Run the Userge**
 
 ```bash
 bash run
@@ -161,7 +183,7 @@ Config vars are basically the variables which configure or modify userbot's to f
 
 Click on the any var from the list below to get its detailed description and setup guide.
 
-#### Mandatory Vars:
+### Mandatory Vars:
 
 1. [**API_ID** and **API_HASH**](https://theuserge.github.io/deployment#1-api_id-and-api_hash)
 
@@ -173,7 +195,7 @@ Click on the any var from the list below to get its detailed description and set
 
 **Note:** These are minimum required vars need to setup to make userbot functional. </pre>
 
-#### Non-Mandatory Vars:
+### Non-Mandatory Vars:
 
 1. [**LOAD_UNOFFICIAL_PLUGINS**](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
 
