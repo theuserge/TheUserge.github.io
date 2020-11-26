@@ -15,15 +15,15 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 In this video tutorial, We have deployed our userbot on heroku with include all steps. Some missing Vars which you didn't see in this video can find their guide below.
 
-### Steps to Deploy:
+### **Steps to Deploy:**
 
 **1. Choose a Branch to deploy:**
 
-[**Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
+* [**Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
 
-[**Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
+* [**Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
 
-[**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
+* [**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
 
 **2. Fill "[Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge)" values.**
 
@@ -55,17 +55,11 @@ OR also you can check other official methods of installing docker-compose [here]
 
 We dont need to clone the repo (yeah Docker-compose does that for us)
 
-1. Setup configs
-
-Download the sample config file
+Setup configs (Download the sample config file)
 
 ```bash
 mkdir userge && cd userge
-```
-```bash
 wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/config.env.sample -O config.env
-```
-```bash
 vim config.env
 ```
     
@@ -74,16 +68,12 @@ Download the yml file for docker-compose
 ```bash
 wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml
 ```
-        
-2. Finally start the bot
+Finally start the bot
 
 ```bash
 docker-compose up -d
 ```
-
-3. The bot should be running now
-
-4. Check logs with
+The bot should be running now. Check logs with
 
 ```bash
 docker-compose logs -f
@@ -91,7 +81,7 @@ docker-compose logs -f
 
 **Q. How to Stop the Bot?**
 
-1. Stop Command
+To stop the running bot in Docker use this Stop Command
 
 ```bash
 docker-compose stop
@@ -105,7 +95,7 @@ docker-compose start
 
 It won't take time for building from scratch.
     
-2. Down command
+To delete the built image of Bot. Use this Down command
 
 ```bash
 docker-compose down
@@ -135,16 +125,12 @@ Changes will be fetched from git repo. You can change repo url from **docker-com
 
 ```bash
 git clone https://github.com/UsergeTeam/Userge.git
-```
-```bash
 cd Userge
 ```
 
 **2. Create Virtual Env**
 ```bash
 virtualenv -p /usr/bin/python3 venv
-```
-```bash
 . ./venv/bin/activate
 ```
 
