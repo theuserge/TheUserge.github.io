@@ -20,9 +20,10 @@
 
 ## Step By Step:
 
-First of all, Install root Repository
+First of all, Update packages and Install root Repository
 
 ```bash
+pkg update && pkg upgrade
 pkg install root-repo
 ```
 
