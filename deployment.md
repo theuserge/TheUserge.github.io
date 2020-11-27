@@ -124,8 +124,7 @@ Changes will be fetched from git repo. You can change repo url from **docker-com
 **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/UsergeTeam/Userge.git
-cd Userge
+git clone https://github.com/UsergeTeam/Userge.git && cd Userge
 ```
 
 **2. Create Virtual Env**
@@ -225,13 +224,11 @@ Click on the any var from the list below to get its detailed description and set
 
 21. [**ALIVE_MEDIA**](https://theuserge.github.io/deployment#21-alive_media) 
 
-22. [**INSTA_ID**](https://theuserge.github.io/deployment#22-insta_id) 
+22. [**INSTA_ID & INSTA_PASS**](https://theuserge.github.io/deployment#22-insta_id--insta_pass)  
 
-23. [**INSTA_PASS**](https://theuserge.github.io/deployment#23-insta_pass) 
+23. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#23-heroku_api_key) 
 
-24. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#24-heroku_api_key) 
-
-25. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#25-heroku_app_name)
+24. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#24-heroku_app_name)
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
@@ -595,20 +592,21 @@ https://t.me/theuserge/8
 ```  
 2. Chat and Message id separated by `|`
 ```bash
--1005545442|84565
+-1001454692938|8
 ```
    
-### 22. INSTA_ID
+### 22. INSTA_ID & INSTA_PASS
 
-To **Download Private Posts** of Instagram. This Var value must be required. You have Fill your **Instagram Username** in this section.
+To **Download Private Posts** of Instagram, you have to fill this Var.
 
-### 23. INSTA_PASS
-
-This also the same, To **Download Private Posts** of Instagram. This Var value must be required. You have Fill your **Instagram Password** in this section.
+```bash 
+eg. INSTA_ID = your instagram username
+    INSTA_PASS = your instagram password
+```
 
 ## Only If you are using Heroku to Host
 
-### 24. HEROKU_API_KEY
+### 23. HEROKU_API_KEY
 
 To work some Heroku compatible modules this var value required to Access your account to use `.die`, `.usage` and `.sleep` commands.
 
@@ -616,7 +614,7 @@ You can get thsi value from:
 
 [Heroku Account](http://dashboard.heroku.com/account)
 
-### 25. HEROKU_APP_NAME
+### 24. HEROKU_APP_NAME
 
 You have to Enter the app name which you gave to identify your userbot in Heroku.
 
@@ -659,6 +657,6 @@ UserGe as a Assistant bot to execute your commands only from the Bot.
 
 ### 3. DUAL MODE
 
-Use UserGe as both Userbot and Assistant bot.
+Use UserGe with both Userbot and Assistant bot.
 
 * Fill both [USER MODE](https://theuserge.github.io/deployment#1-user-mode) and [BOT MODE](https://theuserge.github.io/deployment#2-bot-mode) vars values.
