@@ -2,27 +2,28 @@ log() {
 	echo -e "\n##### $1 #####\n"
 }
 
-log "installing python"
+log "Installing Python"
+pkg update -y && pkg upgrade -y
 pkg install -y root-repo python
 pip install -U pip wheel setuptools
 
-log "installing necessary packages"
+log "Installing Necessary Packages"
 pkg install -y git jq proot resolv-conf libxml2 libxslt libjpeg-turbo
 
-log "installing Pillow"
+log "Installing Pillow"
 LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" \
 	pip install --use-feature=2020-resolver Pillow
 
-log "clonning repo"
+log "Clonning Repository"
 git clone https://github.com/UsergeTeam/Userge Userge && cd Userge 
 
-log "installing requirements"
+log "Installing Requirements"
 CFLAGS="-O0" pip install --use-feature=2020-resolver -r requirements.txt
 
 cp config.env.sample config.env
-log "wait. now openning config.env ...\nedit, save (ctrl+s) and close (ctrl+x) it."
+log "Wait. Now openning config.env ...\nEdit, and Save (ctrl+s) and Close (ctrl+x) it."
 sleep 10
 nano config.env
 
-log "all done!\nnow do termux-chroot and bash Userge/run respectively.\nenjoy :)"
-echo -e "\nmore info https://theuserge.github.io/termux\n"
+log "All done!\nNow run command "termux-chroot" and "cd Userge && bash run" respectively.\nEnjoy :)"
+echo -e "\nFor more info: https://theuserge.github.io/termux\n"
