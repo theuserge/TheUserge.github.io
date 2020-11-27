@@ -178,7 +178,7 @@ Click on the any var from the list below to get its detailed description and set
 
 4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
-**Note:** These are minimum required vars need to setup to make userbot functional. </pre>
+**Note:** These are minimum required vars need to setup to make userbot functional.
 
 ### Non-Mandatory Vars:
 
