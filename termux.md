@@ -1,6 +1,6 @@
 # Termux Guide for Userge
 
-<pre>**Important!** unlike heroku it will cost everything from you</pre>
+<pre><b>Important!</b> unlike heroku it will cost everything from you</pre>
 
 ## Prerequisite
 
@@ -15,7 +15,7 @@
 * Fill them, save (`ctrl+s`) and close (`ctrl+x`) it.
 * Now, Installation done and time to run userge.
 * But first of all do `termux-chroot` to fix DNS Resolver issues.
-* Nice, Now you are in root so `cd Userge && bash run` or `bash Userge/run`.
+* Nice, Now you are in root so `cd Userge && bash run`.
 * Enjoy :)
 
 ## Step By Step:
