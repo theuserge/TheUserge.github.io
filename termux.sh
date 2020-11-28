@@ -1,10 +1,13 @@
 log() {
-	echo -e "\n##### $1 #####\n"
+	echo -e "\n########\n$1\n########\n"
 }
 
-log "Installing Python"
+log "Updating Packages"
 pkg update -y && pkg upgrade -y
-pkg install -y root-repo python
+pkg install -y root-repo
+
+log "Installing Python"
+pkg install -y python
 pip install -U pip wheel setuptools
 
 log "Installing Necessary Packages"
