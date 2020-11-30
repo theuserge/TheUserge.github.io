@@ -655,6 +655,12 @@ UserGe as a Assistant bot to execute your commands only from the Bot.
 
 * **OWNER_ID** - Your user id (not username) Get it by using command `/id` on the Group in the reply of your message where Rose Bot was added.
 
+**Make Sure, you set up these settings while making bot via Bot Father.**
+1. [Group privacy](https://t.me/usergeot/356150) - Turn this OFF
+2. [Allow groups](https://t.me/usergeot/356614) - Turn this ON
+3. [Inline mode](https://t.me/usergeot/354104) - Turn this ON
+4. Add bot To your Log Channel
+
 ### 3. DUAL MODE
 
 Use UserGe with both Userbot and Assistant bot.
