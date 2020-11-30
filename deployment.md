@@ -5,7 +5,7 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-**Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
+**Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
 **Legacy Method** - Using Python and all those packages which required to Run this bot. You can also say a Manual way to deploy userbot.
 
@@ -583,17 +583,17 @@ While you use `.kang` command it will use your @username as Sticker Pack Name. Y
 
 You can set your own custom media for `.alive` command.
 
-Only this formats can be accepted for the this Var value.
+Only this formats can be accepted for this Var value.
 
-1. A link to message
+1. A link to message (Only Message link)
 
-```bash
-https://t.me/theuserge/8
-```  
+   ```bash
+   https://t.me/theuserge/8
+   ```  
 2. Chat and Message id separated by `|`
-```bash
--1001454692938|8
-```
+   ```bash
+   -1001454692938|8
+   ```
    
 ### 22. INSTA_ID & INSTA_PASS
 
