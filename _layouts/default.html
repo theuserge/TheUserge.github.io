@@ -1,81 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-
-  <head>
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#176eb4">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="images/browserconfig.xml">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ site.syntax_theme }}">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <style>
-         .alone-css {
-                color: white;
-                text-decoration: none;
-      }
-         .alone-css:hover {
-                color: white;
-                text-decoration: none;
-      }
-         .alone-right-footer {
-                float: right;
-      }
-    </style>
-  </head>
-
+  {% include head.html %}
   <body>
-
-    <header class="page-header" role="banner">
-      <h1 class="project-name"><a href="/" class="alone-css"><i class="fas fa-robot"></i> Userge Docs</a></h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="{{ site.buttons.btn1_url }}" class="btn"><i class="fab fa-github"></i> {{ site.buttons.btn1_title }}</a>
-      <a href="{{ site.buttons.btn2_url }}" class="btn"><i class="fas fa-plug"></i> {{ site.buttons.btn2_title }}</a>
-      <a href="{{ site.buttons.btn3_url }}" class="btn"><i class="fas fa-sync"></i> {{ site.buttons.btn3_title }}</a>
-      <a href="{{ site.buttons.btn4_url }}" class="btn"><i class="fas fa-users"></i> {{ site.buttons.btn4_title }}</a>
-      <a href="/#quick-links" class="btn"><i class="fas fa-link"></i> Quick Links</a>
-    </header>
-
+    {% include page_header.html %}
+    {% include navbar.html %}
     <main id="content" class="main-content" role="main">
       {{ content }}
-
-      <footer class="site-footer">
-        <nav>
-          <a href="/"><i class="fas fa-home"></i> Home</a> | <a href="/#quick-links"><i class="fas fa-link"></i> Quick Links</a> <a href="https://github.com/theuserge/TheUserge.github.io/edit/main/{{ page.name }}" class="alone-right-footer"><i class="fas fa-edit"></i> Edit this Page</a>
-        </nav>
-        <br>
-        <span class="site-footer-credits">Made with ❤️ by <a href="https://t.me/UsergeOT">UsergeTeam</a>.</span>
-      </footer>
     </main>
-
-    <script>
-      Array.from(
-        document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]')
-      ).forEach(h => {
-        h.addEventListener('click', e => {
-          window.location.hash = e.target.getAttribute('id');
-        });
-      })
-    </script>
-
+    {% include page_footer.html %}
+    {% include scripts.html %}
   </body>
 </html>

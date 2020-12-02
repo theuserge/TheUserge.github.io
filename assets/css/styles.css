@@ -1,0 +1,45 @@
+.alone-css {
+    color: white;
+    text-decoration: none;
+}
+
+.alone-css:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.alone-right-footer {
+    float: right;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #175da3;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 80px;
+}
