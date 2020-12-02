@@ -356,8 +356,6 @@ a {
 .site-footer {
   padding: 2rem;
   border-top: solid 1px $hr-border-color;
-  background-color: white;
-  background-image: linear-gradient(120deg, white, rgb(206, 206, 206));
 
   @include large {
     font-size: 1rem;
