@@ -295,7 +295,7 @@ Click on the any var from the list below to get its detailed description and set
 
 * Choose **Connect Your Application**
 
-* Now, Select **DRIVER** as <code>Pyhton</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
+* Now, Select **DRIVER** as <code>Python</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
 
 <pre>mongodb+srv://&lt;username&gt;:&lt;password&gt;@mongos0.example.com/&lt;dbname&gt;?retryWrites=true&w=majority</pre>
 
@@ -328,7 +328,7 @@ Instead of making Channel You can also create a Group to get your logs and This 
 
 * You just need to make a new **Private Group** on Telegram.
 
-* Add @MissRoseBot in your Private Group from Add Member > Search "@MissRoseBot" and then Add.
+* Add @MissRose_Bot in your Private Group from Add Member > Search "@MissRose_Bot" and then Add.
 
 * After added, Just type "/id" in the chat.
 
