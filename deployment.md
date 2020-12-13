@@ -610,7 +610,7 @@ eg. INSTA_ID = your instagram username
 
 To work some Heroku compatible modules this var value required to Access your account to use `.die`, `.usage` and `.sleep` commands.
 
-You can get thsi value from:
+You can get this value from:
 
 [Heroku Account](http://dashboard.heroku.com/account)
 
