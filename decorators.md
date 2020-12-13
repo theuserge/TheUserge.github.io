@@ -1,10 +1,10 @@
 # Userge Callback Decorators
 
-In addition to available [`Pyrogram Decorators`](https://docs.pyrogram.org/api/decorators), Userge comes with its own custom decorators to handle callback functions.
+In addition to available [`Pyrogram Decorators`](https://docs.pyrogram.org/api/decorators), Userge comes with it's own custom decorators to handle callback functions.
 
 ## `@userge.on_cmd`
 
-Decorator for handling messages containing command text and custom flags or command prefixes.
+Decorator for handling message containing command text and custom flags or command prefixes.
 
 ### Parameters:
 
@@ -18,17 +18,17 @@ Decorator for handling messages containing command text and custom flags or comm
 
     * `header: str` Title of your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/tools/alive.py#L31)
 
-    * `description: str` Describe the working of your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/ocr.py#L52)
+    * `description: str` Describe working of your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/ocr.py#L52)
 
     * `flags: str | dict` Mention available flags in your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L25)
 
-    * `options: str | dict` Mention available options that can be used with your command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L128)
+    * `options: str | dict` Mention available options that can be used with your comand [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L128)
 
     * `types: str | list` Specific types with which your command can be triggered [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/utils/filters.py#L137)
 
     * `usage: str` Syntax with which user should trigger command [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/autopic.py#L41)
 
-    * `examples: str | list` An example on how to use your command (a list containing examples is also supported) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L29) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L31)
+    * `examples: str | list` A example on how to use your command (a list containing examples is also supported) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L29) [`[Example]`](https://github.com/UsergeTeam/Userge/blob/beta/userge/plugins/fun/carbon.py#L31)
 
     * `others: str` Additional note that you would like to give [`[Example]`](https://github.com/UsergeTeam/Userge/blob/b068461bd9a35d3ad28d5c484aabb29d55996705/userge/plugins/misc/utube.py#L30)
 
@@ -54,7 +54,7 @@ Decorator for handling messages containing command text and custom flags or comm
 
 * `allow_channels: bool` Specify if your command works in channels. `[default: True]`
 
-> All above **`allow_*`** keyword arguments are simply provided to prohibit specific chat types to ensure proper functioning of your callable function.
+> All above **`allow_*`** keyword arguments are simply provided to prohibit specific chat type to ensure proper functioning of your callable function.
 
 * `only_admins: bool` Specify if your command (i.e. callable function) needs admin privileges in current chat (groups or channel) to be used. `[default: False]`
 
@@ -64,7 +64,7 @@ Decorator for handling messages containing command text and custom flags or comm
 
 * `check_downpath: bool` If `True`, userge will make sure that `Config.DOWN_PATH` exists. `[default: False]`
 
-* `check_change_info_perm: bool` Pass `True` to check if the current userge client has Change Info Privileges in current chat before further execution of program. `[default: False]`
+* `check_change_info_perm: bool` Pass `True` to check if current userge client has Change Info Privileges in current chat before further execution of program. `[default: False]`
 
 * `check_edit_perm: bool` Pass `True` to check if current client has Edit Permission in current Channel before further execution. `[default: False]`
 
@@ -72,15 +72,15 @@ Decorator for handling messages containing command text and custom flags or comm
 
 * `check_restrict_perm: bool` Pass `True` to check if current client can Restrict Users in current chat. `[default: False]`
 
-* `check_invite_perm: bool` Pass `True` to check if the current client has Privileges to Add Users to export a private invite link, etc... `[default: False]`
+* `check_invite_perm: bool` Pass `True` to check if current client has Privileges to Add Users to export a private invite link, etc... `[default: False]`
 
-* `check_pin_perm: bool` Pass `True` to check if the current client has Privileges to Pin Messages in the current chat. `[default: False]`
+* `check_pin_perm: bool` Pass `True` to check if current client has Privileges to Pin Messages in current chat. `[default: False]`
 
 * `prefix: str` Set a custom prefix to detect flags in a message. `[default: '-']`
 
 * `del_pre: bool` Pass `True` to get a `dict` of flags without prefix. `[default: False]`
 
-> **`[*]`**: Works only if the command is allowed to be triggered by sudo users via **`addscmd`**
+> **`[*]`**: Works only if command is allowed to be triggered by sudo users via **`addscmd`**
 
 ### Examples:
 
@@ -94,7 +94,7 @@ from userge import userge
 
 ```
 
-Now we have imported userge client. For example let's make an echo command that will take an input and send it back to the current chat.
+Now we have imported userge client. For example let's make a echo command that will take an input and send it back to current chat.
 
 ```python
 
@@ -122,7 +122,7 @@ async def echo(message: Message):  # Message is just for type hinting
 
 await message.client.send_message(message.chat.id, text)
 # using message.client is recommended as userge support dual client (i.e user client and bot client)
-# by using this method it ensures that the correct client makes request to API
+# by using this method it ensures that correct client makes request to API
 
 ```
 
@@ -146,9 +146,9 @@ async def echo(message: Message):
 
 ```
 
-However, now we want the following modification in `echo` command:
+However, now we want following modification in `echo` command:
 
-* It should work only in groups.
+* It should work only in goups.
 * Can only be triggered by `>` prefix.
 * Change `-` flag prefix to `*`.
 * Anyone can use this command.
@@ -173,7 +173,7 @@ async def echo(message: Message):
 
 ```
 
-That's all for `userge.on_cmd` for more examples check out our Plugins in main repo or unofficial plugins repository
+That's all for `userge.on_cmd` for more Examples check out our Plugins in main repo or unofficial plugins repository
 
 
 ## `@userge.on_filters`
@@ -208,7 +208,7 @@ Decorator for handling filters.
 
 ### Examples:
 
-Let's make a simple program to detect incoming `audio` and `video` files in any chat
+Lets make a simple programme to detect incoming `audio` and `video` files in any chat
 but not in channels. So ...
 
 ```python
@@ -225,8 +225,8 @@ async def my_filter(message: Message):
 
 ```
 
-Now let's optimize it for a specific chat. Let say I want to filter from `@usergeot`.
-So we only need to add an extra filter to filter that chat.
+Now lets optimize it for a specific chat. Let say i want to filter from `@usergeot`.
+So we only need to add extra filter for filter that chat.
 
 ```python
 
@@ -238,4 +238,4 @@ async def my_filter(message: Message):
 
 ```
 
-That's all for `userge.on_filters` for more examples check out our Plugins in main repo or unofficial plugins repository
+That's all for `userge.on_filters` for more Examples check out our Plugins in main repo or unofficial plugins repository
