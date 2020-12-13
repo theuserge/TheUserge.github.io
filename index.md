@@ -1,10 +1,10 @@
 ![Userge-image](https://telegra.ph/file/083ee09d368e0ee991996.jpg)
 
-Hello wonderer!, Here is the way to start your journey to make your Telegram Account automated with UserGe. It is best Open-source Userbot for Telegram to simplify your daily task in convenient way.
+Hello wonderer! Here is the way to start your journey to make your Telegram Account automated with UserGe. It is the best Open-source Userbot for Telegram to simplify your daily task in a convenient way.
 
 ## What is UserGe?
 
-<b>[UserGe](https://github.com/usergeteam/userge)</b> is a Powerful , Pluggable Telegram UserBot written in [Python](https://www.python.org/) using [Pyrogram](https://github.com/pyrogram) by which you can Automate your Telegram account to work like as you want. It comes with salient and descriptive features which help you to manage your task with some easy command.
+<b>[UserGe](https://github.com/usergeteam/userge)</b> is a Powerful, Pluggable Telegram UserBot written in [Python](https://www.python.org/) using [Pyrogram](https://github.com/pyrogram) by which you can Automate your Telegram account to work as you want. It comes with salient and descriptive features that help you to manage your task with some easy command.
 
 ### Features:
 *  Powerful and Very Useful built-in Plugins
@@ -30,4 +30,4 @@ Hello wonderer!, Here is the way to start your journey to make your Telegram Acc
 5. [Errors and their Fixes]({% link errors.md %})
 6. [Termux]({% link termux.md %})
 
-**Note:** Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc.
+**Note:** Users who want to make custom plugins need to have a Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc.
