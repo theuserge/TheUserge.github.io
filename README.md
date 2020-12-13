@@ -4,3 +4,4 @@
 3. Examples - [Preview](https://theuserge.github.io/examples)
 4. How to Use (FAQs) - [Preview](https://theuserge.github.io/faq)
 5. Errors and their Fixes - [Preview](https://theuserge.github.io/errors)
+6. Termux - [Preview](https://theuserge.github.io/termux)

@@ -28,5 +28,6 @@ Hello wonderer!, Here is the way to start your journey to make your Telegram Acc
 3. [Examples]({% link examples.md %})
 4. [Decorators]({% link decorators.md %})
 5. [Errors and their Fixes]({% link errors.md %})
+6. [Termux]({% link termux.md %})
 
 **Note:** Users who wants to make custom plugins needs to have Moderate level of Python like Data-types, Functions, Iterators, Async/await syntaxes, Some modules and libraries like Pyrogram, requests, os, aiohttp, etc.
