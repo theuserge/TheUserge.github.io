@@ -25,7 +25,7 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 * [**Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
 
-* [**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
+* [**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
 
 **2**. **Click** [**this**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master)
 
