@@ -5,17 +5,19 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 **Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-**Docker** - Run the Userbot in an isolated application which doesnt interfere to system but use your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
+**Docker** - Run the Userbot in an isolated application which doesn't interfere to system but use your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-**Legacy Method** - Using Python and all those packages which required to Run this bot. You can also say a Manual way to deploy userbot.
+**Legacy Method** - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy userbot.
 
 ## Deploying with Heroku
 
 [![userge deploy](https://telegra.ph/file/18f15fcd5bc54161b2fbb.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
 
-In this video tutorial, We have deployed our userbot on heroku with include all steps. Some missing Vars which you didn't see in this video can find their guide below.
+**here's the tutorial video, you can follow this also for deploying userge but better follow the guide below :)**
+
 
 ### **Steps to Deploy:**
+
 
 **1. Choose a Branch to deploy:**
 
@@ -25,15 +27,18 @@ In this video tutorial, We have deployed our userbot on heroku with include all 
 
 * [**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, "Updates" can take a while & Only merged from Beta after confirming No Bugs.
 
-**2. Fill "[Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge)" values.**
+**2**. **Click** [**this**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master)
 
-**3. Click on Deploy Button.**
 
-**4. Turn on Dyno from Resource Tab.**
+**3. Fill [Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) values.**
 
-**5. That's it... Start using Userge.**
+**4. Click on Deploy Button.**
 
-You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used by there respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
+**5. Turn on Dyno from Resource Tab.**
+
+**6. That's it... Start using Userge.**
+
+You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used for respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
 
 ## Deploying with Docker 🐳
 
