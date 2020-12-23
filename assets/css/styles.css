@@ -1,8 +1,8 @@
-.alone-css .alone-css:hover .navbar a {
+.alone-css, .alone-css:hover, .navbar, a {
     color: white;
 }
 
-.alone-css .alone-css:hover {
+.alone-css, .alone-css:hover {
     text-decoration: none;
 }
 
