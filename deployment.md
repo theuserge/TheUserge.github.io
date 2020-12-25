@@ -1,42 +1,40 @@
 
 # Deployment
 
-This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker and Legacy way.
+This Userbot can be deployed with three different ways. Which are Heroku, Docker and Legacy way.
 
-**Heroku** - A Free Platform provide developer to test or run their code. If you dont have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
+**Heroku** - A Free Platform providing developers to test or run their code. If you don't have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-**Docker** - Run the Userbot in an isolated application which doesn't interfere to system but use your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
+**Docker** - Run the Userbot in an isolated application that doesn't interfere to the system but uses your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-**Legacy Method** - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy userbot.
+**Legacy Method** - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
 
 ## Deploying with Heroku
 
 [![userge deploy](https://telegra.ph/file/18f15fcd5bc54161b2fbb.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
 
-**Here's the tutorial video, you can follow this also for deploying userge but better follow the guide below :)**
-
+In this video tutorial, We have deployed our userbot on heroku including all steps. Some missing Vars which you didn't see in this video can find their guide below.
 
 ### **Steps to Deploy:**
-
 
 **1. Choose a Branch to deploy:**
 
 * [**Click Here To Deploy Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
 
+
 * [**Click Here To Deploy Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
+	
+ * [**Click Here to Deploy Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
 
-* [**Click Here to Deploy Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
+**2. Fill "[Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge)" values.**
 
+**3. Click on Deploy Button.**
 
-**3. Fill [Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) values.**
+**4. Turn on Dyno from Resource Tab.**
 
-**4. Click on Deploy Button.**
+**5. That's it... Start using Userge.**
 
-**5. Turn on Dyno from Resource Tab.**
-
-**6. That's it... Start using Userge.**
-
-You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used for respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
+You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used by their respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
 
 ## Deploying with Docker 🐳
 
@@ -46,7 +44,7 @@ Follow the official Docker [Installation Guide](https://docs.docker.com/engine/i
 
 **2. Install Docker-Compose**
 
-Easiest way to install docker-compose is:
+The easiest way to install docker-compose is:
 
 ```bash
 sudo pip install docker-compose
@@ -56,7 +54,7 @@ OR also you can check other official methods of installing docker-compose [here]
 
 **3. Run Userge**
 
-We dont need to clone the repo (yeah Docker-compose does that for us)
+We don't need to clone the repo (yeah Docker-compose does that for us)
 
 Setup configs (Download the sample config file)
 
@@ -71,7 +69,7 @@ Download the yml file for docker-compose
 ```bash
 wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml
 ```
-Finally start the bot
+Finally, start the bot
 
 ```bash
 docker-compose up -d
@@ -153,7 +151,7 @@ cp config.env.sample config.env
 ```bash
 bash genStr
 ```
-OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get string.
+OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get the string.
 
 **6. Finally Run the Userge**
 
@@ -163,13 +161,13 @@ bash run
 
 ## Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
-Config vars are basically the variables which configure or modify userbot's to function. which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start basic feature of bot.
+Config vars are basically the variables which configure or modify userbot's to function. which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
 **You can leave non mandatory vars for now and can add them later.**
 
 ### List of Available Vars in Userge
 
-Click on the any var from the list below to get its detailed description and setup guide.
+Click on any var from the list below to get its detailed description and setup guide.
 
 ### Mandatory Vars:
 
@@ -181,7 +179,7 @@ Click on the any var from the list below to get its detailed description and set
 
 4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
-**Note:** These are minimum required vars need to setup to make userbot functional.
+**Note:** These are the minimum required vars need to setup to make userbot functional.
 
 ### Non-Mandatory Vars:
 
@@ -243,39 +241,39 @@ Click on the any var from the list below to get its detailed description and set
 
 3. Enter Anything as App name and App short name, Enter my.telegram.org in url section
 
-4. Thats it, You"ll get your **API_ID** and **API_HASH** Var.
+4. That's it, You"ll get your **API_ID** and **API_HASH** Var.
 
 ### 2. DATABASE_URL
 
 * First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
-* Login or Sign Up (Create an Account) there. If you dont have an Account!
+* Login or Sign Up (Create an Account) there. If you don't have an Account!
 
-* After Login, You'll be in there Dashboard Page
+* After Login, You'll be on their Dashboard Page
 
 ![This](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
 
-* Choose an option **Build a Cluster** (as show picture below)
+* Choose an option **Build a Cluster** (as the shown picture below)
 
-* Now, You'll see Pricing Plan setion.
+* Now, You'll see Pricing Plan section.
 
 ![This](https://telegra.ph/file/714afabd905531eedc275.jpg)
 
 * Here, We going to use Free Plan for our userbot
 
-* After that, You have to select Region and Server. Where your Databse server will host.
+* After that, You have to select Region and Server. Where your Database server will host.
 
 ![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
 
-<pre>Tips: Select the Nearest server from your location so it wont take long time to connect</pre>
+<pre>Tips: Select the Nearest server from your location so it won't take long time to connect</pre>
 
 * At last, Click on **Create Cluster**.
 
 ![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
-<pre>You have to wait for sometime at this Page while your Database is being created. </pre>
+<pre>You have to wait for some time at this Page while your Database is being created. </pre>
 
-* After Created, Click on **Network Access** (Can see option under Security section of Above Image)
+* After Created, Click on **Network Access** (Can see this option under Security section of Above Image)
 
 * You will see an option **Add IP Adress**. Click on that
 ![This](https://telegra.ph/file/8229e06fc38c87e8880ff.jpg)
@@ -337,7 +335,7 @@ Instead of making Channel You can also create a Group to get your logs and This 
 
 * You'll get the id of your channel or group.
 
-> Note: Changing Group Type to Public may give you issue in Userbot. To Fix this, Put Public group id in var.
+> Note: Changing Group Type to Public may give you an issue in Userbot. To Fix this, Put Public group id in var.
 
 ## Non-Mandatory Vars
  
@@ -415,7 +413,7 @@ If you are using Team Drive (TD) then set this value as `True`. Otherwise leave 
 
 ### 5. G_DRIVE_INDEX_LINK
 
-If you have created Google Drive Index, You can use it as well for output the Index Link after Uploading the file to Google Drive. Just fill your url into the value.
+If you have created Google Drive Index, You can use it as well to output the Index Link after Uploading the file to Google Drive. Just fill your url into the value.
 
 ```bash
 eg. https://example.example.workers.dev
@@ -423,18 +421,18 @@ eg. https://example.example.workers.dev
 
 ### 6. DOWN_PATH
 
-You can rename the directory of your downloads folder. by default all your file will be downloaded in "downloads" folder.
+You can rename the directory of your downloads folder. by default all your files will be downloaded in "downloads" folder.
 
 ### 7. PREFERRED_LANGUAGE
 
-Select your Preferred languge. For example: If English value will be
+Select your Preferred language. For example: If English value will be
 ```bash
 en
 ```
 
 ### 8. CURRENCY_API
 
-This var is used for Currency converter & Exchange Rate in Plugin. If you dont want this you can leave this var value blank.
+This var is used for Currency converter & Exchange Rate in Plugin. If you don't want this you can leave this var value blank.
 
 * Go to [**free.currencyconverterapi.com**](https://free.currencyconverterapi.com).
 
@@ -452,9 +450,9 @@ That's It... Check your Email, You have received the API Key there. Confirm your
 
 ### 9. OCR_SPACE_API_KEY
 
-OCR used to read text from the images. You can also use OCR to read text from the image on Telegram from your Userbot. It help you to copy texts from Images.
+OCR is used to read text from the images. You can also use OCR to read text from the image on Telegram from your Userbot. It helps you to copy texts from Images.
 
-So, Let's start getting value of this var
+So, Let's start getting the value of this var
 
 * Go to [**http://eepurl.com/bOLOcf**](http://eepurl.com/bOLOcf) and Fill your details.
 
@@ -482,7 +480,7 @@ Basically, It has a list of Spammer and they are listed in SpamWatch. If you use
 
 ### 12. OPEN_WEATHER_MAP
 
-As, If you are going to use this userbot also for checking Weather detail on your current City, State. Then, this var value required to be filled with **WEATHER_DEFCITY** var to work.
+As, If you are going to use this userbot also for checking Weather detail on your current City, State. Then, this var value is required to be filled with **WEATHER_DEFCITY** var to work.
 
 * To get Weather API, visit [**openweathermap.org**](https://openweathermap.org/).
 
@@ -496,7 +494,7 @@ As, If you are going to use this userbot also for checking Weather detail on you
 
 ![api key of weather](https://telegra.ph/file/67ff0730fe26eb7d5f36b.jpg)
 
-* After successfull SignUp, You'll see **API Keys** option, Click there.
+* After successful SignUp, You'll see **API Keys** option, Click there.
 
 ![open weather api key](https://telegra.ph/file/7225b7fd50ec647a2481d.jpg)
 
@@ -550,15 +548,15 @@ To use your Userge Userbot as default with all regular Updates and Patches also 
 ```bash
 https://github.com/UsergeTeam/Userge
 ```
-#### For Customized or Modified Reposity
+#### For Customized or Modified Repository
 
-If you plan to use this userbot with your own customized or modifed code. You must fill your own Forked Userge Reposity URL in UPSTREAM_REPO Var value.
+If you plan to use this userbot with your own customized or modified code. You must fill your own Forked Userge Repository URL in UPSTREAM_REPO Var value.
 
 ### 18. FINISHED_PROGRESS_STR
 
 To change the Progress Bar of Download and Uploads. You must fill Single text of filled bar line of character which can be shown in Finish bar.
 
-You can Select any character from these listed site:
+You can Select any character from these listed sites:
 
 * [https://coolsymbol.com/](https://coolsymbol.com/)
 
@@ -570,7 +568,7 @@ You can Select any character from these listed site:
 
 To change the Progress Bar of Download and Uploads. You must fill Single text of Unfinished bar line of character which can be shown in Unfinished bar.
 
-You can Select any character from these listed site:
+You can Select any character from these listed sites:
 
 * [https://coolsymbol.com/](https://coolsymbol.com/)
 
@@ -586,7 +584,7 @@ While you use `.kang` command it will use your @username as Sticker Pack Name. Y
 
 You can set your own custom media for `.alive` command.
 
-Only this formats can be accepted for this Var value.
+Only these formats can be accepted for this Var value.
 
 1. A link to message (Only Message link)
 
@@ -623,17 +621,17 @@ You have to Enter the app name which you gave to identify your userbot in Heroku
 
 ## UserGe Modes
 
-A mode defines the client, whether you want to use Userge on user account or as a Assistant bot.
+A mode defines the client, whether you want to use Userge on user account or as an Assistant bot.
 
-This both also can be possible, Userge as a userbot and as a Assistant bot. You need to fill all vars for User Mode and Bot Mode. check [Dual Mode](https://theuserge.github.io/deployment#3-dual-mode)
+This both also can be possible, Userge as a userbot and as an Assistant bot. You need to fill all vars for User Mode and Bot Mode. check [Dual Mode](https://theuserge.github.io/deployment#3-dual-mode)
 
 ### 1. USER MODE
  
-UserGe as a userbot with user account require this var.
+UserGe as a userbot with a user account requires this var.
 
 **HU_STRING_SESSION**
 
-You can get this Var value by two way.
+You can get this Var value using two ways.
 
 The First Way:
 
@@ -650,13 +648,13 @@ For more details, check this video: on [11:04](https://youtu.be/M4T_BJvFqkc?t=66
 
 ### 2. BOT MODE
 
-UserGe as a Assistant bot to execute your commands only from the Bot.
+UserGe as an Assistant bot to execute your commands only from the Bot.
 
  **BOT_TOKEN** & **OWNER_ID**
 
 * Get **BOT_TOKEN** from [**@Botfather**](https://t.me/botfather) on Telegram.
 
-* **OWNER_ID** - Your user id (not username) Get it by using command `/id` on the Group in the reply of your message where Rose Bot was added.
+* **OWNER_ID** - Your user id (not username) Get it by using command `/id` on the Group in the reply to your message where Rose Bot was added.
 
 **Make Sure, you set up these settings while making bot via Bot Father.**
 1. [Group privacy](https://t.me/usergeot/356150) - Turn this OFF
