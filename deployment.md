@@ -13,7 +13,7 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 [![userge deploy](https://telegra.ph/file/18f15fcd5bc54161b2fbb.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
 
-**here's the tutorial video, you can follow this also for deploying userge but better follow the guide below :)**
+**Here's the tutorial video, you can follow this also for deploying userge but better follow the guide below :)**
 
 
 ### **Steps to Deploy:**
@@ -21,13 +21,11 @@ This Userbot can be deployed with three diffrent ways. Which are Heroku, Docker 
 
 **1. Choose a Branch to deploy:**
 
-* [**Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
+* [**Click Here To Deploy Alpha**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/alpha) - Not stable, Only for Devs for testing Purposes.
 
-* [**Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
+* [**Click Here To Deploy Beta**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/beta) - Pretty stable, Regular Updates, Fixes of Bugs & Changes occurs.
 
-* [**Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
-
-**2**. **Click** [**this**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master)
+* [**Click Here to Deploy Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
 
 
 **3. Fill [Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) values.**
