@@ -595,7 +595,11 @@ Only these formats can be accepted for this Var value.
    ```bash
    -1001454692938|8
    ```
-   
+3. A telegraph link
+   ```bash
+   https://telegra.ph/file/e912739114b56059a8cf3.jpg
+   ```
+
 ### 22. INSTA_ID & INSTA_PASS
 
 To **Download Private Posts** of Instagram, you have to fill this Var.
