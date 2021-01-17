@@ -391,6 +391,12 @@ So, Let's Start
 
 * You'll see **OAuth consent screen** dashboard page.
 
+![publish your app](https://telegra.ph/file/b41e1a396662a9961247b.jpg)
+
+* After that, Now time to **Publish your App** Click on that.
+
+* then **Confirm**, Now start creating the Api Keys which we use in Userge.
+
 ![crendentials](https://telegra.ph/file/283fd1bee4c070d81a65d.jpg) 
 
 * Now, Click on **Credentials**
