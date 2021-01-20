@@ -28,7 +28,7 @@ In this video tutorial, We have deployed our userbot on heroku including all ste
 	
  * [**Click Here to Deploy Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
 
-**2. Fill** [**Mandatory Vars**](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) **values.**
+**2. Fill** [**Mandatory Vars**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) **values.**
 
 **3. Click on Deploy Button.**
 
@@ -200,7 +200,7 @@ bash run
 
 ![](https://telegra.ph/file/5be7144568fb2bcb510ed.jpg) 
 
-**Here is the List of all the** [**Mandatory**](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) and [**Non-Mandatory**](https://theuserge.github.io/deployment.html#non-mandatory-vars) **vars**
+**Here is the List of all the** [**Mandatory**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) and [**Non-Mandatory**](https://theuserge.github.io/deployment.html#non-mandatory-vars) **vars**
 
 **Here is a preview of how the vars will look after adding.** 
 
