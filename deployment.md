@@ -9,6 +9,8 @@ This Userbot can be deployed with three different ways. Which are Heroku, Docker
 
 **Legacy Method** - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
 
+**ZEET** - A free platform similar to Heroku. If you don't have VPS or dont want to deploy local on your system then You can deploy your userbot there. 
+
 ## Deploying with Heroku
 
 [![userge deploy](https://telegra.ph/file/18f15fcd5bc54161b2fbb.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
@@ -26,7 +28,7 @@ In this video tutorial, We have deployed our userbot on heroku including all ste
 	
  * [**Click Here to Deploy Master**](https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master) - Very stable, Updates can take a while & Only merged from Beta after confirming No Bugs.
 
-**2. Fill "[Mandatory Vars](https://theuserge.github.io/deployment#list-of-available-vars-in-userge)" values.**
+**2. Fill** [**Mandatory Vars**](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) **values.**
 
 **3. Click on Deploy Button.**
 
@@ -159,6 +161,58 @@ OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get the string.
 bash run
 ```
 
+## Deploying on ZEET
+
+**1. Fork the** [**Userge Repo**](https://github.com/usergeteam/userge)
+
+![](https://telegra.ph/file/706cc93a2b2f085ca9fc4.jpg)
+
+**2. Login there using your github account.**
+
+**3. Now click on new project.**
+
+**4. Select GitHub as the source of your app.** 
+
+![](https://telegra.ph/file/df3518284fc300ee91ad4.jpg) 
+
+**5. Select Trial plan and click continue.** 
+
+![](https://telegra.ph/file/6051bf579d1bc33cc1dc5.jpg) 
+
+**6. Click Authorize On GitHub**
+
+**7. Choose Your Userge Forked Repo and click Continue.**
+
+![](https://telegra.ph/file/1015d469e8e4c4e9ade44.jpg) 
+
+**8. Click Deploy now.**
+
+![](https://telegra.ph/file/36226975cc5af74468b8c.jpg) 
+
+**9. Now, it will show you the build logs.**
+
+
+![](https://telegra.ph/file/9bebfd396ca9359af7e9c.jpg) 
+
+**10. Now wait at that page till the build gets finished**
+
+**11. After the build finished, add all the mandatory vars and the non mandatory vars you want.**
+
+![](https://telegra.ph/file/5be7144568fb2bcb510ed.jpg) 
+
+**Here is the List of all the** [**Mandatory**](https://theuserge.github.io/deployment#list-of-available-vars-in-userge) and [**Non-Mandatory**](https://theuserge.github.io/deployment.html#non-mandatory-vars) **vars**
+
+**Here is a preview of how the vars will look after adding.** 
+
+![](https://telegra.ph/file/fe49264b531c1c189fe95.jpg)
+
+**12. Now go check project logs.** 
+
+   **Your bot is started now :)**
+
+
+
+ 
 ## Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
 Config vars are basically the variables which configure or modify userbot's to function. which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
