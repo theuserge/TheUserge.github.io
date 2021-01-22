@@ -3,13 +3,13 @@
 
 This Userbot can be deployed with three different ways. Which are Heroku, Docker and Legacy way.
 
-**Heroku** - A Free Platform providing developers to test or run their code. If you don't have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
+[**Heroku**](https://theuserge.github.io/deployment.html#deploying-with-heroku) - A Free Platform providing developers to test or run their code. If you don't have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-**Docker** - Run the Userbot in an isolated application that doesn't interfere to the system but uses your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
+[**Docker**](https://theuserge.github.io/deployment.html#deploying-with-docker-) - Run the Userbot in an isolated application that doesn't interfere to the system but uses your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-**Legacy Method** - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
+[**Legacy-Method**](https://theuserge.github.io/deployment.html#deploying-with-legacy-method)- Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
 
-**ZEET** - A free platform similar to Heroku. If you don't have VPS or dont want to deploy local on your system then You can deploy your userbot there. 
+[**ZEET**](https://theuserge.github.io/deployment.html#deploying-on-zeet) - A free platform similar to Heroku. If you don't have VPS or dont want to deploy local on your system then You can deploy your userbot there. 
 
 ## Deploying with Heroku
 
