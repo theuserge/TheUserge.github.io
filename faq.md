@@ -272,3 +272,9 @@ Use `.term "downloaded_file_path" "new_file_name_with_path"`
 Use `.download your_link | filename.ext`
 
 <pre>eg. .download https//example.com/files/disney_movie.mp4?string=blablabla | disney_movie.mp4</pre>
+
+## 26. How to Add/Load Custom Plugins?
+
+Create a Private channel and save your all plugins there, then copy channel id and paste it in var named `PLUGINS_CHANNEL_ID` and then load all plugins via a single command `.loadall`.
+
+you can delete that file to unload that plugin, use `.restart -t` after delete that file in your channel.
