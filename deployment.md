@@ -374,6 +374,7 @@ Here, You need Log Channel Id to get all logs and Traceback errors of your UserB
 * Find "forward_from_chat" section in the message. you'll see the "id" starting with <code>-100.....</code>
 
 * Copy the id with included hyphen (<code> - </code>) and Paste into LOG_CHANNEL_ID Var.
+>**Note**:- _Don't forget to add your [**Bot**](https://theuserge.github.io/deployment#2-bot-mode) as administrator in log channel._
 
 **For more information... Watch this** [Video](https://youtu.be/M4T_BJvFqkc?t=1025)
 
@@ -716,7 +717,7 @@ UserGe as an Assistant bot to execute your commands only from the Bot.
 
  **BOT_TOKEN** & **OWNER_ID**
 
-* Get **BOT_TOKEN** from [**@Botfather**](https://t.me/botfather) on Telegram.
+* **BOT_TOKEN** - Get it from [**@Botfather**](https://t.me/botfather) in Telegram.
 
 * **OWNER_ID** - Your user id (not username) Get it by using command `/id` on the Group in the reply to your message where Rose Bot was added.
 
