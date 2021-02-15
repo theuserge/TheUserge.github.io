@@ -285,6 +285,8 @@ Click on any var from the list below to get its detailed description and setup g
 
 24. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#24-heroku_app_name)
 
+25. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#25-custom_plugins_repo)
+
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
 ### 1. API_ID and API_HASH
@@ -683,6 +685,11 @@ You can get this value from:
 ### 24. HEROKU_APP_NAME
 
 You have to Enter the app name which you gave to identify your userbot in Heroku.
+
+### 25. CUSTOM_PLUGINS_REPO
+
+Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the userge.
+Copy your repo link and use it as value of above var. This way you haven't need to fork and edit unofficial plugins repo anymore.
 
 ## UserGe Modes
 
