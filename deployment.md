@@ -124,16 +124,18 @@ Changes will be fetched from git repo. You can change repo url from **docker-com
 * Python 3.8 or higher version
 * [Mandatory Vars](https://theuserge.github.io/deployment.html#mandatory-vars)
 
-**1. Clone the Repository**
+**1. Install required package**
+
+``sudo apt install tree wget2 p7zip-full jq ffmpeg wget git``
+
+``wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb``
+
+``sudo apt install ./google-chrome-stable_current_amd64.deb``
+
+**2. Clone the Repository**
 
 ```bash
 git clone https://github.com/UsergeTeam/Userge.git && cd Userge
-```
-
-**2. Create Virtual Env**
-```bash
-virtualenv -p /usr/bin/python3 venv
-. ./venv/bin/activate
 ```
 
 **3. Install Requirements**
