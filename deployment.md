@@ -12,6 +12,29 @@ This Userbot can be deployed with three different ways. Which are Heroku, Docker
 [**ZEET**](https://theuserge.github.io/deployment.html#deploying-on-zeet) - A free platform similar to Heroku. If you don't have VPS or dont want to deploy local on your system then You can deploy your userbot there. 
 
 
+## Deploying with Heroku 
+
+
+### **Steps to Deploy:**
+
+
+**1.[Click here to deploy Userge.**](https://heroku.com/deploy?template=https://github.com/rking32/HelperScript) 
+
+
+**2. Fill** [**Mandatory Vars**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) **values.**
+
+
+**3. Click on Deploy Button.**
+
+
+**4. Turn on Dyno from Resource Tab.** 
+
+
+**5. That's it... Start using Userge.**
+
+
+You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used by their respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
+
 
 
 
