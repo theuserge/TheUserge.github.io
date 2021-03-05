@@ -1,7 +1,9 @@
 
 # Deployment
 
-This Userbot can be deployed with three different ways. Which are Heroku, Docker and Legacy way.
+This Userbot can be deployed with four different ways. Which are Heroku, Docker, Zeet and Legacy way.
+
+[**Heroku**](https://theuserge.github.io/deployment.html#deploying-with-heroku) - A Free Platform providing developers to test or run their code. If you don't have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
 
 
