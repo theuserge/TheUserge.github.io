@@ -18,7 +18,7 @@ This Userbot can be deployed with three different ways. Which are Heroku, Docker
 ### **Steps to Deploy:**
 
 
-**1.[Click here to deploy Userge.**](https://heroku.com/deploy?template=https://github.com/rking32/HelperScript) 
+**1.** [**Click here to deploy Userge.**](https://heroku.com/deploy?template=https://github.com/rking32/HelperScript) 
 
 
 **2. Fill** [**Mandatory Vars**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) **values.**
