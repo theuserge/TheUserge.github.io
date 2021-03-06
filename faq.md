@@ -225,11 +225,11 @@ That's It...
 
 ## 21. How to Add Media in Custom PM Permit?
 
-Before continuing with steps understand this it briefly. 
+Before continuing with steps read it briefly to know how it works.
 
-Userge, Itself doesn't have such a feature for now to set a media (gif, video, image) in PM Permit. but you can do it via embedding your Media link in any word (you may already have seen those blue text (hyperlinked text) containing links, Just like that we going to use that. Telegram will show preview of such direct links, So the user will able to see that media on telegram itself without actually opening the link.
+Userge, Itself doesn't have such a feature for now to set a media (gif, video, image) in PM Permit but you can do it via embedding your Media link in any word (you may already have seen those blue hyperlinked text),just like that.Telegram will show preview of such direct links, So the user will able to see that media on telegram itself without actually opening the link.
 
-To do Follow these Steps:
+You can use this trick with pm-permit with following steps-
 
 1. Reply to any video, gif, image with .telegraph via using userge. it will upload media and give you telegraph link of your media , Copy that link.
 
@@ -241,7 +241,7 @@ To do Follow these Steps:
 
 5. Now just write `.setpmmsg your_custom_pm_msg` before your message and send to set custom PM Permit.
 
-Done, Now it will show that media (via preview) along with your custom PM Message. Also have a look on this [Image](https://telegra.ph/media-in-pmPermit-10-16) to get an idea of How to do it.
+Done, Now it will show that media (via preview) along with your custom PM Message. Also have a look on these [Images](https://telegra.ph/media-in-pmPermit-10-16) to get an idea of How to do it.
 
 ## 22. How to Use Spam Watch API?
 
