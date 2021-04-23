@@ -38,7 +38,7 @@ pkg install git jq proot resolv-conf libxml2 libxslt libjpeg-turbo
 Install Pillow
 
 ```bash
-LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install --use-feature=2020-resolver Pillow
+LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install Pillow
 ```
 
 Then Clone `Userge` and Go to cloned directory
@@ -50,7 +50,7 @@ git clone https://github.com/UsergeTeam/Userge Userge && cd Userge
 Install Requirements
 
 ```bash
-CFLAGS="-O0" pip install --use-feature=2020-resolver -r requirements.txt
+CFLAGS="-O0" pip install -r requirements.txt
 ```
 
 Generate and Fill `config.env`
