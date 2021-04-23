@@ -33,7 +33,7 @@ pkg_install() {
 pip_install() {
     status ${1}
     prog ${2}
-    CFLAGS="-O0" pip install --use-feature=2020-resolver -U ${1} 1> /dev/null
+    CFLAGS="-O0" pip install -U ${1} 1> /dev/null
 }
 
 log "Updating Packages"
@@ -56,7 +56,7 @@ pkg_install libjpeg-turbo 40
 status "pillow"
 prog 45
 LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" \
-    pip install --use-feature=2020-resolver -U Pillow 1> /dev/null
+    pip install -U Pillow 1> /dev/null
 
 log "Clonning Repository"
 prog 50
