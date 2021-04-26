@@ -40,3 +40,8 @@
 .sticky + .content {
     padding-top: 80px;
 }
+
+.dark {
+    background-color: black;
+    color: white;
+}
