@@ -42,13 +42,13 @@
 }
 
 .dark {
-    background-color: #0000;
+    background-color: black;
     color: #ffff;
 }
 
 .light {
     background-color: #ffff;
-    color: #0000;
+    color: black;
 }
 
 .sbtn {
