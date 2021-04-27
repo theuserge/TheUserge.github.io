@@ -42,12 +42,16 @@
 }
 
 .dark {
-    background-color: black;
-    color: white;
+    background-color: #0000;
+    color: #ffff;
+}
+
+.light {
+    background-color: #ffff;
+    color: #0000;
 }
 
 .sbtn {
-    display: inline-block;
     float: right;
     color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.08);
