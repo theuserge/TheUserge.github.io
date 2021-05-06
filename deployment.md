@@ -77,11 +77,11 @@ $ docker run -d --restart on-failure --name userge_1 userge
 ```
 Explanation of the command flags above :
 
-1. -d: detach ```This will make your docker running even if you exit your console```
+1. `-d`: (_detach_) This will make your docker running even if you exit your console
 
-2. --restart on-failure: ```Docker container will automatically restart if there is a failure on the running system```
+2. `--restart on-failure`: Docker container will automatically restart if there is a failure on the running system
 
-3. --name userge_1: ```Custom name for your container, instead of using the container id , this makes it easier for you to find it```
+3. `--name userge_1`: Custom name for your container, instead of using the container id , this makes it easier for you to find it
 
 To stop docker container run:
 
@@ -137,7 +137,7 @@ $ docker-compose logs -f
 To stop the running bot in Docker use this Stop Command
 
 ```bash
-$docker-compose stop
+$ docker-compose stop
 ```
 
 This will just stop the containers. Built images won't be removed. So next time you can start with this command
@@ -176,18 +176,24 @@ Changes will be fetched from git repo. You can change repo url from **docker-com
 
 **1. Install required package**
 
-``$ sudo apt install tree wget2 p7zip-full jq ffmpeg wget git``
+```
+$ sudo apt install tree wget2 p7zip-full jq ffmpeg wget git
+```
 
-``$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb``
+```
+$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+```
 
-``$ sudo apt install ./google-chrome-stable_current_amd64.deb``
+```
+$ sudo apt install ./google-chrome-stable_current_amd64.deb
+```
 
 **Notes:** Recommended FFMPEG version is 4.3 or above
 
 **2. Clone the Repository**
 
 ```bash
-$git clone https://github.com/UsergeTeam/Userge.git && cd Userge
+$ git clone https://github.com/UsergeTeam/Userge.git && cd Userge
 ```
 
 **3. Install Requirements**
