@@ -84,32 +84,34 @@ Explanation of the command flags above :
 3. --name userge_1: ```Custom name for your container, instead of using the container id , this makes it easier for you to find it```
 
 To stop docker container run:
+
 ```bash
 $ docker container stop userge_1
 ```
 To get container logs:
+
 ```bash
 $ docker logs userge_1 
 ```
-
-**2. Install Docker-Compose**
+## Run userge with docker-compose 🐋
+**1. Install Docker-Compose**
 
 The easiest way to install docker-compose is:
 
 ```bash
-$sudo pip install docker-compose
+$ sudo pip install docker-compose
 ```
 
 OR also you can check other official methods of installing docker-compose [here](https://docs.docker.com/compose/install/)
 
-**3. Run Userge**
+**2. Run Userge**
 
 We don't need to clone the repo (yeah Docker-compose does that for us)
 
 Setup configs (Download the sample config file)
 
 ```bash
-$mkdir userge && cd userge
+$ mkdir userge && cd userge
 wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/config.env.sample -O config.env
 vim config.env
 ```
@@ -117,17 +119,17 @@ vim config.env
 Download the yml file for docker-compose
     
 ```bash
-$wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml
+$ wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml
 ```
 Finally, start the bot
 
 ```bash
-$docker-compose up -d
+$ docker-compose up -d
 ```
 The bot should be running now. Check logs with
 
 ```bash
-$docker-compose logs -f
+$ docker-compose logs -f
 ```
 
 **Q. How to Stop the Bot?**
@@ -141,7 +143,7 @@ $docker-compose stop
 This will just stop the containers. Built images won't be removed. So next time you can start with this command
 
 ```bash
-$docker-compose start
+$ docker-compose start
 ```
 
 It won't take time for building from scratch.
@@ -149,18 +151,18 @@ It won't take time for building from scratch.
 To delete the built image of Bot. Use this Down command
 
 ```bash
-$docker-compose down
+$ docker-compose down
 ```
 You can stop and delete the built images also. So next time you have to do this to start the bot.
 
 ```bash
-$docker-compose up -d
+$ docker-compose up -d
 ```
 
 **Q. How to Update the Bot?**
 
 ```bash
-$docker-compose up -d
+$ docker-compose up -d
 ```
 
 Changes will be fetched from git repo. You can change repo url from **docker-compose.yml** file.
@@ -174,11 +176,13 @@ Changes will be fetched from git repo. You can change repo url from **docker-com
 
 **1. Install required package**
 
-``$sudo apt install tree wget2 p7zip-full jq ffmpeg wget git``
+``$ sudo apt install tree wget2 p7zip-full jq ffmpeg wget git``
 
-``$wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb``
+``$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb``
 
-``$sudo apt install ./google-chrome-stable_current_amd64.deb``
+``$ sudo apt install ./google-chrome-stable_current_amd64.deb``
+
+**Notes:** Recommended FFMPEG version is 4.3 or above
 
 **2. Clone the Repository**
 
@@ -189,19 +193,19 @@ $git clone https://github.com/UsergeTeam/Userge.git && cd Userge
 **3. Install Requirements**
 
 ```bash
-$pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 **4. Create config.env as given config.env.sample and Fill that**
 
 ```bash
-$cp config.env.sample config.env
+$ cp config.env.sample config.env
 ```
 
 **5. Get String Session and Add it to config.env**
 
 ```bash
-$bash genStr
+$ bash genStr
 ```
 OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get the string.
 
