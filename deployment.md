@@ -217,9 +217,10 @@ OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get the string.
 
 **6. Finally Run the Userge**
 
-```$ bash
-bash run
+``` bash
+$ bash run
 ```
+
 
 
 ## Deploying on ZEET
@@ -343,6 +344,7 @@ Click on any var from the list below to get its detailed description and setup g
 24. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#24-heroku_app_name)
 
 25. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#25-custom_plugins_repo)
+
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
