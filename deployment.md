@@ -220,6 +220,55 @@ OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get the string.
 ```$ bash
 bash run
 ```
+
+
+## Deploying on ZEET
+
+**1. Fork the** [**Userge Repo**](https://github.com/usergeteam/userge)
+
+![](https://telegra.ph/file/706cc93a2b2f085ca9fc4.jpg)
+
+**2. Login there using your github account.**
+
+**3. Now click on new project.**
+
+**4. Select GitHub as the source of your app.** 
+
+![](https://telegra.ph/file/df3518284fc300ee91ad4.jpg) 
+
+**5. Select your desired plan and click continue.** 
+
+**6. Click Authorize On GitHub**
+
+**7. Choose Your Userge Forked Repo and click Continue.**
+
+![](https://telegra.ph/file/1015d469e8e4c4e9ade44.jpg) 
+
+**8. Click Deploy now.**
+
+![](https://telegra.ph/file/36226975cc5af74468b8c.jpg) 
+
+**9. Now, it will show you the build logs.**
+
+
+![](https://telegra.ph/file/9bebfd396ca9359af7e9c.jpg) 
+
+**10. Now wait at that page till the build gets finished**
+
+**11. After the build finished, add all the mandatory vars and the non mandatory vars you want.**
+
+![](https://telegra.ph/file/5be7144568fb2bcb510ed.jpg) 
+
+**Here is the List of all the** [**Mandatory**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) and [**Non-Mandatory**](https://theuserge.github.io/deployment.html#non-mandatory-vars) **vars**
+
+**Here is a preview of how the vars will look after adding.** 
+
+![](https://telegra.ph/file/fe49264b531c1c189fe95.jpg)
+
+**12. Now go check project logs.** 
+
+   **Your bot is started now :)**
+
  
 ## Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
 
