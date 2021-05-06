@@ -43,18 +43,18 @@ You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html
 
 Follow the official Docker [Installation Guide](https://docs.docker.com/engine/install/ubuntu/)
 
-You need clone userge repository first by run:
+You need to clone userge repository first by running:
 ```bash
 git clone https://github.com/UsergeTeam/Userge.git
 ```
-***Note:*** You can add -b flags to select branch which will be cloned
+***Note:*** You can add -b flag to select branch which you want to be cloned
 
-Example branch **master** run code:
+Example branch **master** cloning code:
 
 ```bash
 git clone -b master https://github.com/UsergeTeam/Userge.git
 ```
-Go to the working directory by run:
+Go to the working directory by running:
 ```bash
 $ cd Userge
 ```
@@ -62,9 +62,9 @@ Open & set all the necessary config.env For example the config.env is in config.
 ```bash
 $ mv config.env.sample config.env
 ```
-Then edit config.env with your favorite text editor save it!
+Then edit config.env with your favorite text editor and save it!
 
-Building docker image by run:
+Build docker image by running:
 
 ```bash
 $ docker build . -t userge
