@@ -345,6 +345,7 @@ Click on any var from the list below to get its detailed description and setup g
 
 25. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#25-custom_plugins_repo)
 
+26. [**MAX_DURATION**](https://theuserge.github.io/deployment#26-max_duration)
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
@@ -749,6 +750,10 @@ You have to Enter the app name which you gave to identify your userbot in Heroku
 
 Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the userge.
 Copy your repo link and use it as value of above var. This way you haven't need to fork and edit unofficial plugins repo anymore.
+
+### 26. MAX_DURATION
+
+Custome max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds. 
 
 ## UserGe Modes
 
