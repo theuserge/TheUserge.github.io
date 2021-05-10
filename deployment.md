@@ -753,7 +753,7 @@ Copy your repo link and use it as value of above var. This way you haven't need 
 
 ### 26. MAX_DURATION
 
-Custome max audio(music) duration for voice call plugin, Default to 900 seconds. 
+Custome max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds. 
 
 ## UserGe Modes
 
