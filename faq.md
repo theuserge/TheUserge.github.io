@@ -275,6 +275,6 @@ Use `.download your_link | filename.ext`
 
 ## 26. How to Add/Load Custom Plugins?
 
-Create a Private channel and save your all plugins there, then copy channel id and paste it in var named `PLUGINS_CHANNEL_ID` and then load all plugins via a single command `.loadall`.
+Create a Private channel and save your all plugins there, then copy channel id and paste it in var named `PLUGINS_CHAT_ID` and then load all plugins via a single command `.loadall`.
 
 you can delete that file to unload that plugin, use `.restart -t` after delete that file in your channel.
