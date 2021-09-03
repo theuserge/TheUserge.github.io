@@ -5,35 +5,25 @@ This Userbot can be deployed with four different ways. Which are Heroku, Docker,
 
 [**Heroku**](https://theuserge.github.io/deployment.html#deploying-with-heroku) - A Free Platform providing developers to test or run their code. If you don't have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-
-
 [**Docker**](https://theuserge.github.io/deployment.html#deploying-with-docker-) - Run the Userbot in an isolated application that doesn't interfere to the system but uses your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
-[**Legacy-Method**](https://theuserge.github.io/deployment.html#deploying-with-legacy-method)- Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
+[**Legacy-Method**](https://theuserge.github.io/deployment.html#deploying-with-legacy-method) - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
 
-[**ZEET**](https://theuserge.github.io/deployment.html#deploying-on-zeet) - A free platform similar to Heroku. If you don't have VPS or dont want to deploy local on your system then You can deploy your userbot there. 
-
+[**Termux**](https://theuserge.github.io/termux) - Run the Userbot in Termux (mobile).
 
 ## Deploying with Heroku 
 
-
 ### **Steps to Deploy:**
-
 
 **1.** [**Click here to deploy Userge.**](https://heroku.com/deploy?template=https://github.com/rking32/HelperScript) 
 
-
 **2. Fill** [**Mandatory Vars**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) **values.**
-
 
 **3. Click on Deploy Button.**
 
-
 **4. Turn on Dyno from Resource Tab.** 
 
-
 **5. That's it... Start using Userge.**
-
 
 You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used by their respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
 
@@ -221,57 +211,7 @@ OR you can use this [@genStr_bot](https://t.me/genStr_bot) to get the string.
 $ bash run
 ```
 
-
-
-## Deploying on ZEET
-
-**1. Fork the** [**Userge Repo**](https://github.com/usergeteam/userge)
-
-![](https://telegra.ph/file/706cc93a2b2f085ca9fc4.jpg)
-
-**2. Login there using your github account.**
-
-**3. Now click on new project.**
-
-**4. Select GitHub as the source of your app.** 
-
-![](https://telegra.ph/file/df3518284fc300ee91ad4.jpg) 
-
-**5. Select your desired plan and click continue.** 
-
-**6. Click Authorize On GitHub**
-
-**7. Choose Your Userge Forked Repo and click Continue.**
-
-![](https://telegra.ph/file/1015d469e8e4c4e9ade44.jpg) 
-
-**8. Click Deploy now.**
-
-![](https://telegra.ph/file/36226975cc5af74468b8c.jpg) 
-
-**9. Now, it will show you the build logs.**
-
-
-![](https://telegra.ph/file/9bebfd396ca9359af7e9c.jpg) 
-
-**10. Now wait at that page till the build gets finished**
-
-**11. After the build finished, add all the mandatory vars and the non mandatory vars you want.**
-
-![](https://telegra.ph/file/5be7144568fb2bcb510ed.jpg) 
-
-**Here is the List of all the** [**Mandatory**](https://theuserge.github.io/deployment.html#list-of-available-vars-in-userge) and [**Non-Mandatory**](https://theuserge.github.io/deployment.html#non-mandatory-vars) **vars**
-
-**Here is a preview of how the vars will look after adding.** 
-
-![](https://telegra.ph/file/fe49264b531c1c189fe95.jpg)
-
-**12. Now go check project logs.** 
-
-   **Your bot is started now :)**
-
- 
-## Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/beta/config.env.sample)
+## Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/alpha/config.env.sample)
 
 Config vars are basically the variables which configure or modify userbot's to function. which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
@@ -297,55 +237,59 @@ Click on any var from the list below to get its detailed description and setup g
 
 1. [**LOAD_UNOFFICIAL_PLUGINS**](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
 
-2. [**WORKERS**](https://theuserge.github.io/deployment#2-workers)
+2. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#2-custom_plugins_repo)
 
-3. [**G_DRIVE_CLIENT_ID** *&* **G_DRIVE_CLIENT_SECRET**](https://theuserge.github.io/deployment#3-g_drive_client_id--g_drive_client_secret)
+3. [**ASSERT_SINGLE_INSTANCE**](https://theuserge.github.io/deployment#3-assert_single_instance)
 
-4. [**G_DRIVE_IS_TD**](https://theuserge.github.io/deployment#4-g_drive_is_td)
+4. [**WORKERS**](https://theuserge.github.io/deployment#4-workers)
 
-5. [**G_DRIVE_INDEX_LINK**](https://theuserge.github.io/deployment#5-g_drive_index_link)
+5. [**RSS_CHAT_ID**](https://theuserge.github.io/deployment#5-rss_chat_id)
 
-6. [**DOWN_PATH**](https://theuserge.github.io/deployment#6-down_path)
+6. [**G_DRIVE_CLIENT_ID** *&* **G_DRIVE_CLIENT_SECRET**](https://theuserge.github.io/deployment#6-g_drive_client_id--g_drive_client_secret)
 
-7. [**PREFERRED_LANGUAGE**](https://theuserge.github.io/deployment#7-preferred_language)
+7. [**G_DRIVE_IS_TD**](https://theuserge.github.io/deployment#7-g_drive_is_td)
 
-8. [**CURRENCY_API**](https://theuserge.github.io/deployment#8-currency_api)
+8. [**G_DRIVE_INDEX_LINK**](https://theuserge.github.io/deployment#8-g_drive_index_link)
 
-9. [**OCR_SPACE_API_KEY**](https://theuserge.github.io/deployment#9-ocr_space_api_key)
+9. [**DOWN_PATH**](https://theuserge.github.io/deployment#9-down_path)
 
-10. [**WEATHER_DEFCITY**](https://theuserge.github.io/deployment#10-weather_defcity)
+10. [**PREFERRED_LANGUAGE**](https://theuserge.github.io/deployment#10-preferred_language)
 
-11. [**SPAM_WATCH_API**](https://theuserge.github.io/deployment#11-spam_watch_api)
+11. [**CURRENCY_API**](https://theuserge.github.io/deployment#11-currency_api)
 
-12. [**OPEN_WEATHER_MAP**](https://theuserge.github.io/deployment#12-open_weather_map)
+12. [**OCR_SPACE_API_KEY**](https://theuserge.github.io/deployment#12-ocr_space_api_key)
 
-13. [**REMOVE_BG_API_KEY**](https://theuserge.github.io/deployment#13-remove_bg_api_key)
+13. [**WEATHER_DEFCITY**](https://theuserge.github.io/deployment#13-weather_defcity)
 
-14. [**G_DRIVE_PARENT_ID**](https://theuserge.github.io/deployment#14-g_drive_parent_id)
+14. [**USERGE_ANTISPAM_API**](https://theuserge.github.io/deployment#14-userge_antispam_api)
 
-15. [**CMD_TRIGGER**](https://theuserge.github.io/deployment#15-cmd_trigger)
+15. [**SPAM_WATCH_API**](https://theuserge.github.io/deployment#15-spam_watch_api)
 
-16. [**SUDO_TRIGGER**](https://theuserge.github.io/deployment#16-sudo_trigger) 
+16. [**OPEN_WEATHER_MAP**](https://theuserge.github.io/deployment#16-open_weather_map)
 
-17. [**UPSTREAM_REPO**](https://theuserge.github.io/deployment#17-upstream_repo) 
+17. [**REMOVE_BG_API_KEY**](https://theuserge.github.io/deployment#17-remove_bg_api_key)
 
-18. [**FINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#18-finished_progress_str) 
+18. [**G_DRIVE_PARENT_ID**](https://theuserge.github.io/deployment#18-g_drive_parent_id)
 
-19. [**UNFINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#19-unfinished_progress_str) 
+19. [**CMD_TRIGGER**](https://theuserge.github.io/deployment#19-cmd_trigger)
 
-20. [**CUSTOM_PACK_NAME**](https://theuserge.github.io/deployment#20-custom_pack_name) 
+20. [**SUDO_TRIGGER**](https://theuserge.github.io/deployment#20-sudo_trigger) 
 
-21. [**ALIVE_MEDIA**](https://theuserge.github.io/deployment#21-alive_media) 
+21. [**UPSTREAM_REPO**](https://theuserge.github.io/deployment#21-upstream_repo) 
 
-22. [**INSTA_ID & INSTA_PASS**](https://theuserge.github.io/deployment#22-insta_id--insta_pass)  
+22. [**FINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#22-finished_progress_str) 
 
-23. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#23-heroku_api_key) 
+23. [**UNFINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#23-unfinished_progress_str) 
 
-24. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#24-heroku_app_name)
+24. [**CUSTOM_PACK_NAME**](https://theuserge.github.io/deployment#24-custom_pack_name) 
 
-25. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#25-custom_plugins_repo)
+25. [**ALIVE_MEDIA**](https://theuserge.github.io/deployment#25-alive_media) 
 
-26. [**MAX_DURATION**](https://theuserge.github.io/deployment#26-max_duration)
+26. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#26-heroku_api_key) 
+
+27. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#27-heroku_app_name)
+
+28. [**MAX_DURATION**](https://theuserge.github.io/deployment#28-max_duration)
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
@@ -466,11 +410,24 @@ LOAD_UNOFFICIAL_PLUGINS = True
 
 To load these all Plugins you have to set the var value `"True"` while deploying userbot. Alphabets case must be or lower case.
 
-### 2. WORKERS
+### 2. CUSTOM_PLUGINS_REPO
 
-Set the number of workers count you want, Defaults are currently depends on CPU Cores, Basically, It's the number of CPU Core. Leave it as default and the default value is 4.
+Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the userge.
+Copy your repo link and use it as value of above var. This way you haven't need to fork and edit unofficial plugins repo anymore.
 
-### 3. G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET
+### 3. ASSERT_SINGLE_INSTANCE
+
+This will assert that there is only one running Userge instance to prevent from AUTH_KEY_DUPLICATED error.
+
+### 4. WORKERS
+
+Set the number of workers count you want, Defaults are currently depends on CPU Cores, Basically, It's the number of CPU Core.
+
+### 5. RSS_CHAT_ID
+
+Telegram chat id for post updates of rss feeds if you have added feed urls.
+
+### 6. G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET
 
 **This Vars is used for Google Drive Feature. If you want to download or upload your files and document into Google Drive. You must set this var value.**
 
@@ -530,11 +487,11 @@ So, Let's Start
 
 * That's it... You have got your both G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET Var.
 
-### 4. G_DRIVE_IS_TD
+### 7. G_DRIVE_IS_TD
 
 If you are using Team Drive (TD) then set this value as `True`. Otherwise leave as it is default. To know more about TD, You can find it on Web.
 
-### 5. G_DRIVE_INDEX_LINK
+### 8. G_DRIVE_INDEX_LINK
 
 If you have created Google Drive Index, You can use it as well to output the Index Link after Uploading the file to Google Drive. Just fill your url into the value.
 
@@ -542,18 +499,18 @@ If you have created Google Drive Index, You can use it as well to output the Ind
 eg. https://example.example.workers.dev
 ```
 
-### 6. DOWN_PATH
+### 9. DOWN_PATH
 
 You can rename the directory of your downloads folder. by default all your files will be downloaded in "downloads" folder.
 
-### 7. PREFERRED_LANGUAGE
+### 10. PREFERRED_LANGUAGE
 
 Select your Preferred language. For example: If English value will be
 ```bash
 en
 ```
 
-### 8. CURRENCY_API
+### 11. CURRENCY_API
 
 This var is used for Currency converter & Exchange Rate in Plugin. If you don't want this you can leave this var value blank.
 
@@ -571,7 +528,7 @@ This var is used for Currency converter & Exchange Rate in Plugin. If you don't 
 
 That's It... Check your Email, You have received the API Key there. Confirm your Email Address and Fill the API Key in Value.
 
-### 9. OCR_SPACE_API_KEY
+### 12. OCR_SPACE_API_KEY
 
 OCR is used to read text from the images. You can also use OCR to read text from the image on Telegram from your Userbot. It helps you to copy texts from Images.
 
@@ -587,7 +544,7 @@ So, Let's start getting the value of this var
 
 * Copy API Key and Fill in the **OCR_SPACE_API_KEY** value.
 
-### 10. WEATHER_DEFCITY
+### 13. WEATHER_DEFCITY
 
 To know Weather detail of your City, State. This value is required with **OPEN_WEATHER_MAP** var to work, you can also skip it as it is not mandatory.
 
@@ -595,13 +552,17 @@ Add Default city value for weather details,
 
 ```eg. Delhi, India```
 
-### 11. SPAM_WATCH_API
+### 14. USERGE_ANTISPAM_API
+
+Get it from @UsergeAntiSpamBot in Telegram.
+
+### 15. SPAM_WATCH_API
 
 Basically, It has a list of Spammer and they are listed in SpamWatch. If you use this var, It bans the SpamWatch banned users in the groups wherever you are at Admin or Owner post.
 
 * Get SpamWatch API from [@SpamWatch](https://t.me/spamwatch) on Telegram.
 
-### 12. OPEN_WEATHER_MAP
+### 16. OPEN_WEATHER_MAP
 
 As, If you are going to use this userbot also for checking Weather detail on your current City, State. Then, this var value is required to be filled with **WEATHER_DEFCITY** var to work.
 
@@ -623,7 +584,7 @@ As, If you are going to use this userbot also for checking Weather detail on you
 
 * That's it... You have got your API Key.
 
-### 13. REMOVE_BG_API_KEY
+### 17. REMOVE_BG_API_KEY
 
 This API is used for the Removing the Background from Images (removebg module).
 
@@ -641,13 +602,13 @@ So, Let's start getting the value of this var
 
 That's it... You have got your API Key.
 
-### 14. G_DRIVE_PARENT_ID
+### 18. G_DRIVE_PARENT_ID
 
 You need to enter the Folder Id of Google Drive. If you want to use Google Drive module to Upload or Download files from your Userge userbot.
 
 For detailed Guide for getting this value can be found [here](https://theuserge.github.io/faq.html#setup-gdrive-parent-id).
 
-### 15. CMD_TRIGGER
+### 19. CMD_TRIGGER
 
 Command Trigger needed to trigger your userbot to execute your command. This can be only set as one Symbol (Special Character)
 
@@ -656,7 +617,7 @@ eg. !
 
 ```
 
-### 16. SUDO_TRIGGER
+### 20. SUDO_TRIGGER
 
 SUDO Trigger also needed to trigger your userbot to execute command whoever you gave sudo permission to use your userbot or trigger your bot mode. This also can be only set as one Symbol (Special Character) but must be different from **CMD_TRIGGER** Var value.
 
@@ -664,7 +625,7 @@ SUDO Trigger also needed to trigger your userbot to execute command whoever you 
 eg. $
 ```
 
-### 17. UPSTREAM_REPO
+### 21. UPSTREAM_REPO
 
 To use your Userge Userbot as default with all regular Updates and Patches also without customizing or modifying as your own choice this must be filled with Userge Main Repository URL in value.
 
@@ -675,7 +636,7 @@ https://github.com/UsergeTeam/Userge
 
 If you plan to use this userbot with your own customized or modified code. You must fill your own Forked Userge Repository URL in UPSTREAM_REPO Var value.
 
-### 18. FINISHED_PROGRESS_STR
+### 22. FINISHED_PROGRESS_STR
 
 To change the Progress Bar of Download and Uploads. You must fill Single text of filled bar line of character which can be shown in Finish bar.
 
@@ -687,7 +648,7 @@ You can Select any character from these listed sites:
 
 * [https://text-symbols.com/](https://text-symbols.com/)
 
-### 19. UNFINISHED_PROGRESS_STR
+### 23. UNFINISHED_PROGRESS_STR
 
 To change the Progress Bar of Download and Uploads. You must fill Single text of Unfinished bar line of character which can be shown in Unfinished bar.
 
@@ -699,11 +660,11 @@ You can Select any character from these listed sites:
 
 * [https://text-symbols.com/](https://text-symbols.com/)
 
-### 20. CUSTOM_PACK_NAME
+### 24. CUSTOM_PACK_NAME
 
 While you use `.kang` command it will use your @username as Sticker Pack Name. You can set Custom Stick PAck name by filling this var value.
 
-### 21. ALIVE_MEDIA
+### 25. ALIVE_MEDIA
 
 You can set your own custom media for `.alive` command.
 
@@ -723,18 +684,7 @@ Only these formats can be accepted for this Var value.
    https://telegra.ph/file/e912739114b56059a8cf3.jpg
    ```
 
-### 22. INSTA_ID & INSTA_PASS
-
-To **Download Private Posts** of Instagram, you have to fill this Var.
-
-```bash 
-eg. INSTA_ID = your instagram username
-    INSTA_PASS = your instagram password
-```
-
-## Only If you are using Heroku to Host
-
-### 23. HEROKU_API_KEY
+### 26. HEROKU_API_KEY
 
 To work some Heroku compatible modules this var value required to Access your account to use `.die`, `.usage` and `.sleep` commands.
 
@@ -742,16 +692,11 @@ You can get this value from:
 
 [Heroku Account](http://dashboard.heroku.com/account)
 
-### 24. HEROKU_APP_NAME
+### 27. HEROKU_APP_NAME
 
 You have to Enter the app name which you gave to identify your userbot in Heroku.
 
-### 25. CUSTOM_PLUGINS_REPO
-
-Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the userge.
-Copy your repo link and use it as value of above var. This way you haven't need to fork and edit unofficial plugins repo anymore.
-
-### 26. MAX_DURATION
+### 28. MAX_DURATION
 
 Custome max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds. 
 
