@@ -17,7 +17,6 @@ Hello wonderer! Here is the way to start your journey to make your Telegram Acco
 *  Plugin Manager
 *  OCR Image reader
 *  Remove Background APIs
-*  Lydia ChatBot
 *  Group Management
 *  Built-in help support (Use **.help**)
 *  and much more...
