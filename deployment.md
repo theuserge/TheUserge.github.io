@@ -35,7 +35,7 @@ You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html
 
 **1. Click ->** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FUsergeTeam%2FUserge&envs=API_ID%2CAPI_HASH%2CDATABASE_URL%2CLOG_CHANNEL_ID%2CHU_STRING_SESSION%2CBOT_TOKEN%2COWNER_ID&optionalEnvs=HU_STRING_SESSION%2CBOT_TOKEN%2COWNER_ID&API_IDDesc=Get+this+value+from+https%3A%2F%2Fmy.telegram.org&API_HASHDesc=Get+this+value+from+https%3A%2F%2Fmy.telegram.org&DATABASE_URLDesc=Mongodb+url+from+https%3A%2F%2Fcloud.mongodb.com%2F&LOG_CHANNEL_IDDesc=Telegram+Log+Channel+ID&HU_STRING_SESSIONDesc=%5BUSER+MODE%5D&BOT_TOKENDesc=%5BBOT+MODE%5D+-+Get+this+from+https%3A%2F%2Ft.me%2Fbotfather&OWNER_IDDesc=%5BBOT+MODE%5D+-+Your+user_id&referralCode=b0fdYp)
 
-**Other steps are same as [**Heroku**](https://theuserge.github.io/deployment.html#deploying-with-heroku) method**
+**Other steps are same as [Heroku](https://theuserge.github.io/deployment.html#deploying-with-heroku) method**
 
 ## Deploying with Docker 🐳
 
