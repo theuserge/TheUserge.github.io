@@ -5,13 +5,11 @@ This Userbot can be deployed with four different ways. Which are Heroku, Docker,
 
 [**Heroku**](https://theuserge.github.io/deployment.html#deploying-with-heroku) - A Free Platform providing developers to test or run their code. If you don't have VPS or dont want to deploy local on your system. This is the best place to deploy your Userbot for free.
 
-[**Railway**](https://theuserge.github.io/deployment.html#deploying-with-railway) - Yet another free platform like Heroku.
+[**Termux**](https://theuserge.github.io/termux) - Run the Userbot in Termux (mobile).
 
 [**Docker**](https://theuserge.github.io/deployment.html#deploying-with-docker-) - Run the Userbot in an isolated application that doesn't interfere to the system but uses your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
 [**Legacy-Method**](https://theuserge.github.io/deployment.html#deploying-with-legacy-method) - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
-
-[**Termux**](https://theuserge.github.io/termux) - Run the Userbot in Termux (mobile).
 
 ## Deploying with Heroku 
 
@@ -28,14 +26,6 @@ This Userbot can be deployed with four different ways. Which are Heroku, Docker,
 **5. That's it... Start using Userge.**
 
 You can add [**Non-Mandatory Vars**](https://theuserge.github.io/deployment.html#non-mandatory-vars) later as per your needs. Those vars are used by their respective plugins in userbot to work. To know How to add Non-Mandatory vars, Check this [Guide](https://t.me/UnofficialPluginsHelp/31).
-
-## Deploying with Railway
-
-### **Steps to Deploy:**
-
-**1. Click ->** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FUsergeTeam%2FUserge&envs=API_ID%2CAPI_HASH%2CDATABASE_URL%2CLOG_CHANNEL_ID%2CHU_STRING_SESSION%2CBOT_TOKEN%2COWNER_ID&optionalEnvs=HU_STRING_SESSION%2CBOT_TOKEN%2COWNER_ID&API_IDDesc=Get+this+value+from+https%3A%2F%2Fmy.telegram.org&API_HASHDesc=Get+this+value+from+https%3A%2F%2Fmy.telegram.org&DATABASE_URLDesc=Mongodb+url+from+https%3A%2F%2Fcloud.mongodb.com%2F&LOG_CHANNEL_IDDesc=Telegram+Log+Channel+ID&HU_STRING_SESSIONDesc=%5BUSER+MODE%5D&BOT_TOKENDesc=%5BBOT+MODE%5D+-+Get+this+from+https%3A%2F%2Ft.me%2Fbotfather&OWNER_IDDesc=%5BBOT+MODE%5D+-+Your+user_id&referralCode=b0fdYp)
-
-**Other steps are same as [Heroku](https://theuserge.github.io/deployment.html#deploying-with-heroku) method**
 
 ## Deploying with Docker 🐳
 
