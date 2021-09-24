@@ -2,52 +2,68 @@
 
 The Purpose of this page to get solution of all common Errors.
 
-## 1. description : "Bad request : chat not found"
+## 1. Description: "Bad request : chat not found"
 
-[![error 1](https://telegra.ph/file/1b707364fd2bb0e6a3805.jpg)](https://t.me/usergeot/502028)
+![](https://telegra.ph/file/1b707364fd2bb0e6a3805.jpg)
 
-**If your Logs give Error something like this.**
+Mostly this happens if your bot missing in log channel. So first add your bot into log channel and restart your bot.
+Still happening ? Ok then double check your values of `BOT_TOKEN` and `LOG_CHANNEL_ID`. Probably you did a mistake.
 
-Simply Do add your bot in your `Log channel` and Do `restart` Manually from Heroku.
+## 2. Description: "Unauthorized"
 
-## 2. ERROR :: Required Command : jq : could not be found !
+![](https://i.imgur.com/NktHbGR.jpg)
 
-[![error 2](https://telegra.ph/file/28e9365af63d3b509f501.jpg)](https://t.me/usergeot/514541)
+Probably your `BOT_TOKEN` is invalid. So recheck or revoke it from botfather and update the new value.
 
-**If your Logs say something like this.
-Do Add this buildpack in heroku.**
-`https://github.com/chrismytton/heroku-buildpack-jq.git`
+## 2. Invalid log chat type
 
-<pre>Go to heroku -> Select your app -> select setting option -> scroll down -> Click on Add buildpack-> Add THIS link in Bar -> Click on Add -> then Deploy Branch.</pre>
+![](https://i.imgur.com/440c4kW.jpg)
 
-## 3. 'fatal: bad revision 'HEAD...upstream/master'
+You can only use super-groups and channels as log chat. So promote current group into a super-group or use a channel as log chat (`LOG_CHANNEL_ID`).
 
-[![error 3](https://telegra.ph/file/aeda709f622f34ae3802d.jpg)](https://t.me/usergeot/519271)
+## 3. Unauthorized for url
 
-**Recently UserGe Updated to v0.3.0, so maybe old users who didn't update yet will get this ERROR.**
+![](https://i.imgur.com/5DPIgbE.jpg)
 
-_Simply do this to fix this._
-`.update -master -pull -push`
+Seems your `HEROKU_API_KEY` is wrong. Goto your heroku account -> profile, grab your api key (regenerate if need) and update the value of this var.
 
-_Or if Bot not Working. Do Delete Old Fork.
-Refork and Deploy Branch to Master._
+## 4. Build faild: could not find an Aptfile
 
-## 4. Error R14 (memory quota exceeded)
+![](https://i.imgur.com/uGniomq.jpg)
 
-[![error 4](https://telegra.ph/file/d5f90faff504b334e541f.jpg)](https://t.me/usergeot/599155)
+Please read our deployment guide. You are doing it in wrong way.
 
-**If your Logs say something like this.Try Below Suggestion.**
+## 5. Pymonge: Authentication failed
 
-1- _Disable unofficial plugin_ by `.setvar LOAD_UNOFFICIAL_PLUGINS False` and `restart your dynos.`
+![](https://i.imgur.com/qGlQ3ft.jpg)
 
-2 - Do `.update -beta -pull -push`
+Seems like you are using special charactors with your username or password. Simply don't use those or escape them properly.
+Further read [this](https://stackoverflow.com/a/64846679).
 
-3 - _Enable unofficial plugin again by_ `.setvar LOAD_UNOFFICIAL_PLUGINS True`
-after UserGe has started successfully.
-## 5. GitCommandError
+## 6. Pymongo: no write concern mode named 'masjority' found in ...
 
-[![error 5](https://telegra.ph/file/1a286bbd6284f71abfed4.jpg)](https://t.me/usergeot/539484)
+![](https://i.imgur.com/eCasnjv.jpg)
 
-**If you Get error Like this while Updating.**
+By deleting **&w=majority** part at the end will solve this problem. Further read [this](https://stackoverflow.com/a/65507979)
 
-do `.restart -h` and check again.
+## 7. Too many requests: try after ...
+
+![](https://i.imgur.com/O9OrBcN.jpg)
+
+Turn off your bot for a while and turn back it on. If you read this message properly, you can get an idea about how much time should i stop my bot.
+
+## 8. Unpack requires a buffer of 263 bytes
+
+![](https://i.imgur.com/NySBc32.jpg)
+
+Userge is based on Pyrogram. So you have to give a pyrogram session string to `HU_STRING_SESSION`.
+
+## 9. Auth key duplicated, unregistered or Session revoked
+
+![](https://i.imgur.com/jmS2GuV.jpg)
+![](https://i.imgur.com/CGKBGCY.jpg)
+![](https://i.imgur.com/o23werB.jpg)
+
+Simply make a new Pyrogram session string.
+
+
