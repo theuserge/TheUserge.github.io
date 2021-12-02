@@ -682,7 +682,7 @@ You have to Enter the app name which you gave to identify your userbot in Heroku
 
 ### 28. MAX_DURATION
 
-Custome max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds.
+Custom max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds.
 
 ### 29. YOUTUBE_DL_PATH
 
