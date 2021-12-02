@@ -273,6 +273,8 @@ Click on any var from the list below to get its detailed description and setup g
 
 28. [**MAX_DURATION**](https://theuserge.github.io/deployment#28-max_duration)
 
+29. [**YOUTUBE_DL_PATH**](https://theuserge.github.io/deployment#29-youtube_dl_path)
+
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
 ### 1. API_ID and API_HASH
@@ -680,7 +682,11 @@ You have to Enter the app name which you gave to identify your userbot in Heroku
 
 ### 28. MAX_DURATION
 
-Custome max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds. 
+Custome max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds.
+
+### 29. YOUTUBE_DL_PATH
+
+Optional variable to use custom youtube_dl for utube.py, Default to youtube_dl, For more information check [Userge OnTopic](https://t.me/usergeot).
 
 ## UserGe Modes
 
