@@ -1,7 +1,7 @@
 
 # Deployment
 
-This Userbot can be deployed with four different ways. Which are Heroku, Docker, Zeet and Legacy way.
+This Userbot can be deployed with four different ways. Which are Heroku, Docker and Legacy way.
 
 [**Termux**](https://theuserge.github.io/termux) - Run the Userbot in Termux (mobile).
 
