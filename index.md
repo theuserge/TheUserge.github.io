@@ -1,4 +1,4 @@
-![Userge-image](https://telegra.ph/file/083ee09d368e0ee991996.jpg)
+![Arjvps-image](https://telegra.ph/file/083ee09d368e0ee991996.jpg)
 
 Hello wonderer! Here is the way to start your journey to make your Telegram Account automated with UserGe. It is the best Open-source Userbot for Telegram to simplify your daily task in a convenient way.
 
