@@ -221,7 +221,7 @@ Click on any var from the list below to get its detailed description and setup g
 
 3. [**LOG_CHANNEL_ID**](https://theuserge.github.io/deployment#3-log_channel_id)
 
-4. Vars Defined for your [**mode**](https://theuserge.github.io/deployment#userge-modes)
+4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
 **Note:** These are the minimum required vars need to setup to make userbot functional.
 
@@ -301,9 +301,9 @@ Click on any var from the list below to get its detailed description and setup g
 
 * First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
-* Login there. Sign up, if you don't have an Account!
+* Login or Sign up, if you don't have an Account!
 
-* After Login, You'll be on their Clusters Page
+* After Login, You'll be on your Clusters Page
 
 ![Clusters](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
 
