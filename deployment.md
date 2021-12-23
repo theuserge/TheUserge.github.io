@@ -1,13 +1,23 @@
 
 # Deployment
 
-This Userbot can be deployed with four different ways. Which are Heroku, Docker and Legacy way.
+This Userbot can be deployed with four different ways, which are Termux, Heroku, Docker and Legacy way.
 
 [**Termux**](https://theuserge.github.io/termux) - Run the Userbot in Termux (mobile).
+
+[**Heroku**](https://theuserge.github.io/deployment.html#deploy-to-heroku) - Run the Userbot in a cloud application. It's the easy way to use Userge!
 
 [**Docker**](https://theuserge.github.io/deployment.html#deploying-with-docker-) - Run the Userbot in an isolated application that doesn't interfere to the system but uses your same system hardware and internet. You Just have to fill mandatory vars and 2-3 line commands to Run Userge on Docker.
 
 [**Legacy-Method**](https://theuserge.github.io/deployment.html#deploying-with-legacy-method) - Using Python and all those packages which are required to Run this bot. You can also say a Manual way to deploy a userbot.
+
+## Deploy to Heroku
+
+Click the button below to deploy Userge on Heroku!
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jigarvarma2005/HelperScript-V2)
+
+> Credits: **[@Jigarvarma2005](https://github.com/Jigarvarma2005)**
 
 ## Deploying with Docker 🐳
 
@@ -15,11 +25,11 @@ This Userbot can be deployed with four different ways. Which are Heroku, Docker 
 
 Follow the official Docker [Installation Guide](https://docs.docker.com/engine/install/ubuntu/)
 
-You need to clone userge repository first by running:
+You need to clone Userge repository first by running:
 ```bash
 git clone https://github.com/UsergeTeam/Userge.git
 ```
-***Note:*** You can add -b flag to select branch which you want to be cloned
+***Note:*** You can add `-b` flag to select branch which you want to be cloned.
 
 Example branch **master** cloning code:
 
@@ -30,13 +40,13 @@ Go to the working directory by running:
 ```bash
 $ cd Userge
 ```
-Open & set all the necessary config.env For example the config.env is in config.env.sample
+Open & set all the necessary vars in `config.env` file. For example, the `config.env` is in `config.env.sample`:
 ```bash
 $ mv config.env.sample config.env
 ```
-Then edit config.env with your favorite text editor and save it!
+Then edit `config.env` with your favorite text editor and save it!
 
-Build docker image by running:
+Build Docker image by running:
 
 ```bash
 $ docker build . -t userge
@@ -49,13 +59,13 @@ $ docker run -d --restart on-failure --name userge_1 userge
 ```
 Explanation of the command flags above :
 
-1. `-d`: (_detach_) This will make your docker running even if you exit your console
+1. `-d`: (_detach_) This will make your Docker running even if you exit your console.
 
-2. `--restart on-failure`: Docker container will automatically restart if there is a failure on the running system
+2. `--restart on-failure`: Docker container will automatically restart if there is a failure on the running system.
 
-3. `--name userge_1`: Custom name for your container, instead of using the container id , this makes it easier for you to find it
+3. `--name userge_1`: Custom name for your container, instead of using the container ID, this makes it easier for you to find it.
 
-To stop docker container run:
+To stop Docker container, run:
 
 ```bash
 $ docker container stop userge_1
@@ -65,7 +75,7 @@ To get container logs:
 ```bash
 $ docker logs userge_1 
 ```
-## Run userge with docker-compose 🐋
+## Run userge with Docker-Compose 🐋
 **1. Install Docker-Compose**
 
 The easiest way to install docker-compose is:
@@ -74,11 +84,11 @@ The easiest way to install docker-compose is:
 $ sudo pip install docker-compose
 ```
 
-OR also you can check other official methods of installing docker-compose [here](https://docs.docker.com/compose/install/)
+OR, also you can check other official methods of installing Docker-Compose [here](https://docs.docker.com/compose/install/).
 
 **2. Run Userge**
 
-We don't need to clone the repo (yeah Docker-compose does that for us)
+We don't need to clone the repo (yeah Docker-Compose does that for us)
 
 Setup configs (Download the sample config file)
 
@@ -88,7 +98,7 @@ wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/config.env.sample
 vim config.env
 ```
     
-Download the yml file for docker-compose
+Download the yml file for Docker-Compose
     
 ```bash
 $ wget https://raw.githubusercontent.com/UsergeTeam/Userge/alpha/resources/docker-compose.yml
@@ -106,7 +116,7 @@ $ docker-compose logs -f
 
 **Q. How to Stop the Bot?**
 
-To stop the running bot in Docker use this Stop Command
+To stop the running bot in Docker, use this Stop Command
 
 ```bash
 $ docker-compose stop
@@ -120,7 +130,7 @@ $ docker-compose start
 
 It won't take time for building from scratch.
     
-To delete the built image of Bot. Use this Down command
+To delete the built image of Bot, use this Down command
 
 ```bash
 $ docker-compose down
@@ -137,7 +147,7 @@ $ docker-compose up -d
 $ docker-compose up -d
 ```
 
-Changes will be fetched from git repo. You can change repo url from **docker-compose.yml** file.
+Changes will be fetched from git repo. You can change Repo URL from **docker-compose.yml** file.
 
 ## Deploying with Legacy Method
 
@@ -195,7 +205,7 @@ $ bash run
 
 ## Config Vars / [**Setting Up Vars**](https://github.com/UsergeTeam/Userge/blob/alpha/config.env.sample)
 
-Config vars are basically the variables which configure or modify userbot's to function. which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
+Config vars are basically the variables which configure or modify userbots to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
 **You can leave non mandatory vars for now and can add them later.**
 
@@ -281,7 +291,7 @@ Click on any var from the list below to get its detailed description and setup g
 
 1. Go to [my.telegram.org](https://my.telegram.org) then Enter your Phone Number with your country code.
 
-2. After, you are logged in click on API Development Tools.
+2. After, you are logged in click on [API Development Tools](https://my.telegram.org/apps).
 
 3. Enter Anything as App name and App short name, Enter my.telegram.org in url section
 
@@ -291,48 +301,48 @@ Click on any var from the list below to get its detailed description and setup g
 
 * First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
-* Login or Sign Up (Create an Account) there. If you don't have an Account!
+* Login or Sign up, if you don't have an Account!
 
-* After Login, You'll be on their Dashboard Page
+* After Login, You'll be on your Clusters Page
 
-![This](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
+![Clusters](https://telegra.ph/file/46e58355fe5bf648c8108.jpg)
 
 * Choose an option **Build a Cluster** (as the shown picture below)
 
 * Now, You'll see Pricing Plan section.
 
-![This](https://telegra.ph/file/714afabd905531eedc275.jpg)
+![Pricing Plans](https://telegra.ph/file/714afabd905531eedc275.jpg)
 
-* Here, We going to use Free Plan for our userbot
+* Here, we're going to use free plan for our userbot.
 
-* After that, You have to select Region and Server. Where your Database server will host.
+* After that, you have to select Region and Server, where your Database server will host.
 
-![This](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
+![Create Cluster page](https://telegra.ph/file/69b46491ca2143438bc19.jpg)
 
 <pre>Tips: Select the Nearest server from your location so it won't take long time to connect</pre>
 
 * At last, Click on **Create Cluster**.
 
-![This](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
+![Clusters page](https://telegra.ph/file/268f44ba7e1c25f77b1ec.jpg)
 
 <pre>You have to wait for some time at this Page while your Database is being created. </pre>
 
 * After Created, Click on **Network Access** (Can see this option under Security section of Above Image)
 
-* You will see an option **Add IP Adress**. Click on that
-![This](https://telegra.ph/file/8229e06fc38c87e8880ff.jpg)
+* You will see an option **Add IP Address**. Click on that.
+![IP Address page](https://telegra.ph/file/8229e06fc38c87e8880ff.jpg)
 
-* Now, **Allow Access From Anywhere**. Then **Confirm**
+* Now, **Allow Access From Anywhere**. Then **Confirm**.
 
-![This](https://telegra.ph/file/83c30132c4fc2b639f669.jpg)
+![Whitelist IP Address page](https://telegra.ph/file/83c30132c4fc2b639f669.jpg)
 
-<pre> Wait until the Status changes from Pending to Active </pre>
+<pre> Wait until the Status changes from Pending to Active. </pre>
 
 * Go Back to **Cluster** option and Click on **Connect**.
 
 * Now. Fill any random **Username** and **Password**
 
-<pre>Note: Don't use Special character in your Password like @#$% etc. </pre>
+<pre>Note: Don't use Special character in your password like @#$% etc. </pre>
 
 * After filled, Click on **Create MongoDB User**.
 
@@ -342,51 +352,51 @@ Click on any var from the list below to get its detailed description and setup g
 
 * Now, Select **DRIVER** as <code>Python</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
 
-<pre>mongodb+srv://&lt;username&gt;:&lt;password&gt;@mongos0.example.com/&lt;dbname&gt;?retryWrites=true&w=majority</pre>
+<pre>mongodb+srv://&lt;username&gt:<password>;@mongos0.example.com/myFirstDatabase?retryWrites=true&w=majority</pre>
 
-* Replace &lt;password&gt; with your given Password and &lt;dbname&gt; with "test" or "cluster0" and remove <> symbols.
+* Replace `<password>` with your given Password and `myFirstDatabase` with "`test`" or "`cluster0`" and remove `<>` symbols.
 
 **That's it**. You have got your **DATABASE_URL** Var value.
 
 
 ### 3. LOG_CHANNEL_ID
 
-Here, You need Log Channel Id to get all logs and Traceback errors of your UserBot.
+Here, You need Log Channel ID to get all logs and Traceback errors of your UserBot.
 
 * Create a **Private Channel** on your Telegram.
 
 * Type and send any Message on your channel.
 
-* Now, Forward your Message to @ShowJsonBot.
+* Now, Forward your Message to [@ShowJsonBot](https://telegram.me/ShowJsonBot).
 
 * Bot will send you json formated data of your message.
 
 * Find "forward_from_chat" section in the message. you'll see the "id" starting with <code>-100.....</code>
 
 * Copy the id with included hyphen (<code> - </code>) and Paste into LOG_CHANNEL_ID Var.
->**Note**:- _Don't forget to add your [**Bot**](https://theuserge.github.io/deployment#2-bot-mode) as administrator in log channel._
+> **Note**:- _Don't forget to add your [**Bot**](https://theuserge.github.io/deployment#2-bot-mode) as administrator in log channel._
 
 **For more information... Watch this** [Video](https://youtu.be/M4T_BJvFqkc?t=1025)
 
 ##### ---- [Optional] ----
 
-Instead of making Channel You can also create a Group to get your logs and This is the very easy way to get. Let's Do it 
+Instead of making Channel, you can also create a Group to get your logs and this is the very easy way to get. Let's Do it.
 
 * You just need to make a new **Private Group** on Telegram.
 
-* Add @MissRose_Bot in your Private Group from Add Member > Search "@MissRose_Bot" and then Add.
+* Add [@MissRose_Bot](https://t.me/MissRose_bot) in your Private Group from Add Member > Search "[@MissRose_Bot](https://t.me/MissRose_bot)" and then Add.
 
-* After added, Just type "/id" in the chat.
+* After added, Just type "`/id`" in the chat.
 
-* You'll get the id of your channel or group.
+* You'll get the ID of your channel or group.
 
-> Note: Changing Group Type to Public may give you an issue in Userbot. To Fix this, Put Public group id in var.
+> Note: Changing Group Type to Public may give you an issue in Userbot. To Fix this, Put Public group ID in var.
 
 ## Non-Mandatory Vars
  
 ### 1. LOAD_UNOFFICIAL_PLUGINS
 
-Userge has a plugin repository where extra plugins are available. A place collection of all the plugins for Userge UserBot made by awesome people who are not in Userge dev team. We saying this as [Unofficial Plugins](https://github.com/UsergeTeam/Userge-Plugins).
+Userge has a plugin repository where extra plugins are available. A place collection of all the plugins for Userge Userbot made by awesome people who are not in Userge Dev team. We're saying this as [Unofficial Plugins](https://github.com/UsergeTeam/Userge-Plugins).
 
 ```bash
 LOAD_UNOFFICIAL_PLUGINS = True
@@ -396,7 +406,7 @@ To load these all Plugins you have to set the var value `"True"` while deploying
 
 ### 2. CUSTOM_PLUGINS_REPO
 
-Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the userge.
+Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the Userge.
 Copy your repo link and use it as value of above var. This way you haven't need to fork and edit unofficial plugins repo anymore.
 
 ### 3. ASSERT_SINGLE_INSTANCE
@@ -409,11 +419,11 @@ Set the number of workers count you want, Defaults are currently depends on CPU 
 
 ### 5. RSS_CHAT_ID
 
-Telegram chat id for post updates of rss feeds if you have added feed urls.
+Telegram chat ID for post updates of rss feeds if you have added feed urls.
 
 ### 6. G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET
 
-**This Vars is used for Google Drive Feature. If you want to download or upload your files and document into Google Drive. You must set this var value.**
+**This Vars is used for Google Drive Feature. If you want to download or upload your files and document into Google Drive, you must set this var value.**
 
 So, Let's Start
 
@@ -439,7 +449,7 @@ So, Let's Start
 
 * Click on **OAuth consent screen** option.
 
-![](https://telegra.ph/file/dec4a53a721811c35086e.jpg)
+![User Type](https://telegra.ph/file/dec4a53a721811c35086e.jpg)
 
 * Select User Type as **External** and **Create**
 
@@ -453,9 +463,9 @@ So, Let's Start
 
 * After that, Now time to **Publish your App** Click on that.
 
-* then **Confirm**, Now start creating the Api Keys which we use in Userge.
+* then **Confirm**, Now start creating the API Keys which we use in Userge.
 
-![crendentials](https://telegra.ph/file/283fd1bee4c070d81a65d.jpg) 
+![credentials](https://telegra.ph/file/283fd1bee4c070d81a65d.jpg) 
 
 * Now, Click on **Credentials**
 
@@ -489,7 +499,7 @@ You can rename the directory of your downloads folder. by default all your files
 
 ### 10. PREFERRED_LANGUAGE
 
-Select your Preferred language. For example: If English value will be
+Select your preferred language. For example: If English value will be
 ```bash
 en
 ```
@@ -538,7 +548,9 @@ Add Default city value for weather details,
 
 ### 14. USERGE_ANTISPAM_API
 
-Get it from @UsergeAntiSpamBot in Telegram.
+This is a var for Userge AntiSpam project. If you use this var, it bans banned/muted users in Userge AntiSpam in groups where you're an Admin or Owner.
+
+Get your personal token from [@UsergeAntiSpamBot](https://t.me/UsergeAntiSpamBot) in Telegram.
 
 ### 15. SPAM_WATCH_API
 
@@ -548,7 +560,7 @@ Basically, It has a list of Spammer and they are listed in SpamWatch. If you use
 
 ### 16. OPEN_WEATHER_MAP
 
-As, If you are going to use this userbot also for checking Weather detail on your current City, State. Then, this var value is required to be filled with **WEATHER_DEFCITY** var to work.
+As, If you are going to use this userbot also for checking Weather detail on your current City, State. Then, this var value is required to be filled with `WEATHER_DEFCITY` var to work.
 
 * To get Weather API, visit [**openweathermap.org**](https://openweathermap.org/).
 
@@ -559,6 +571,7 @@ As, If you are going to use this userbot also for checking Weather detail on you
 ![weather api key](https://telegra.ph/file/fad561412fa58ae5f6884.jpg)
 
 * To Get API Key, You must **Sign Up** to the website.
+> For signup, you must be at least 16 years old.
 
 ![api key of weather](https://telegra.ph/file/67ff0730fe26eb7d5f36b.jpg)
 
@@ -594,7 +607,7 @@ For detailed Guide for getting this value can be found [here](https://theuserge.
 
 ### 19. CMD_TRIGGER
 
-Command Trigger needed to trigger your userbot to execute your command. This can be only set as one Symbol (Special Character)
+Command Trigger needed to trigger your userbot in User mode to execute your command. This can be only set as one Symbol (Special Character)
 
 ```bash 
 eg. !
@@ -611,18 +624,18 @@ eg. $
 
 ### 21. UPSTREAM_REPO
 
-To use your Userge Userbot as default with all regular Updates and Patches also without customizing or modifying as your own choice this must be filled with Userge Main Repository URL in value.
+To use your Userge Userbot as default with all regular Updates and Patches. Also without customizing or modifying as your own choice, this must be filled with Userge Main Repository URL in value.
 
 ```bash
 https://github.com/UsergeTeam/Userge
 ```
 #### For Customized or Modified Repository
 
-If you plan to use this userbot with your own customized or modified code. You must fill your own Forked Userge Repository URL in UPSTREAM_REPO Var value.
+If you plan to use this userbot with your own customized or modified code, you must fill your own Forked Userge Repository URL in `UPSTREAM_REPO` Var value.
 
 ### 22. FINISHED_PROGRESS_STR
 
-To change the Progress Bar of Download and Uploads. You must fill Single text of filled bar line of character which can be shown in Finish bar.
+To change the Progress Bar of Download and Uploads, you must fill Single text of filled bar line of character which can be shown in Finish bar.
 
 You can Select any character from these listed sites:
 
@@ -646,31 +659,33 @@ You can Select any character from these listed sites:
 
 ### 24. CUSTOM_PACK_NAME
 
-While you use `.kang` command it will use your @username as Sticker Pack Name. You can set Custom Stick PAck name by filling this var value.
+While you use `kang` command it will use "`@username's kang pack: Vol 1`" as Sticker Pack Name. You can set Custom Stick PAck name by filling this var value.
 
 ### 25. ALIVE_MEDIA
 
-You can set your own custom media for `.alive` command.
+You can set your own custom media for `alive` command.
 
 Only these formats can be accepted for this Var value.
 
 1. A link to message (Only Message link)
 
-   ```bash
+   ```
    https://t.me/theuserge/8
    ```  
 2. Chat and Message id separated by `|`
-   ```bash
+   ```
    -1001454692938|8
    ```
 3. A telegraph link
-   ```bash
+   ```
    https://telegra.ph/file/e912739114b56059a8cf3.jpg
    ```
 
 ### 26. HEROKU_API_KEY
 
-To work some Heroku compatible modules this var value required to Access your account to use `.die`, `.usage` and `.sleep` commands.
+To work some Heroku compatible modules, this var value required to Access your account to use `die`, `usage` and `sleep` commands.
+
+You can fill this var using your API key or Authorization token.
 
 You can get this value from:
 
@@ -686,7 +701,7 @@ Custom max audio(music) duration for voice call plugin. set `MAX_DURATION` in va
 
 ### 29. YOUTUBE_DL_PATH
 
-Optional variable to use custom youtube_dl for utube.py, Default to youtube_dl, For more information check [Userge OnTopic](https://t.me/usergeot).
+Optional variable to use custom youtube_dl for `utube.py`, Default to youtube_dl, For more information type `#ytdl` in **_[Userge OnTopic](https://t.me/usergeot)_** group.
 
 ## UserGe Modes
 
@@ -725,11 +740,11 @@ UserGe as an Assistant bot to execute your commands only from the Bot.
 
 * **OWNER_ID** - Your user id (not username) Get it by using command `/id` on the Group in the reply to your message where Rose Bot was added.
 
-**Make Sure, you set up these settings while making bot via Bot Father.**
+**Make sure you've set up these settings while making bot via BotFather.**
 1. [Group privacy](https://t.me/usergeot/356150) - Turn this OFF
 2. [Allow groups](https://t.me/usergeot/356614) - Turn this ON
 3. [Inline mode](https://t.me/usergeot/354104) - Turn this ON
-4. Add bot To your Log Channel
+4. Add bot to your Log Channel
 
 ### 3. DUAL MODE
 
