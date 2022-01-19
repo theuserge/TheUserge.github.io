@@ -125,11 +125,11 @@ After Setup **BOT_TOKEN** and **OWNER_ID**, Add Your bot to Userge log channel. 
 > * Add bot to **Log Channel**
 
 ## 9. How to Get Help Menu as Inline Mode?
-![Example photo using @Junime_bot](https://telegra.ph/file/38c3f2e49844401abfbbe.jpg)
+![This](https://telegra.ph/file/38c3f2e49844401abfbbe.jpg)
 
 To Use Inline Mode You must have enabled Bot Mode!
 
-![Example using @Junime_bot](https://telegra.ph/file/00749e7bb67b36c168e51.jpg)
+![This](https://telegra.ph/file/00749e7bb67b36c168e51.jpg)
 
 Type your `@botusername` then give space you'll see Inline Menu.
 
@@ -160,49 +160,23 @@ So, here is the Pattern: `Google [Open URL][buttonurl:https://www.google.com]`
 
 To Add buttons in Images, Just Reply with the Images and Follow the Pattern.
 
-## 12. How to Setup Lydia?
-
-Lydia is an Active Machine Learning Chat Bot Powered by CoffeeHouse from [@Intellivoid](https://t.me/Intellivoid). This AI Chat bot reply user messages using AML.
-
-To Setup this You have to configure these two KEY vars on your Heroku App or If you are using another platform than Heroku then add these var on your `config.env` file.
-
-1. `CH_LYDIA_API`
-2. `CUSTOM_REPLY_CHANNEL`
-
-#### `CH_LYDIA_API`
-
-* Visit the website [coffeehouse.intellivoid.net](https://coffeehouse.intellivoid.net/).
-* Select your Plan and continue.
-* If you already have an Account then log in. Otherwise, Create one.
-* Now, you will be able to see the dashboard, Scroll Down and you will find your API/Access key.
-* Add the Var value with your API Key.
-
-#### `CUSTOM_REPLY_CHANNEL`
-
-This Var needs to be configured if you want your bot will send Sticker/ Gif/ Photo/ Video/ Text to users. Bot will randomly pick any media file from the channel and send it to the user.
-
-* Create a Private channel and Set channel Id in Var value.
-* Now, Send your favorite media and stickers in the channel.
-
-> For More Information: Check this [Guide](https://t.me/UnofficialPluginsHelp/55).
-
-## 13. What is FloodWait?
+## 12. What is FloodWait?
 
 It's a restriction given by Telegram, when you make too much requests to Telegram servers. Mainly this happens when you are spamming with multiple userbots.
 
 You've to wait for sometime to remove the restriction.
 
-## 14. How to Setup Deezloader?
+## 13. How to Setup Deezloader?
 
 To download Songs and Playlist from Deezer, You need to configure `ARL_TOKEN` var.
 
 Detailed Guide can be found here: [![Deezloader Setup Guide](https://img.shields.io/badge/Setup_Guide_for-Deezloader-green)](https://t.me/UnofficialPluginsHelp/4)
 
-## 15. What is SpamWatch?
+## 14. What is SpamWatch?
 
 It's a Federation in Rose Bot, Which happens to use and develop a userbot named "Kantek" to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch.
 
-## 16. How to Set your OWN Custom Media for .alive?
+## 15. How to Set your OWN Custom Media for .alive?
 
 When you type command `.alive` there You'll see Userge Animated GIF. You can change it with any file. To do that use `.setvar ALIVE_MEDIA Your_Media_Link` (The link should be a Link of Message)
 
@@ -210,7 +184,7 @@ When you type command `.alive` there You'll see Userge Animated GIF. You can cha
 
 > More details can be found here: [`ALIVE_MEDIA`](https://theuserge.github.io/deployment#25-alive_media)
 
-## 17. How to Send Secret Message using your Userge Bot?
+## 16. How to Send Secret Message using your Userge Bot?
 
 To Do this you must have enabled Bot Mode and Inline Mode!
 
@@ -226,15 +200,15 @@ You will see an Inline Query to Send Private Message to the user, Click on it.
 
 > Secret messaging for users without username will be added as soon as possible.
 
-## 18. How to Clear Downloads Path?
+## 17. How to Clear Downloads Path?
 
  To Clear downloads directory path use command `.dclear`
 
-## 19. How to Stop Autopic?
+## 18. How to Stop Autopic?
     
 Type `.autopic` once again.
 
-## 20. How to UnZip, Unrar, and Unpack files in Userge?
+## 19. How to UnZip, Unrar, and Unpack files in Userge?
 
 * First, You have to download your file using `.download` command which will give you the downloaded path after downloading is finished.
 
@@ -246,7 +220,7 @@ Type `.autopic` once again.
 
 That's It...
 
-## 21. How to Add Media in Custom PM Permit?
+## 20. How to Add Media in Custom PM Permit?
 
 Before continuing with steps read it briefly to know how it works.
 
@@ -268,24 +242,24 @@ You can use this trick with pm-permit with following steps-
 
 Done, Now it will show that media (via preview) along with your custom PM Message. Also have a look on these [Images](https://telegra.ph/media-in-pmPermit-10-16) to get an idea of How to do it.
 
-## 22. How to Use Spam Watch/Userge AntiSpam API?
+## 21. How to Use Spam Watch/Userge AntiSpam API?
 
 `.antispam` If you want Auto ban the spammers from the groups where you are Admin. 
 
 `.info` If you wanna check the user. He/ She is banned in SpamWatch, CAS, or UserGe AntiSpam.
 
-## 23. How to Update Userge Userbot?
+## 22. How to Update Userge Userbot?
 
 To Update your Userge Bot, just type `.update -pull`.
 You can select branches using `-master` or `-beta` flags.
 
 > Better check help using `.help update`.
 
-## 24. How to know Dyno Usage?
+## 23. How to know Dyno Usage?
 
 Type `.usage`
 
-## 25. File type issue while Downloading from link?
+## 24. File type issue while Downloading from link?
 
 When you download any file from the link it contains some query in the URL which came along with the filename, which gives you an issue to open the file. To fix this you can rename the file or can download it with a custom filename.
 
@@ -301,7 +275,7 @@ Use `.download your_link | filename.ext`
 
 <pre>eg. .download https//example.com/files/disney_movie.mp4?string=blablabla | disney_movie.mp4</pre>
 
-## 26. How to Add/Load Custom Plugins?
+## 25. How to Add/Load Custom Plugins?
 
 Create a Private channel and save your all plugins there, then copy channel id and paste it in var named `PLUGINS_CHAT_ID` and then load all plugins via a single command `.loadall`.
 
