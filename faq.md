@@ -1,14 +1,17 @@
 # FAQs
 
-The Purpose of this page to Answer all your common Questions regarding UserGe
+The Purpose of this page to answer all your common questions regarding UserGe.
 
 ## 1. How to Setup UserGe?
 
-[![userge deploy](https://telegra.ph/file/18f15fcd5bc54161b2fbb.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
+A video tutorial to Deploy or Setup UserGe on your Account with Heroku is given below. Watch in your own platforms!
+* [![Google Drive 😃](https://img.shields.io/badge/Google_Drive-😃-blue?logo=googledrive)](https://drive.google.com/file/d/1gXQmk9nBth5IfnEA9TUMGjpPE5HnNHCN/view?usp=drivesdk)
+* [![Google Photos 😁](https://img.shields.io/badge/Google_Photos-😁-blue?logo=googlephotos)](https://photos.app.goo.gl/Va2ZTZA1RDooV2SKA)
+* [![YouTube: Unavailable](https://img.shields.io/badge/YouTube:-Unavailable!_😢-red?logo=youtube)](https://www.youtube.com/watch?v=M4T_BJvFqkc)
 
-A video tutorial to Deploy or Setup UserGe on your Account with Heroku. To Deploy on your VPS or local machine and For more further information, Check the [Deployment Page](https://theuserge.github.io/deployment.html)
+To Deploy on your VPS or local machine and For more further information, Check the [Deployment Page](https://theuserge.github.io/deployment.html)
 
- You can also type `#usergeguide` and `#deployment` in [UserGeOt](https://t.me/usergeot).
+ You can also type `#usergeguide` and `#deployment` in [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/UsergeOT).
 
 ## 2. How to Add Unofficial Plugins?
 
@@ -19,21 +22,21 @@ A video tutorial to Deploy or Setup UserGe on your Account with Heroku. To Deplo
 * Type **True** in the value.
 * That's it... Restart the Dyno.
 
-Check out [this](https://t.me/UnofficialPluginsHelp/31) Guide for more information. You can also Type `#unofficialhelp` in [UserGeOt](https://t.me/usergeot).
+Check out [this](https://t.me/UnofficialPluginsHelp/31) guide for more information. You can also Type `#unofficialhelp` in: [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/usergeOT).
 
 **For Docker or Legacy Method Users:**
 
-To Enable Unofficial Plugins on your Userge UserBot. Add `LOAD_UNOFFICIAL_PLUGINS` KEY and the value is `true` into your `config.env` file.
+To Enable Unofficial Plugins on your Userge UserBot, Add `LOAD_UNOFFICIAL_PLUGINS` KEY and the value is `true` into your `config.env` file.
 
 ## 3. How to Generate String Session ?
 
-To Generate Session String of your Userge bot. You can try anyone way from these two methods.
+To Generate Session String of your Userge bot, you can try anyone way from these two methods.
 
 * From Heroku website > Userge App > More > Run Console > Type `bash genStr`
 
 * [Userge Session Gen* Bot](https://t.me/genStr_bot)
 
-For more way to Generate session string. Type `#string` in [UserGeOt](https://t.me/usergeot).
+For more way to Generate session string, type `#string` in [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/usergeot).
 
 ## 4. How to get All Commands list?
 
@@ -41,7 +44,7 @@ Type `.help` to get All Command list. When you type .help you'll get Modules nam
 
 ## 5. How to use a Command?
 
-To Know more How a Command works which you get under Modules. Type `.help .<command-name>`
+To Know more How a Command works which you get under Modules, type `.help .<command-name>`
 
 ## 6. What is SUDO? How to Enable It?
 
@@ -61,15 +64,15 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 * After that You'll get a code which you have to copy and come back to Telegram channel log,
 
-* Type `.gconf your_copied_code` and send
+* Type `.gconf {your_copied_code}` and send
 
 * That's it...
 
 ### Setup GDrive Parent Id
 
-* Go to `drive.google.com` Create or Open the folder which you want to Add, Where your bot will upload files. 
+* Go to `drive.google.com`. Create or Open the folder which you want to Add, where your bot will upload files. 
 
-* Copy the URL of Page
+* Copy the URL of Page.
 
 <pre>https://drive.google.com/folderview?id=12Ncm5VjoGIKT12eA-cgFOqRZWzVf749v</pre>
 
@@ -87,53 +90,67 @@ With the help of Sudo you can give access to multiple users to use/control your 
 
 > **Note:** It's Just a Demo, Don't use the same ID.
 
-* After Getting your Parent Id. Type `.gset your_parent_id`
+* After Getting your Parent ID, Type `.gset {your_parent_id}`
 
-* That's it... Start Uploading your file with `.help .gup`
+* That's it... Start Uploading your file with `.gup`
+> For help, use `.help .gup`.
 
 ## 8. What is Bot Mode? How to Enable Bot Mode?
 
-You can use UserGe as a bot which can execute your all commands through the Bot. Similarly like Rose Bot and other Bots.
+You can use UserGe as a bot which can execute your all commands through the Bot, similarly like Rose Bot and other Bots.
 
-To Use Bot Mode in Userge, you need to set these two vars and configure the settings shown below.
+To Use Bot Mode in UserGe, you need to set these two vars and configure the settings shown below.
 
-1. OWNER_ID
-2. BOT_TOKEN
+1. `OWNER_ID`
+2. `BOT_TOKEN`
 
-#### OWNER_ID
+#### `OWNER_ID`
 
-Set OWNER_ID Var in KEY and value should be your user id. To get your user id, Type `.ids` in the reply of your own message.
+The bot can know it's owner using owner's user ID.
 
-#### BOT_TOKEN
+Set `OWNER_ID` Var in KEY and value should be your user id. To get your user id, Type `.ids` in your Saved Messages or reply to your own message.
 
-Set BOT_TOKEN Var in KEY and value should be your Bot Token which you get from @BotFather Bot
+#### `BOT_TOKEN`
 
-For More Info: Type `#botmode` in [UserGeOt](https://t.me/usergeot).
+Set `BOT_TOKEN` Var in KEY and value should be your Bot Token which you get from [@BotFather](https://t.me/BotFather) Bot
 
-After Setup **BOT_TOKEN** and **OWNER_ID** Add Your bot to Userge log channel and Enable these **settings** in **BotFather**
+For More Info: Type `#botmode` in: [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/usergeot).
 
-![This](https://telegra.ph/file/16a099e25ca28647d6662.jpg)
+After Setup **BOT_TOKEN** and **OWNER_ID**, Add Your bot to Userge log channel. Enable these **settings** in **BotFather**.
+
+> Make sure you've setted up these settings while creating bot with **BotFather**.
+> * **Group Privacy**: Turn this OFF
+> * **Inline Mode**: Turn this ON
+> * **Allow Groups**: Turn this ON
+> * Add bot to **Log Channel**
 
 ## 9. How to Get Help Menu as Inline Mode?
 ![This](https://telegra.ph/file/38c3f2e49844401abfbbe.jpg)
 
-To Use Inline Mode You must have enabled Bot Mode!!!
+To Use Inline Mode You must have enabled Bot Mode!
 
 ![This](https://telegra.ph/file/00749e7bb67b36c168e51.jpg)
 
-Type your `@botusername` then give space you'll see Inline Menu
+Type your `@botusername` then give space you'll see Inline Menu.
 
-## 10. What is Dyno Saver? What is .die? Only for Heroku Users
+## 10. What is Dyno Saver? What is .die? (Only for Heroku Users)
 
 Dyno saver is basically turning your Dyno off by typing the command `.die`
 
-Ps:- You have to manually start it again from Heroku Account, you can also use [@HK_heroku_BOT](https://t.me/HK_heroku_BOT) and [@yHerokuBot](https://t.me/yHerokuBot)
+> PS:- You have to manually start it again from Heroku Account, you can also use these bots. 
+> * [![@HK_Heroku_BOT](https://img.shields.io/badge/Heroku_Bot-@HK__Heroku__BOT-blue?logo=heroku)](https://t.me/HK_heroku_BOT)
+> * [![@yHerokuBot](https://img.shields.io/badge/Heroku_Bot-@yHerokuBot-blue?logo=heroku)](https://t.me/yHerokuBot)
 
 **Tips:** You can set timeout to turn your dyno off, it will start to count when you went offline but if you come back online within that timeout, it will start to recount from beginning, you can save a huge amount of dyno hours using this 
 
 ## 11. How to Add Buttons in Text, Notes, and Filters?
 
 To Add buttons in Notes and Filters you must have Enabled Bot Mode. To know How to Enable it Click [here](https://theuserge.github.io/faq.html#8-what-is-bot-mode-how-to-enable-bot-mode)
+
+You can add buttons with this syntax:
+
+* `[name][buttonurl:link]`: Adds buttons in each rows
+* `[name][buttonurl:link:same]`: Adds buttons in the same row
 
 So, Let's Start:
 
@@ -143,59 +160,37 @@ So, here is the Pattern: `Google [Open URL][buttonurl:https://www.google.com]`
 
 To Add buttons in Images, Just Reply with the Images and Follow the Pattern.
 
-## 12. How to Setup Lydia?
+## 12. What is FloodWait?
 
-Lydia is an Active Machine Learning Chat Bot Powered by CoffeeHouse from @Intellivoid. This AI Chat bot reply user messages using AML.
+It's a restriction given by Telegram, when you make too much requests to Telegram servers. Mainly this happens when you are spamming with multiple userbots.
 
-To Setup this You have to configure these two KEY vars on your Heroku App or If you are using another platform than Heroku then add these var on your `config.env` file.
+You've to wait for sometime to remove the restriction.
 
-1. `CH_LYDIA_API`
-2. `CUSTOM_REPLY_CHANNEL`
+## 13. How to Setup Deezloader?
 
-#### CH_LYDIA_API
+To download Songs and Playlist from Deezer, You need to configure `ARL_TOKEN` var.
 
-* Visit the website [coffeehouse.intellivoid.net](https://coffeehouse.intellivoid.net/).
-* Select your Plan and continue.
-* If you already have an Account then log in. otherwise, Create one.
-* Now, you will be able to see the dashboard, Scroll Down and you will find your API/Access key.
-* Add the Var value with your API Key.
+Detailed Guide can be found here: [![Deezloader Setup Guide](https://img.shields.io/badge/Setup_Guide_for-Deezloader-green)](https://t.me/UnofficialPluginsHelp/4)
 
-#### CUSTOM_REPLY_CHANNEL
+## 14. What is SpamWatch?
 
-This Var needs to be configured if you want your bot will send Sticker/ Gif/ Photo/ Video/ Text to users. Bot will randomly pick any media file from the channel and send it to the user.
+It's a Federation in Rose Bot, Which happens to use and develop a userbot named "Kantek" to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch.
 
-* Create a Private channel and Set channel Id in Var value.
-* Now, Send your favorite media and stickers in the channel.
-
-For More Information: Check this [Guide](https://t.me/UnofficialPluginsHelp/55)
-
-## 13. What is FloodWait?
-
-It's kinda a Restriction by Telegram, If you make multiple requests from Telegram server. They restrict you from sending more requests. Mainly It happens when you use the same session string in many Bots or spamming on Telegram.
-
-## 14. How to Setup Deezloader?
-
-To download Songs and Playlist from Deezer. You need to configure these var.
-
-Detailed Guide can be found here: [Deezloader Setup Guide](https://t.me/UnofficialPluginsHelp/4)
-
-## 15. What is SpamWatch?
-
-It's a Federation in Rose Bot, Which happens to use and develop a userbot named kantek to ban possible spam bots using their logs. SpamWatch API have 3 levels, Normal users can only fetch ban info whereas those with higher level can add bans in SpamWatch.
-
-## 16. How to Set your OWN Custom Media for .alive?
+## 15. How to Set your OWN Custom Media for .alive?
 
 When you type command `.alive` there You'll see Userge Animated GIF. You can change it with any file. To do that use `.setvar ALIVE_MEDIA Your_Media_Link` (The link should be a Link of Message)
 
 **Example:** `.setvar ALIVE_MEDIA https://t.me/theuserge/8`
 
-## 17. How to Send Secret Message using your Userge Bot?
+> More details can be found here: [`ALIVE_MEDIA`](https://theuserge.github.io/deployment#25-alive_media)
 
-To Do this you must have enabled Bot Mode in Userge.
+## 16. How to Send Secret Message using your Userge Bot?
 
-![Secret msg ](https://telegra.ph/file/6f064b70cecd420d2dcdf.jpg)
+To Do this you must have enabled Bot Mode and Inline Mode!
 
-1. Type your Bot @Username then give a Space.
+![Secret msg](https://telegra.ph/file/6f064b70cecd420d2dcdf.jpg)
+
+1. Type your Bot `@Username` then give a Space.
 2. Type Username of the user, which you want to send secret Message.
 3. Then Add this symbol `-` After the user's username.
 4. Type Message you want say in Private.
@@ -203,15 +198,17 @@ To Do this you must have enabled Bot Mode in Userge.
 
 You will see an Inline Query to Send Private Message to the user, Click on it.
 
-## 18. How to Clear Downloads Path?
+> Secret messaging for users without username will be added as soon as possible.
+
+## 17. How to Clear Downloads Path?
 
  To Clear downloads directory path use command `.dclear`
 
-## 19. How to Stop Autopic?
+## 18. How to Stop Autopic?
     
 Type `.autopic` once again.
 
-## 20. How to UnZip, Unrar, and Unpack files in Userge?
+## 19. How to UnZip, Unrar, and Unpack files in Userge?
 
 * First, You have to download your file using `.download` command which will give you the downloaded path after downloading is finished.
 
@@ -223,11 +220,13 @@ Type `.autopic` once again.
 
 That's It...
 
-## 21. How to Add Media in Custom PM Permit?
+## 20. How to Add Media in Custom PM Permit?
 
 Before continuing with steps read it briefly to know how it works.
 
-Userge, Itself doesn't have such a feature for now to set a media (gif, video, image) in PM Permit but you can do it via embedding your Media link in any word (you may already have seen those blue hyperlinked text),just like that.Telegram will show preview of such direct links, So the user will able to see that media on telegram itself without actually opening the link.
+Userge, itself doesn't have such a feature for now to set a media (gif, video, image) in PM Permit but you can do it via embedding your Media link in any word (you may already have seen those blue hyperlinked text),just like that. Telegram will show preview of such direct links, So the user will able to see that media on Telegram itself without actually opening the link.
+
+> It will be added as soon as possible.
 
 You can use this trick with pm-permit with following steps-
 
@@ -243,23 +242,26 @@ You can use this trick with pm-permit with following steps-
 
 Done, Now it will show that media (via preview) along with your custom PM Message. Also have a look on these [Images](https://telegra.ph/media-in-pmPermit-10-16) to get an idea of How to do it.
 
-## 22. How to Use Spam Watch API?
+## 21. How to Use Spam Watch/Userge AntiSpam API?
 
 `.antispam` If you want Auto ban the spammers from the groups where you are Admin. 
 
-`.info` If you wanna check the user. He/ She is banned in SpamWatch or CAS.
+`.info` If you wanna check the user. He/ She is banned in SpamWatch, CAS, or UserGe AntiSpam.
 
-## 23. How to Update Userge Userbot?
+## 22. How to Update Userge Userbot?
 
-To Update your Userge Bot better check in help by typing `.help update`
+To Update your Userge Bot, just type `.update -pull`.
+You can select branches using `-master` or `-beta` flags.
 
-## 24. How to know Dyno Usage?
+> Better check help using `.help update`.
+
+## 23. How to know Dyno Usage?
 
 Type `.usage`
 
-## 25. File type issue while Downloading from link?
+## 24. File type issue while Downloading from link?
 
-When you download any file from the link it contains some query in the url which came along with the filename. which gives you an issue to open the file. To fix this you can rename the file or can download it with a custom filename.
+When you download any file from the link it contains some query in the URL which came along with the filename, which gives you an issue to open the file. To fix this you can rename the file or can download it with a custom filename.
 
 #### To Rename the file
 
@@ -273,8 +275,10 @@ Use `.download your_link | filename.ext`
 
 <pre>eg. .download https//example.com/files/disney_movie.mp4?string=blablabla | disney_movie.mp4</pre>
 
-## 26. How to Add/Load Custom Plugins?
+## 25. How to Add/Load Custom Plugins?
 
 Create a Private channel and save your all plugins there, then copy channel id and paste it in var named `PLUGINS_CHAT_ID` and then load all plugins via a single command `.loadall`.
 
-you can delete that file to unload that plugin, use `.restart -t` after delete that file in your channel.
+You can delete that file to unload that plugin, use `.restart -t` after delete that file in your channel.
+
+> **Tip**: You can also use custom plugins by forking [plugins repo](https://github.com/UsergeTeam/Userge-Plugins) and setting `CUSTOM_PLUGINS_REPO` var with your forked repo.
