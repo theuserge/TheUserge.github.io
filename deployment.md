@@ -352,7 +352,7 @@ Click on any var from the list below to get its detailed description and setup g
 
 * Now, Select **DRIVER** as <code>Python</code> and **VERSION** as <code>3.6 or later</code> then Copy the Database link Shown below
 
-<pre>mongodb+srv://&lt;username&gt:<password>;@mongos0.example.com/myFirstDatabase?retryWrites=true&w=majority</pre>
+<pre>mongodb+srv://&lt;username&gt;:&lt;password&gt;@mongos0.example.com/myFirstDatabase?retryWrites=true&w=majority</pre>
 
 * Replace `<password>` with your given Password and `myFirstDatabase` with "`test`" or "`cluster0`" and remove `<>` symbols.
 
