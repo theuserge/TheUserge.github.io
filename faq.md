@@ -4,9 +4,12 @@ The Purpose of this page to answer all your common questions regarding UserGe.
 
 ## 1. How to Setup UserGe?
 
-[![How to setup Userge?](https://telegra.ph/file/18f15fcd5bc54161b2fbb.jpg)](https://www.youtube.com/watch?v=M4T_BJvFqkc "How to Setup Userge Userbot")
+A video tutorial to Deploy or Setup UserGe on your Account with Heroku is given below. Watch in your own platforms!
+* [![Google Drive 😃](https://img.shields.io/badge/Google_Drive-😃-blue?logo=googledrive)](https://drive.google.com/file/d/1gXQmk9nBth5IfnEA9TUMGjpPE5HnNHCN/view?usp=drivesdk)
+* [![Google Photos 😁](https://img.shields.io/badge/Google_Photos-😁-blue?logo=googlephotos)](https://photos.app.goo.gl/Va2ZTZA1RDooV2SKA)
+* [![YouTube: Unavailable](https://img.shields.io/badge/YouTube:-Unavailable!_😢-red?logo=youtube)](https://www.youtube.com/watch?v=M4T_BJvFqkc)
 
-A video tutorial to Deploy or Setup UserGe on your Account with Heroku. To Deploy on your VPS or local machine and For more further information, Check the [Deployment Page](https://theuserge.github.io/deployment.html)
+To Deploy on your VPS or local machine and For more further information, Check the [Deployment Page](https://theuserge.github.io/deployment.html)
 
  You can also type `#usergeguide` and `#deployment` in [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/UsergeOT).
 
