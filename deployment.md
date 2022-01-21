@@ -711,6 +711,18 @@ Custom max audio(music) duration for voice call plugin. set `MAX_DURATION` in va
 
 Optional variable to use custom `youtube_dl` for `utube.py`, Default to `youtube_dl`, For more information type `#ytdl` in **_[Userge OnTopic](https://t.me/usergeot)_** group.
 
+### 30. `START_MEDIA`
+
+This var can be used to show media when you start your bot.
+
+> Available to **Bot Mode** users only
+
+Var value should be a telegraph link of a media.
+
+```bash
+eg. https://telegra.ph/file/e912739114b56059a8cf3.jpg
+```
+
 ## UserGe Modes
 
 A mode defines the client, whether you want to use Userge on user account or as an Assistant bot.
