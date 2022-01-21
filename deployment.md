@@ -17,7 +17,7 @@ Click the button below to deploy Userge on Heroku!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jigarvarma2005/HelperScript-V2)
 
-> Credits: **[@Jigarvarma2005](https://github.com/Jigarvarma2005)**
+> Credits: **[HelperScript](https://github.com/Jigarvarma2005/HelperScript-V2)** by **[@Jigarvarma2005](https://github.com/Jigarvarma2005)
 
 ## Deploying with Docker 🐳
 
@@ -215,11 +215,11 @@ Click on any var from the list below to get its detailed description and setup g
 
 ### Mandatory Vars:
 
-1. [**API_ID** and **API_HASH**](https://theuserge.github.io/deployment#1-api_id-and-api_hash)
+1. [`API_ID` and `API_HASH`](https://theuserge.github.io/deployment#1-api_id-and-api_hash)
 
-2. [**DATABASE_URL**](https://theuserge.github.io/deployment#2-database_url)
+2. [`DATABASE_URL`](https://theuserge.github.io/deployment#2-database_url)
 
-3. [**LOG_CHANNEL_ID**](https://theuserge.github.io/deployment#3-log_channel_id)
+3. [`LOG_CHANNEL_ID`](https://theuserge.github.io/deployment#3-log_channel_id)
 
 4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
@@ -227,67 +227,69 @@ Click on any var from the list below to get its detailed description and setup g
 
 ### Non-Mandatory Vars:
 
-1. [**LOAD_UNOFFICIAL_PLUGINS**](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
+1. [`LOAD_UNOFFICIAL_PLUGINS`](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
 
-2. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#2-custom_plugins_repo)
+2. [`CUSTOM_PLUGINS_REPO`](https://theuserge.github.io/deployment#2-custom_plugins_repo)
 
-3. [**ASSERT_SINGLE_INSTANCE**](https://theuserge.github.io/deployment#3-assert_single_instance)
+3. [`ASSERT_SINGLE_INSTANCE`](https://theuserge.github.io/deployment#3-assert_single_instance)
 
-4. [**WORKERS**](https://theuserge.github.io/deployment#4-workers)
+4. [`WORKERS`](https://theuserge.github.io/deployment#4-workers)
 
-5. [**RSS_CHAT_ID**](https://theuserge.github.io/deployment#5-rss_chat_id)
+5. [`RSS_CHAT_ID`](https://theuserge.github.io/deployment#5-rss_chat_id)
 
-6. [**G_DRIVE_CLIENT_ID** *&* **G_DRIVE_CLIENT_SECRET**](https://theuserge.github.io/deployment#6-g_drive_client_id--g_drive_client_secret)
+6. [`G_DRIVE_CLIENT_ID` *&* `G_DRIVE_CLIENT_SECRET`](https://theuserge.github.io/deployment#6-g_drive_client_id--g_drive_client_secret)
 
-7. [**G_DRIVE_IS_TD**](https://theuserge.github.io/deployment#7-g_drive_is_td)
+7. [`G_DRIVE_IS_TD`](https://theuserge.github.io/deployment#7-g_drive_is_td)
 
-8. [**G_DRIVE_INDEX_LINK**](https://theuserge.github.io/deployment#8-g_drive_index_link)
+8. [`G_DRIVE_INDEX_LINK`](https://theuserge.github.io/deployment#8-g_drive_index_link)
 
-9. [**DOWN_PATH**](https://theuserge.github.io/deployment#9-down_path)
+9. [`DOWN_PATH`](https://theuserge.github.io/deployment#9-down_path)
 
-10. [**PREFERRED_LANGUAGE**](https://theuserge.github.io/deployment#10-preferred_language)
+10. [`PREFERRED_LANGUAGE`](https://theuserge.github.io/deployment#10-preferred_language)
 
-11. [**CURRENCY_API**](https://theuserge.github.io/deployment#11-currency_api)
+11. [`CURRENCY_API`](https://theuserge.github.io/deployment#11-currency_api)
 
-12. [**OCR_SPACE_API_KEY**](https://theuserge.github.io/deployment#12-ocr_space_api_key)
+12. [`OCR_SPACE_API_KEY`](https://theuserge.github.io/deployment#12-ocr_space_api_key)
 
-13. [**WEATHER_DEFCITY**](https://theuserge.github.io/deployment#13-weather_defcity)
+13. [`WEATHER_DEFCITY`](https://theuserge.github.io/deployment#13-weather_defcity)
 
-14. [**USERGE_ANTISPAM_API**](https://theuserge.github.io/deployment#14-userge_antispam_api)
+14. [`USERGE_ANTISPAM_API`](https://theuserge.github.io/deployment#14-userge_antispam_api)
 
-15. [**SPAM_WATCH_API**](https://theuserge.github.io/deployment#15-spam_watch_api)
+15. [`SPAM_WATCH_API`](https://theuserge.github.io/deployment#15-spam_watch_api)
 
-16. [**OPEN_WEATHER_MAP**](https://theuserge.github.io/deployment#16-open_weather_map)
+16. [`OPEN_WEATHER_MAP`](https://theuserge.github.io/deployment#16-open_weather_map)
 
-17. [**REMOVE_BG_API_KEY**](https://theuserge.github.io/deployment#17-remove_bg_api_key)
+17. [`REMOVE_BG_API_KEY`](https://theuserge.github.io/deployment#17-remove_bg_api_key)
 
-18. [**G_DRIVE_PARENT_ID**](https://theuserge.github.io/deployment#18-g_drive_parent_id)
+18. [`G_DRIVE_PARENT_ID`](https://theuserge.github.io/deployment#18-g_drive_parent_id)
 
-19. [**CMD_TRIGGER**](https://theuserge.github.io/deployment#19-cmd_trigger)
+19. [`CMD_TRIGGER`](https://theuserge.github.io/deployment#19-cmd_trigger)
 
-20. [**SUDO_TRIGGER**](https://theuserge.github.io/deployment#20-sudo_trigger) 
+20. [`SUDO_TRIGGER`](https://theuserge.github.io/deployment#20-sudo_trigger) 
 
-21. [**UPSTREAM_REPO**](https://theuserge.github.io/deployment#21-upstream_repo) 
+21. [`UPSTREAM_REPO`](https://theuserge.github.io/deployment#21-upstream_repo) 
 
-22. [**FINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#22-finished_progress_str) 
+22. [`FINISHED_PROGRESS_STR`](https://theuserge.github.io/deployment#22-finished_progress_str) 
 
-23. [**UNFINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#23-unfinished_progress_str) 
+23. [`UNFINISHED_PROGRESS_STR`](https://theuserge.github.io/deployment#23-unfinished_progress_str) 
 
-24. [**CUSTOM_PACK_NAME**](https://theuserge.github.io/deployment#24-custom_pack_name) 
+24. [`CUSTOM_PACK_NAME`](https://theuserge.github.io/deployment#24-custom_pack_name) 
 
-25. [**ALIVE_MEDIA**](https://theuserge.github.io/deployment#25-alive_media) 
+25. [`ALIVE_MEDIA`](https://theuserge.github.io/deployment#25-alive_media) 
 
-26. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#26-heroku_api_key) 
+26. [`HEROKU_API_KEY`](https://theuserge.github.io/deployment#26-heroku_api_key) 
 
-27. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#27-heroku_app_name)
+27. [`HEROKU_APP_NAME`](https://theuserge.github.io/deployment#27-heroku_app_name)
 
-28. [**MAX_DURATION**](https://theuserge.github.io/deployment#28-max_duration)
+28. [`MAX_DURATION`](https://theuserge.github.io/deployment#28-max_duration)
 
-29. [**YOUTUBE_DL_PATH**](https://theuserge.github.io/deployment#29-youtube_dl_path)
+29. [`YOUTUBE_DL_PATH`](https://theuserge.github.io/deployment#29-youtube_dl_path)
+
+30. [`START_MEDIA`](https://theuserge.github.io/deployment#30-start_media)
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
-### 1. API_ID and API_HASH
+### 1. `API_ID` and `API_HASH`
 
 1. Go to [my.telegram.org](https://my.telegram.org) then Enter your Phone Number with your country code.
 
@@ -297,7 +299,7 @@ Click on any var from the list below to get its detailed description and setup g
 
 4. That's it, You"ll get your **API_ID** and **API_HASH** Var.
 
-### 2. DATABASE_URL
+### 2. `DATABASE_URL`
 
 * First, Go to [cloud.mongodb.com](https://cloud.mongodb.com) then Sign Up there.
 
@@ -359,7 +361,7 @@ Click on any var from the list below to get its detailed description and setup g
 **That's it**. You have got your **DATABASE_URL** Var value.
 
 
-### 3. LOG_CHANNEL_ID
+### 3. `LOG_CHANNEL_ID`
 
 Here, You need Log Channel ID to get all logs and Traceback errors of your UserBot.
 
@@ -394,34 +396,34 @@ Instead of making Channel, you can also create a Group to get your logs and this
 
 ## Non-Mandatory Vars
  
-### 1. LOAD_UNOFFICIAL_PLUGINS
+### 1. `LOAD_UNOFFICIAL_PLUGINS`
 
-Userge has a plugin repository where extra plugins are available. A place collection of all the plugins for Userge Userbot made by awesome people who are not in Userge Dev team. We're saying this as [Unofficial Plugins](https://github.com/UsergeTeam/Userge-Plugins).
+Userge has a plugins repository where extra plugins are available. A place collection of all the plugins for Userge Userbot made by awesome people who are not in Userge Dev team. We're saying this as [Unofficial Plugins](https://github.com/UsergeTeam/Userge-Plugins).
 
 ```bash
 LOAD_UNOFFICIAL_PLUGINS = True
 ```
 
-To load these all Plugins you have to set the var value `"True"` while deploying userbot. Alphabets case must be or lower case.
+To load these all Plugins you have to set the var value "`True`" while deploying userbot. Alphabets case must be or lower case.
 
-### 2. CUSTOM_PLUGINS_REPO
+### 2. `CUSTOM_PLUGINS_REPO`
 
 Fork this [Repo](https://github.com/UsergeTeam/Custom-Plugins). Now just the add your's desired Custom plugins you want to install while starting the Userge.
 Copy your repo link and use it as value of above var. This way you haven't need to fork and edit unofficial plugins repo anymore.
 
-### 3. ASSERT_SINGLE_INSTANCE
+### 3. `ASSERT_SINGLE_INSTANCE`
 
 This will assert that there is only one running Userge instance to prevent from AUTH_KEY_DUPLICATED error.
 
-### 4. WORKERS
+### 4. `WORKERS`
 
 Set the number of workers count you want, Defaults are currently depends on CPU Cores, Basically, It's the number of CPU Core.
 
-### 5. RSS_CHAT_ID
+### 5. `RSS_CHAT_ID`
 
 Telegram chat ID for post updates of rss feeds if you have added feed urls.
 
-### 6. G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET
+### 6. `G_DRIVE_CLIENT_ID` & `G_DRIVE_CLIENT_SECRET`
 
 **This Vars is used for Google Drive Feature. If you want to download or upload your files and document into Google Drive, you must set this var value.**
 
@@ -481,11 +483,11 @@ So, Let's Start
 
 * That's it... You have got your both G_DRIVE_CLIENT_ID & G_DRIVE_CLIENT_SECRET Var.
 
-### 7. G_DRIVE_IS_TD
+### 7. `G_DRIVE_IS_TD`
 
 If you are using Team Drive (TD) then set this value as `True`. Otherwise leave as it is default. To know more about TD, You can find it on Web.
 
-### 8. G_DRIVE_INDEX_LINK
+### 8. `G_DRIVE_INDEX_LINK`
 
 If you have created Google Drive Index, You can use it as well to output the Index Link after Uploading the file to Google Drive. Just fill your url into the value.
 
@@ -493,18 +495,20 @@ If you have created Google Drive Index, You can use it as well to output the Ind
 eg. https://example.example.workers.dev
 ```
 
-### 9. DOWN_PATH
+### 9. `DOWN_PATH`
 
 You can rename the directory of your downloads folder. by default all your files will be downloaded in "downloads" folder.
 
-### 10. PREFERRED_LANGUAGE
+### 10. `PREFERRED_LANGUAGE`
 
 Select your preferred language. For example: If English value will be
 ```bash
 en
 ```
 
-### 11. CURRENCY_API
+> This var can be useful for translation, etc.
+
+### 11. `CURRENCY_API`
 
 This var is used for Currency converter & Exchange Rate in Plugin. If you don't want this you can leave this var value blank.
 
@@ -522,7 +526,7 @@ This var is used for Currency converter & Exchange Rate in Plugin. If you don't 
 
 That's It... Check your Email, You have received the API Key there. Confirm your Email Address and Fill the API Key in Value.
 
-### 12. OCR_SPACE_API_KEY
+### 12. `OCR_SPACE_API_KEY`
 
 OCR is used to read text from the images. You can also use OCR to read text from the image on Telegram from your Userbot. It helps you to copy texts from Images.
 
@@ -538,27 +542,27 @@ So, Let's start getting the value of this var
 
 * Copy API Key and Fill in the **OCR_SPACE_API_KEY** value.
 
-### 13. WEATHER_DEFCITY
+### 13. `WEATHER_DEFCITY`
 
-To know Weather detail of your City, State. This value is required with **OPEN_WEATHER_MAP** var to work, you can also skip it as it is not mandatory.
+To know Weather detail of your City, State, This value is required with `OPEN_WEATHER_MAP` var to work, you can also skip it as it is not mandatory.
 
 Add Default city value for weather details, 
 
 ```eg. Delhi, India```
 
-### 14. USERGE_ANTISPAM_API
+### 14. `USERGE_ANTISPAM_API`
 
 This is a var for Userge AntiSpam project. If you use this var, it bans banned/muted users in Userge AntiSpam in groups where you're an Admin or Owner.
 
 Get your personal token from [@UsergeAntiSpamBot](https://t.me/UsergeAntiSpamBot) in Telegram.
 
-### 15. SPAM_WATCH_API
+### 15. `SPAM_WATCH_API`
 
 Basically, It has a list of Spammer and they are listed in SpamWatch. If you use this var, It bans the SpamWatch banned users in the groups wherever you are at Admin or Owner post.
 
 * Get SpamWatch API from [@SpamWatch](https://t.me/spamwatch) on Telegram.
 
-### 16. OPEN_WEATHER_MAP
+### 16. `OPEN_WEATHER_MAP`
 
 As, If you are going to use this userbot also for checking Weather detail on your current City, State. Then, this var value is required to be filled with `WEATHER_DEFCITY` var to work.
 
@@ -581,7 +585,7 @@ As, If you are going to use this userbot also for checking Weather detail on you
 
 * That's it... You have got your API Key.
 
-### 17. REMOVE_BG_API_KEY
+### 17. `REMOVE_BG_API_KEY`
 
 This API is used for the Removing the Background from Images (removebg module).
 
@@ -599,13 +603,13 @@ So, Let's start getting the value of this var
 
 That's it... You have got your API Key.
 
-### 18. G_DRIVE_PARENT_ID
+### 18. `G_DRIVE_PARENT_ID`
 
 You need to enter the Folder Id of Google Drive. If you want to use Google Drive module to Upload or Download files from your Userge userbot.
 
 For detailed Guide for getting this value can be found [here](https://theuserge.github.io/faq.html#setup-gdrive-parent-id).
 
-### 19. CMD_TRIGGER
+### 19. `CMD_TRIGGER`
 
 Command Trigger needed to trigger your userbot in User mode to execute your command. This can be only set as one Symbol (Special Character)
 
@@ -614,26 +618,30 @@ eg. !
 
 ```
 
-### 20. SUDO_TRIGGER
+### 20. `SUDO_TRIGGER`
 
-SUDO Trigger also needed to trigger your userbot to execute command whoever you gave sudo permission to use your userbot or trigger your bot mode. This also can be only set as one Symbol (Special Character) but must be different from **CMD_TRIGGER** Var value.
+SUDO Trigger also needed to trigger your userbot to execute command whoever you gave sudo permission to use your userbot or trigger your bot mode. This also can be only set as one Symbol (Special Character) but must be different from `CMD_TRIGGER` Var value.
 
 ```bash
 eg. $
 ```
 
-### 21. UPSTREAM_REPO
+### 21. `UPSTREAM_REPO`
 
 To use your Userge Userbot as default with all regular Updates and Patches. Also without customizing or modifying as your own choice, this must be filled with Userge Main Repository URL in value.
 
 ```bash
-https://github.com/UsergeTeam/Userge
+eg. https://github.com/UsergeTeam/Userge
 ```
 #### For Customized or Modified Repository
 
 If you plan to use this userbot with your own customized or modified code, you must fill your own Forked Userge Repository URL in `UPSTREAM_REPO` Var value.
 
-### 22. FINISHED_PROGRESS_STR
+```bash
+eg. https://github.com/Krishna-Singhal/Userge
+```
+
+### 22. `FINISHED_PROGRESS_STR`
 
 To change the Progress Bar of Download and Uploads, you must fill Single text of filled bar line of character which can be shown in Finish bar.
 
@@ -645,7 +653,7 @@ You can Select any character from these listed sites:
 
 * [https://text-symbols.com/](https://text-symbols.com/)
 
-### 23. UNFINISHED_PROGRESS_STR
+### 23. `UNFINISHED_PROGRESS_STR`
 
 To change the Progress Bar of Download and Uploads. You must fill Single text of Unfinished bar line of character which can be shown in Unfinished bar.
 
@@ -657,11 +665,11 @@ You can Select any character from these listed sites:
 
 * [https://text-symbols.com/](https://text-symbols.com/)
 
-### 24. CUSTOM_PACK_NAME
+### 24. `CUSTOM_PACK_NAME`
 
 While you use `kang` command it will use "`@username's kang pack: Vol 1`" as Sticker Pack Name. You can set Custom Stick PAck name by filling this var value.
 
-### 25. ALIVE_MEDIA
+### 25. `ALIVE_MEDIA`
 
 You can set your own custom media for `alive` command.
 
@@ -681,7 +689,7 @@ Only these formats can be accepted for this Var value.
    https://telegra.ph/file/e912739114b56059a8cf3.jpg
    ```
 
-### 26. HEROKU_API_KEY
+### 26. `HEROKU_API_KEY`
 
 To work some Heroku compatible modules, this var value required to Access your account to use `die`, `usage` and `sleep` commands.
 
@@ -691,17 +699,17 @@ You can get this value from:
 
 [Heroku Account](http://dashboard.heroku.com/account)
 
-### 27. HEROKU_APP_NAME
+### 27. `HEROKU_APP_NAME`
 
 You have to Enter the app name which you gave to identify your userbot in Heroku.
 
-### 28. MAX_DURATION
+### 28. `MAX_DURATION`
 
 Custom max audio(music) duration for voice call plugin. set `MAX_DURATION` in variables with your own time(seconds), Default to 900 seconds.
 
-### 29. YOUTUBE_DL_PATH
+### 29. `YOUTUBE_DL_PATH`
 
-Optional variable to use custom youtube_dl for `utube.py`, Default to youtube_dl, For more information type `#ytdl` in **_[Userge OnTopic](https://t.me/usergeot)_** group.
+Optional variable to use custom `youtube_dl` for `utube.py`, Default to `youtube_dl`, For more information type `#ytdl` in **_[Userge OnTopic](https://t.me/usergeot)_** group.
 
 ## UserGe Modes
 
@@ -713,7 +721,7 @@ This both also can be possible, Userge as a userbot and as an Assistant bot. You
  
 UserGe as a userbot with a user account requires this var.
 
-**HU_STRING_SESSION**
+`HU_STRING_SESSION`
 
 You can get this Var value using two ways.
 
@@ -724,6 +732,9 @@ The First Way:
 The Second Way:
 
 * Type `skip` in the value while deploying the bot.
+  ```bash
+  HU_STRING_SESSION = skip
+  ```
 * After deployed, You must off the Dyno from **Resource** tab.
 * Then click on **More** in the top right corner and **Run Console**.
 * In Console, Type `bash genStr` and fill the details.
@@ -734,17 +745,17 @@ For more details, check this video: on [11:04](https://youtu.be/M4T_BJvFqkc?t=66
 
 UserGe as an Assistant bot to execute your commands only from the Bot.
 
- **BOT_TOKEN** & **OWNER_ID**
+ `BOT_TOKEN` & `OWNER_ID`
 
 * **BOT_TOKEN** - Get it from [**@Botfather**](https://t.me/botfather) in Telegram.
 
 * **OWNER_ID** - Your user id (not username) Get it by using command `/id` on the Group in the reply to your message where Rose Bot was added.
 
-**Make sure you've set up these settings while making bot via BotFather.**
-1. [Group privacy](https://t.me/usergeot/356150) - Turn this OFF
-2. [Allow groups](https://t.me/usergeot/356614) - Turn this ON
-3. [Inline mode](https://t.me/usergeot/354104) - Turn this ON
-4. Add bot to your Log Channel
+> **Make sure you've set up these settings while making bot via BotFather.**
+> * [Group privacy](https://t.me/usergeot/356150) - Turn this OFF
+> * [Allow groups](https://t.me/usergeot/356614) - Turn this ON
+> * [**Inline mode**](https://t.me/usergeot/354104) - Turn this ON
+> * Add bot to your **Log Channel**
 
 ### 3. DUAL MODE
 
