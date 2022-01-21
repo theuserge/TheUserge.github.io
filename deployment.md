@@ -17,7 +17,7 @@ Click the button below to deploy Userge on Heroku!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jigarvarma2005/HelperScript-V2)
 
-> Credits: **[HelperScript](https://github.com/Jigarvarma2005/HelperScript-V2)** by **[@Jigarvarma2005](https://github.com/Jigarvarma2005)
+> Credits: **[HelperScript](https://github.com/Jigarvarma2005/HelperScript-V2)** by **[@Jigarvarma2005](https://github.com/Jigarvarma2005)**
 
 ## Deploying with Docker 🐳
 
