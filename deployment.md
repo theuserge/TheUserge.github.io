@@ -215,11 +215,11 @@ Click on any var from the list below to get its detailed description and setup g
 
 ### Mandatory Vars:
 
-1. [`API_ID` and `API_HASH`](https://theuserge.github.io/deployment#1-api_id-and-api_hash)
+1. [**API_ID** and **API_HASH**](https://theuserge.github.io/deployment#1-api_id-and-api_hash)
 
-2. [`DATABASE_URL`](https://theuserge.github.io/deployment#2-database_url)
+2. [**DATABASE_URL**](https://theuserge.github.io/deployment#2-database_url)
 
-3. [`LOG_CHANNEL_ID`](https://theuserge.github.io/deployment#3-log_channel_id)
+3. [**LOG_CHANNEL_ID**](https://theuserge.github.io/deployment#3-log_channel_id)
 
 4. Vars Defined for your [**Mode**](https://theuserge.github.io/deployment#userge-modes)
 
@@ -227,65 +227,65 @@ Click on any var from the list below to get its detailed description and setup g
 
 ### Non-Mandatory Vars:
 
-1. [`LOAD_UNOFFICIAL_PLUGINS`](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
+1. [**LOAD_UNOFFICIAL_PLUGINS**](https://theuserge.github.io/deployment#1-load_unofficial_plugins)
 
-2. [`CUSTOM_PLUGINS_REPO`](https://theuserge.github.io/deployment#2-custom_plugins_repo)
+2. [**CUSTOM_PLUGINS_REPO**](https://theuserge.github.io/deployment#2-custom_plugins_repo)
 
-3. [`ASSERT_SINGLE_INSTANCE`](https://theuserge.github.io/deployment#3-assert_single_instance)
+3. [**ASSERT_SINGLE_INSTANCE**](https://theuserge.github.io/deployment#3-assert_single_instance)
 
-4. [`WORKERS`](https://theuserge.github.io/deployment#4-workers)
+4. [**WORKERS**](https://theuserge.github.io/deployment#4-workers)
 
-5. [`RSS_CHAT_ID`](https://theuserge.github.io/deployment#5-rss_chat_id)
+5. [**RSS_CHAT_ID**](https://theuserge.github.io/deployment#5-rss_chat_id)
 
-6. [`G_DRIVE_CLIENT_ID` *&* `G_DRIVE_CLIENT_SECRET`](https://theuserge.github.io/deployment#6-g_drive_client_id--g_drive_client_secret)
+6. [**G_DRIVE_CLIENT_ID** *&* `G_DRIVE_CLIENT_SECRET`](https://theuserge.github.io/deployment#6-g_drive_client_id--g_drive_client_secret)
 
-7. [`G_DRIVE_IS_TD`](https://theuserge.github.io/deployment#7-g_drive_is_td)
+7. [**G_DRIVE_IS_TD**](https://theuserge.github.io/deployment#7-g_drive_is_td)
 
-8. [`G_DRIVE_INDEX_LINK`](https://theuserge.github.io/deployment#8-g_drive_index_link)
+8. [**G_DRIVE_INDEX_LINK**](https://theuserge.github.io/deployment#8-g_drive_index_link)
 
-9. [`DOWN_PATH`](https://theuserge.github.io/deployment#9-down_path)
+9. [**DOWN_PATH**](https://theuserge.github.io/deployment#9-down_path)
 
-10. [`PREFERRED_LANGUAGE`](https://theuserge.github.io/deployment#10-preferred_language)
+10. [**PREFERRED_LANGUAGE**](https://theuserge.github.io/deployment#10-preferred_language)
 
-11. [`CURRENCY_API`](https://theuserge.github.io/deployment#11-currency_api)
+11. [**CURRENCY_API**](https://theuserge.github.io/deployment#11-currency_api)
 
-12. [`OCR_SPACE_API_KEY`](https://theuserge.github.io/deployment#12-ocr_space_api_key)
+12. [**OCR_SPACE_API_KEY**](https://theuserge.github.io/deployment#12-ocr_space_api_key)
 
-13. [`WEATHER_DEFCITY`](https://theuserge.github.io/deployment#13-weather_defcity)
+13. [**WEATHER_DEFCITY**](https://theuserge.github.io/deployment#13-weather_defcity)
 
-14. [`USERGE_ANTISPAM_API`](https://theuserge.github.io/deployment#14-userge_antispam_api)
+14. [**USERGE_ANTISPAM_API**](https://theuserge.github.io/deployment#14-userge_antispam_api)
 
-15. [`SPAM_WATCH_API`](https://theuserge.github.io/deployment#15-spam_watch_api)
+15. [**SPAM_WATCH_API**](https://theuserge.github.io/deployment#15-spam_watch_api)
 
-16. [`OPEN_WEATHER_MAP`](https://theuserge.github.io/deployment#16-open_weather_map)
+16. [**OPEN_WEATHER_MAP**](https://theuserge.github.io/deployment#16-open_weather_map)
 
-17. [`REMOVE_BG_API_KEY`](https://theuserge.github.io/deployment#17-remove_bg_api_key)
+17. [**REMOVE_BG_API_KEY**](https://theuserge.github.io/deployment#17-remove_bg_api_key)
 
-18. [`G_DRIVE_PARENT_ID`](https://theuserge.github.io/deployment#18-g_drive_parent_id)
+18. [**G_DRIVE_PARENT_ID**](https://theuserge.github.io/deployment#18-g_drive_parent_id)
 
-19. [`CMD_TRIGGER`](https://theuserge.github.io/deployment#19-cmd_trigger)
+19. [**CMD_TRIGGER**](https://theuserge.github.io/deployment#19-cmd_trigger)
 
-20. [`SUDO_TRIGGER`](https://theuserge.github.io/deployment#20-sudo_trigger) 
+20. [**SUDO_TRIGGER**](https://theuserge.github.io/deployment#20-sudo_trigger) 
 
-21. [`UPSTREAM_REPO`](https://theuserge.github.io/deployment#21-upstream_repo) 
+21. [**UPSTREAM_REPO**](https://theuserge.github.io/deployment#21-upstream_repo) 
 
-22. [`FINISHED_PROGRESS_STR`](https://theuserge.github.io/deployment#22-finished_progress_str) 
+22. [**FINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#22-finished_progress_str) 
 
-23. [`UNFINISHED_PROGRESS_STR`](https://theuserge.github.io/deployment#23-unfinished_progress_str) 
+23. [**UNFINISHED_PROGRESS_STR**](https://theuserge.github.io/deployment#23-unfinished_progress_str) 
 
-24. [`CUSTOM_PACK_NAME`](https://theuserge.github.io/deployment#24-custom_pack_name) 
+24. [**CUSTOM_PACK_NAME**](https://theuserge.github.io/deployment#24-custom_pack_name) 
 
-25. [`ALIVE_MEDIA`](https://theuserge.github.io/deployment#25-alive_media) 
+25. [**ALIVE_MEDIA**](https://theuserge.github.io/deployment#25-alive_media) 
 
-26. [`HEROKU_API_KEY`](https://theuserge.github.io/deployment#26-heroku_api_key) 
+26. [**HEROKU_API_KEY**](https://theuserge.github.io/deployment#26-heroku_api_key) 
 
-27. [`HEROKU_APP_NAME`](https://theuserge.github.io/deployment#27-heroku_app_name)
+27. [**HEROKU_APP_NAME**](https://theuserge.github.io/deployment#27-heroku_app_name)
 
-28. [`MAX_DURATION`](https://theuserge.github.io/deployment#28-max_duration)
+28. [**MAX_DURATION**](https://theuserge.github.io/deployment#28-max_duration)
 
-29. [`YOUTUBE_DL_PATH`](https://theuserge.github.io/deployment#29-youtube_dl_path)
+29. [**YOUTUBE_DL_PATH**](https://theuserge.github.io/deployment#29-youtube_dl_path)
 
-30. [`START_MEDIA`](https://theuserge.github.io/deployment#30-start_media)
+30. [**START_MEDIA**](https://theuserge.github.io/deployment#30-start_media)
 
 <pre> UserGe has many non-mandatory vars which are used for Extra features. </pre>
 
