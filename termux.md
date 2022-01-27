@@ -4,12 +4,12 @@
 
 ## Prerequisite
 
-* [Termux](https://play.google.com/store/apps/details?id=com.termux) App
+* [Termux](https://wiki.termux.com/wiki/Main_Page#Installation) App
 * At least **750MB** device storage
 
 ## Quick Setup
 
-* Open Termux and run `bash <(curl -s https://theuserge.github.io/termux.sh)`.
+* Open Termux and run `bash <(curl -s https://theuserge.tech/termux.sh)`.
 * Wait for a while (`upto 10min`) ... (some times it may ask for inputs).
 * It will redirect to `config.env` and ask to fill.
 * Fill them, save (`ctrl+s`) and close (`ctrl+x`) it.
