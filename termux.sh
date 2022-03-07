@@ -1,84 +1,130 @@
 #!/bin/bash
 
+declare -r minPy=8 maxPy=9
+declare -r repo="https://github.com/usergeteam/loader"
+declare -r -A pyLinks=(
+    [aarch64]="https://github.com/Termux-pod/termux-pod/blob/main/aarch64/python/python-3.9.7/python_3.9.7_aarch64.deb?raw=true"
+    [arm]="https://github.com/Termux-pod/termux-pod/blob/main/arm/python/python-3.9.7/python_3.9.7_arm.deb?raw=true"
+    [i686]="https://github.com/Termux-pod/termux-pod/blob/main/i686/python/python-3.9.7/python_3.9.7_i686.deb?raw=true"
+    [x86_64]="https://github.com/Termux-pod/termux-pod/tree/main/x86_64/python/python-3.8.6?raw=true"
+)
+
 log() {
-    echo -e "\n$1\n########################\n"
+    test -n "$@" && printf "\e[36mINFO:\e[0m %b\n" "$@"
 }
 
-status() {
-    printf "Installing : [${1}] ...\n"
+die() {
+    test -n "$@" && printf "\e[31mERROR:\e[0m %b\n" "$@"
+    exit 1
 }
 
-prog() {
-    let _prog=${1}
-    let _done=($_prog*4)/10
-    let _left=40-$_done
-    _fill=$(printf "%${_done}s")
-    _empty=$(printf "%${_left}s")
-    printf "Progress : ${_fill// /▰}${_empty// /▱} $_prog%%\n"
+_checkTermux() {
+    log "Checking Termux..."
+    test -n "$(termux-info 2> /dev/null)" \
+        || die "This script is only for termux users!" 
 }
 
-pkg_update() {
-    prog 0
-    pkg update -y
-    prog 1
-    pkg upgrade -y
+_checkRequirement() {
+    test -n $1 && {
+        log "Checking Requirement: $1"
+        test -n "$(command $1 --help 2> /dev/null)" \
+            || die "The program $1 is not installed, Install it by executing:\n pkg install $1 -y"
+    }
 }
 
-pkg_install() {
-    status ${1}
-    prog ${2}
-    pkg install -y ${1} &> /dev/null
+_getPythonVersion() {
+    ptn='s|Python (3\.[0-9]{1,2}\.[0-9]{1,2}).*|\1|g'
+    echo $(sed -E "$ptn" <<< "$(python3 -V 2> /dev/null)")
 }
 
-pip_install() {
-    status ${1}
-    prog ${2}
-    CFLAGS="-O0" pip install -U ${1} 1> /dev/null
+_getDeviceArchitecture() {
+    echo "$(uname -m)"
 }
 
-log "Updating Packages"
-pkg_update
-pkg_install root-repo 3
+_uninstallPython() {
+    log "Uninstalling Python due to verison not match..."
+    test "$(pkg uninstall python -y 2> /dev/null)" \
+        || die "Couldn't uninstall Python, Uninstall manually and run this script again."
+    
+}
 
-log "Installing Necessary Packages"
-pkg_install python 5
-pip_install pip 10
-pip_install wheel 15
-pip_install setuptools 20
-pkg_install git 25
-pkg_install jq 30
-pkg_install proot 32
-pkg_install resolv-conf 34
-pkg_install libxml2 36
-pkg_install libxslt 38
-pkg_install libjpeg-turbo 40
+_installPythonFromPath() {
+    log "Now Installing..."
+    test "$(dpkg -i $1 2> /dev/null)" || die "Couldn't install Python"
+    log "Installed Python version: $(_getPythonVersion)"
+    $(rm -rf $path)
+}
 
-status "pillow"
-prog 45
-LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" \
-    pip install -U Pillow 1> /dev/null
+_downloadPython() {
+    local path v out
+    log "Downloading Required Python verison..."
+    path=$(echo $1 | sed -e "s|.*\/||g" -e "s|\?.*||")
+    test -d $path && {
+        _installPythonFromPath "$path"
+        return
+    }
+    out=$(wget -O $path $1 &> /dev/null)
+    if test -z $out; then
+        log "Downloaded $path"
+        _installPythonFromPath "$path"
+    else
+        die "Couldn't Download Python"
+    fi
+}
 
-log "Clonning Repository"
-prog 50
-rm -rf Userge
-git clone https://github.com/UsergeTeam/Userge Userge &> /dev/null
-cd Userge
+_installPython() {
+    local arc
+    _checkRequirement "wget"
+    arc=$(_getDeviceArchitecture)
+    test $arc || die "Couldn't find CPU Architecture!"
+    test -n "${pyLinks[$arc]}" \
+        && _downloadPython "${pyLinks[$arc]}" \
+        || die "Couldn't find any suitable python version for CPU Architecture: $arc"
+}
 
-log "Installing Requirements"
-let _val=55
-while IFS= read -r line
-do
-    [[ ${line,,} == "pillow"* ]] && continue
-    pip_install $line $_val
-    let _val+=1
-done < "requirements.txt"
+_reinstallPython() {
+    _uninstallPython
+    _installPython
+}
 
-cp config.env.sample config.env
-echo -e "\nInstallation Completed !\n"
-prog 100
-log "Wait. Now openning config.env ...\nEdit, and Save (ctrl+s) and Close (ctrl+x) it."
-sleep 10
-nano config.env
+_checkPython() {
+    local ptn v pyv
+    pyv=$(_getPythonVersion)
+    if test -n "$pyv"; then
+        v=$(sed -E 's|3\.(.*)\.[0-9]{1,2}|\1|g' <<< $pyv)
+        if test $v -lt $minPy; then
+            log "minimum python version required: 3.${minPy}, current: $pyv"
+            _reinstallPython
+        elif test $v -gt $maxPy; then
+            log "maximum python version required: 3.${maxPy}, current: $pyv"
+            _reinstallPython
+        else
+            log "Found Installed Python version: $pyv"
+        fi
+    else
+        log "Python not found!"
+        _installPython
+    fi
+}
 
-log "All done!\nNow run command \"termux-chroot\" and \"cd Userge && bash run\" respectively.\nEnjoy :)"
-echo -e "\nFor more info: https://theuserge.github.io/termux\n"
+_setupLoader() {
+    local out
+    log "Cloning into 'loader'..."
+    _checkRequirement "git"
+    test -d "loader" && $(rm -rf loader)
+    out=$(git clone $repo 2> /dev/null)
+    test -z "$out" && {
+        $(mv loader/config.env.sample loader/config.env)
+        log "Loader is set up successfully..."
+        log "Now fill config.env file by executing:\n\tcd loader && nano config.env"
+        log "start userge by executing:\n\tbash install_req && bash run"
+    }
+}
+
+main() {
+    _checkTermux
+    _checkPython
+    _setupLoader
+}
+
+main
