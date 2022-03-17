@@ -15,7 +15,12 @@ This Userbot can be deployed with four different ways, which are Termux, Heroku,
 
 Click the button below to deploy Userge on Heroku!
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rking32/HelperScript)
+
+OR
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jigarvarma2005/HelperScript-V2)
+
 
 > Credits: **[@Jigarvarma2005](https://github.com/Jigarvarma2005)**
 
@@ -88,7 +93,11 @@ Setup configs (Download the sample config file)
 
 ```bash
 mkdir userge && cd userge
+```
+```
 wget https://raw.githubusercontent.com/UsergeTeam/Loader/master/config.env.sample -O config.env
+```
+```
 vim config.env
 ```
     
@@ -154,7 +163,7 @@ Changes will be fetched from git repo. You can change Repo URL from **docker-com
 **1. Install required package**
 
 ```
-sudo apt install tree wget2 p7zip-full jq ffmpeg wget git
+sudo apt install tree wget2 p7zip-full ffmpeg wget git
 ```
 
 ```
@@ -212,12 +221,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 Only Git is Compulsary
 ```
 choco install git
-
+```
+```
 choco install wget
-
+```
+```
 choco install ffmpeg
-
-choco install jq
 ```
 
 **3. Clone the Repository**

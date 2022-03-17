@@ -270,11 +270,11 @@ Use `.download your_link | filename.ext`
 
 ## 25. How to Add/Load Custom Plugins?
 
-You can also use custom plugins by forking [plugins repo](https://github.com/UsergeTeam/Userge-Plugins) and sending 
+You can also use custom plugins by forking [plugins repo](https://github.com/UsergeTeam/Custom-Plugins) and sending 
 ```
 .addrepo YOUR_REPO_URL
 ``` 
-follwoed by
+followed by
  ```
  restart -h
 ```
