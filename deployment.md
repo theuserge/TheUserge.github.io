@@ -13,16 +13,10 @@ This Userbot can be deployed with four different ways, which are Termux, Heroku,
 
 ## Deploy to Heroku
 
-Click the button below to deploy Userge on Heroku!
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rking32/HelperScript)
-
-OR
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jigarvarma2005/HelperScript-V2)
-
-
-> Credits: **[@Jigarvarma2005](https://github.com/Jigarvarma2005)**
+Fork the Helper Script [Repo](https://github.com/rking32/HelperScript) then Rename your fork with some random names and deploy . Deploy Link will be in Format given below.
+```
+https://heroku.com/deploy?template=https://github.com/username/repo_name
+```
 
 ## Deploying with Docker 🐳
 
@@ -104,7 +98,7 @@ vim config.env
 Download the yml file for Docker-Compose
     
 ```bash
-wget https://raw.githubusercontent.com/UsergeTeam/Loader/master/resources/docker-compose.yml
+wget https://raw.githubusercontent.com/UsergeTeam/Loader/master/docker-compose.yml
 ```
 Finally, start the bot
 

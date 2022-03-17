@@ -68,8 +68,3 @@ Simply make a new Pyrogram session string.
 
 
 
-### TIP
->> If you get *We couldn't deploy your app because the source code violates the Salesforce Acceptable Use and External-Facing Services Policy.* 
-Just Fork the helper script [repo](https://github.com/rking32/HelperScript) then Rename your fork with some random names and deploy
-
-
