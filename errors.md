@@ -56,7 +56,7 @@ Probably, this happens when there are too many requests. So, Turn off your bot f
 
 ![](https://i.imgur.com/NySBc32.jpg)
 
-Userge is based on Pyrogram. So you have to give a Pyrogram session string to `HU_STRING_SESSION`.
+Userge is based on Pyrogram. So you have to give a Pyrogram session string to `SESSION_STRING`.
 
 ## 10. Auth Key Duplicated / Revoked / Unregistered
 
