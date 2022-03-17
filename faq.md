@@ -13,20 +13,13 @@ To Deploy on your VPS or local machine and For more further information, Check t
 
  You can also type `#usergeguide` and `#deployment` in [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/UsergeOT).
 
-## 2. How to Add Unofficial Plugins?
+## 2. How to Add Official Plugins?
 
-**For Heroku Users:**
+After Your Userbot starts send 
 
-* Go to Heroku website > App Setting > Reveal Config Vars.
-* Type **LOAD_UNOFFICIAL_PLUGINS** in the KEY.
-* Type **True** in the value.
-* That's it... Restart the Dyno.
-
-Check out [this](https://t.me/UnofficialPluginsHelp/31) guide for more information. You can also Type `#unofficialhelp` in: [![UserGe OT](https://img.shields.io/badge/@UserGeOT-blue?logo=telegram)](https://t.me/usergeOT).
-
-**For Docker or Legacy Method Users:**
-
-To Enable Unofficial Plugins on your Userge UserBot, Add `LOAD_UNOFFICIAL_PLUGINS` KEY and the value is `true` into your `config.env` file.
+``` 
+.addrepo https://github.com/UsergeTeam/Userge-Plugins
+ ```
 
 ## 3. How to Generate String Session ?
 
@@ -277,8 +270,11 @@ Use `.download your_link | filename.ext`
 
 ## 25. How to Add/Load Custom Plugins?
 
-Create a Private channel and save your all plugins there, then copy channel id and paste it in var named `PLUGINS_CHAT_ID` and then load all plugins via a single command `.loadall`.
-
-You can delete that file to unload that plugin, use `.restart -t` after delete that file in your channel.
-
-> **Tip**: You can also use custom plugins by forking [plugins repo](https://github.com/UsergeTeam/Userge-Plugins) and setting `CUSTOM_PLUGINS_REPO` var with your forked repo.
+You can also use custom plugins by forking [plugins repo](https://github.com/UsergeTeam/Custom-Plugins) and sending 
+```
+.addrepo YOUR_REPO_URL
+``` 
+followed by
+ ```
+ restart -h
+```
