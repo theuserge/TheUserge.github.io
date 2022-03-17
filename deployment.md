@@ -150,7 +150,7 @@ Changes will be fetched from git repo. You can change Repo URL from **docker-com
 
 ### Requirements:
 
-* Python 3.9 or higher version
+* Python (Min Version 3.8 & Max version 3.9)
 * [Mandatory Vars](https://theuserge.github.io/deployment.html#mandatory-vars)
 ### Linux 
 
