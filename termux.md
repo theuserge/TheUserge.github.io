@@ -9,7 +9,7 @@
 
 ## Quick Setup
 
-* Open Termux and run `bash <(curl -s https://theuserge.tech/termux.sh)`.
+* Open Termux and run `wget https://theuserge.tech/termux.sh` then `bash termux.sh`.
 * Wait for a while (`upto 10min`) ... (some times it may ask for inputs).
 * It will redirect to `config.env` and ask to fill.
 * Fill them, save (`ctrl+s`) and close (`ctrl+x`) it.
