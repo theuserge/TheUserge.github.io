@@ -30,9 +30,8 @@ pkg install root-repo
 Install Python and necessary packages
 
 ```bash
-pkg install python
+pkg install git python proot resolv-conf libxml2 libxslt libjpeg-turbo
 pip install -U pip wheel setuptools
-pkg install git jq proot resolv-conf libxml2 libxslt libjpeg-turbo
 ```
 
 Install Pillow
@@ -41,16 +40,16 @@ Install Pillow
 LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install Pillow
 ```
 
-Then Clone `Userge` and Go to cloned directory
+Then Clone `Loader` and Go to cloned directory
 
 ```bash
-git clone https://github.com/UsergeTeam/Userge Userge && cd Userge
+git clone https://github.com/UsergeTeam/Loader Loader && cd Loader
 ```
 
 Install Requirements
 
 ```bash
-CFLAGS="-O0" pip install -r requirements.txt
+bash install_req
 ```
 
 Generate and Fill `config.env`
@@ -64,6 +63,6 @@ Done. Now run Userge
 
 ```bash
 termux-chroot
-cd Userge
+cd Loader
 bash run
 ```
